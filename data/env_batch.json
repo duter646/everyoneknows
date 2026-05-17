@@ -1,0 +1,411 @@
+[
+  {
+    "id": "env_001",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "引起温室效应的主要气体是",
+    "options": [
+      "氧气",
+      "二氧化碳",
+      "氮气",
+      "氩气"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "CO2是主要温室气体",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_002",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "哪种能源属于不可再生能源",
+    "options": [
+      "太阳能",
+      "风能",
+      "地热能",
+      "煤炭"
+    ],
+    "answer": [
+      3
+    ],
+    "difficulty": "easy",
+    "explanation": "煤炭是化石燃料",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_003",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "破坏臭氧层的主要物质是",
+    "options": [
+      "二氧化碳",
+      "氟利昂",
+      "二氧化硫",
+      "甲烷"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "氟利昂破坏大氧层",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_004",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "酸雨的主要成因气体",
+    "options": [
+      "CO2",
+      "SO2",
+      "O3",
+      "N2"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "二氧化硫形成酸雨",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_005",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "世界地球日是哪一天",
+    "options": [
+      "3.12",
+      "4.22",
+      "6.5",
+      "12.1"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "4月22日是地球日",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_006",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "水俣病是由哪种重金属引起的",
+    "options": [
+      "铅",
+      "汞",
+      "镉",
+      "铬"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "hard",
+    "explanation": "汞污染引起水俣病",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_007",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "痛痛病是由哪种元素引起的",
+    "options": [
+      "铅",
+      "汞",
+      "镉",
+      "铬"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "hard",
+    "explanation": "镉中毒",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_008",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "不属于可降解塑料的是",
+    "options": [
+      "PLA",
+      "PBAT",
+      "PVC",
+      "PHA"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "PVC难降解",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_009",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "雾霾的主要成分指标是",
+    "options": [
+      "PM2.5",
+      "CO",
+      "O3",
+      "VOCs"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "easy",
+    "explanation": "主要看PM2.5",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_010",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "京都议定书主要针对什么",
+    "options": [
+      "保护濒危动物",
+      "控制温室气体",
+      "防止核扩散",
+      "跨国界垃圾"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "温室气体减排",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_011",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "巴黎协定目标将全球升温限制在多少度内",
+    "options": [
+      "1.5",
+      "2.0",
+      "2.5",
+      "3.0"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "hard",
+    "explanation": "相比工业化前最好1.5，限制在2.0",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_012",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "白色污染主要指什么",
+    "options": [
+      "废玻璃",
+      "废塑料",
+      "废纸",
+      "废铁"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "难降解的塑料废弃物",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_013",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "碳中和是指",
+    "options": [
+      "不排放碳",
+      "把碳变中性",
+      "碳排放与吸收平衡",
+      "多吸收碳"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "净零排放",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_014",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "回收标志中的三个箭头代表",
+    "options": [
+      "减少、再利用、循环",
+      "燃烧、填埋、堆肥",
+      "分类、清洗、打包",
+      "生产、消费、回收"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "easy",
+    "explanation": "3R原则",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_015",
+    "domain": "环境与可持续发展",
+    "type": "single",
+    "question": "森林被称为地球的",
+    "options": [
+      "心脏",
+      "肝脏",
+      "肺",
+      "肾脏"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "光合作用产生氧气",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_016",
+    "domain": "环境与可持续发展",
+    "type": "multiple",
+    "question": "哪些属于新能源",
+    "options": [
+      "太阳能",
+      "风能",
+      "核能",
+      "煤炭"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "煤不是新能源",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_017",
+    "domain": "环境与可持续发展",
+    "type": "multiple",
+    "question": "常见的温室气体有",
+    "options": [
+      "二氧化碳",
+      "甲烷",
+      "氧化亚氮",
+      "氧气"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "氧气不是温室气体",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_018",
+    "domain": "环境与可持续发展",
+    "type": "multiple",
+    "question": "有助于节能减排的行为包括",
+    "options": [
+      "随手关灯",
+      "多坐公交",
+      "空调调低",
+      "使用一次性餐具"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "日常环保行为",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_019",
+    "domain": "环境与可持续发展",
+    "type": "multiple",
+    "question": "生物多样性包括",
+    "options": [
+      "遗传多样性",
+      "物种多样性",
+      "生态系统多样性",
+      "文化多样性"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "三大层次",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "env_020",
+    "domain": "环境与可持续发展",
+    "type": "multiple",
+    "question": "可持续发展的原则包括",
+    "options": [
+      "公平性原则",
+      "持续性原则",
+      "共同性原则",
+      "逐利性原则"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "hard",
+    "explanation": "不是逐利",
+    "tags": [
+      "综合"
+    ]
+  }
+]
