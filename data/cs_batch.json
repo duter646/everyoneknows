@@ -1,0 +1,847 @@
+[
+  {
+    "id": "cs_001",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "世界上第一台通用电子数字计算机是？",
+    "options": [
+      "EDVAC",
+      "ENIAC",
+      "UNIVAC",
+      "Turing Machine"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "ENIAC（电子数值积分计算机）于1946年诞生，是世界上第一台通用电子数字计算机。",
+    "tags": [
+      "计算机史",
+      "ENIAC"
+    ]
+  },
+  {
+    "id": "cs_002",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "现代计算机的体系结构主要基于哪位科学家的理论？",
+    "options": [
+      "阿兰·图灵",
+      "冯·诺依曼",
+      "查尔斯·巴贝奇",
+      "克劳德·香农"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "冯·诺依曼提出了“存储程序”的概念，奠定了现代计算机的基础结构。",
+    "tags": [
+      "体系结构",
+      "冯诺依曼"
+    ]
+  },
+  {
+    "id": "cs_003",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "计算机中用于解释和执行指令的核心部件是？",
+    "options": [
+      "内存",
+      "硬盘",
+      "CPU（中央处理器）",
+      "主板"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "CPU是计算机的大脑，负责解释和执行程序指令。",
+    "tags": [
+      "硬件",
+      "CPU"
+    ]
+  },
+  {
+    "id": "cs_004",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "1 Byte (字节) 等于多少个 Bit (位)？",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "1字节(Byte)由8个二进制位(Bit)组成。",
+    "tags": [
+      "数据单位"
+    ]
+  },
+  {
+    "id": "cs_005",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "下列哪个是操作系统最基本的功能？",
+    "options": [
+      "播放多媒体",
+      "管理软硬件资源",
+      "进行科学计算",
+      "连接无线网络"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "操作系统是管理计算机硬件与软件资源的系统程序。",
+    "tags": [
+      "操作系统"
+    ]
+  },
+  {
+    "id": "cs_006",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "ASCII码标准通常使用多少个二进制位来表示一个字符？",
+    "options": [
+      "7位",
+      "8位",
+      "16位",
+      "32位"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "medium",
+    "explanation": "标准ASCII码使用7位二进制表示128个字符（最高位一般为0作校验或扩展）。",
+    "tags": [
+      "编码",
+      "ASCII"
+    ]
+  },
+  {
+    "id": "cs_007",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "计算机断电后，哪种存储器中的数据会全部丢失？",
+    "options": [
+      "ROM",
+      "RAM (如DRAM)",
+      "硬盘",
+      "U盘"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "RAM（随机存取存储器）是易失性存储器，断电后数据清空。",
+    "tags": [
+      "存储器",
+      "RAM"
+    ]
+  },
+  {
+    "id": "cs_008",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "十六进制数 'A' 对应的十进制数值是？",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "在16进制中，A代表10，B代表11，一直到F代表15。",
+    "tags": [
+      "进制转换"
+    ]
+  },
+  {
+    "id": "cs_009",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "Linux操作系统的内核最初是由谁编写的？",
+    "options": [
+      "比尔·盖茨",
+      "史蒂夫·乔布斯",
+      "林纳斯·托瓦兹",
+      "理查德·斯托曼"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "Linus Torvalds在1991年发布了Linux内核的首个版本。",
+    "tags": [
+      "操作系统",
+      "Linux"
+    ]
+  },
+  {
+    "id": "cs_010",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "在关系型数据库中，SQL的全称是？",
+    "options": [
+      "Standard Query Language",
+      "Structured Query Language",
+      "Simple Query Language",
+      "System Query Language"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "SQL即结构化查询语言(Structured Query Language)。",
+    "tags": [
+      "数据库",
+      "SQL"
+    ]
+  },
+  {
+    "id": "cs_011",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "在面向对象编程中，实现代码复用的主要机制之一是？",
+    "options": [
+      "继承",
+      "指针",
+      "递归",
+      "死循环"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "medium",
+    "explanation": "继承允许基于现有类创建新类，是面向对象实现代码复用的关键。",
+    "tags": [
+      "编程",
+      "OOP"
+    ]
+  },
+  {
+    "id": "cs_012",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "时间复杂度为 O(n log n) 的排序算法是？",
+    "options": [
+      "冒泡排序",
+      "插入排序",
+      "快速排序",
+      "快速排序（平均情况）及归并排序"
+    ],
+    "answer": [
+      3
+    ],
+    "difficulty": "hard",
+    "explanation": "归并、堆排序和平均情况的快速排序的时间复杂度均为O(n log n)。",
+    "tags": [
+      "算法",
+      "排序"
+    ]
+  },
+  {
+    "id": "cs_013",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "图灵测试（Turing Test）主要用于检验机器的？",
+    "options": [
+      "计算速度",
+      "存储容量",
+      "表现出智能行为的能力",
+      "网络带宽"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "图灵测试由阿兰·图灵提出，用以判断机器是否能够表现出与人等同或无法区分的智能行为。",
+    "tags": [
+      "图灵",
+      "智能"
+    ]
+  },
+  {
+    "id": "cs_014",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "在计算机存储体系中，访问速度最快的是？",
+    "options": [
+      "寄存器 (Register)",
+      "L1缓存",
+      "主存 (RAM)",
+      "固态硬盘 (SSD)"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "medium",
+    "explanation": "存储结构层级中，CPU内部的寄存器访问速度最快。",
+    "tags": [
+      "硬件",
+      "存储层级"
+    ]
+  },
+  {
+    "id": "cs_015",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "补码（Two's complement）主要用于计算机内部表示？",
+    "options": [
+      "浮点数",
+      "原码",
+      "正负整数",
+      "字符串"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "计算机内部通常使用补码来表示有符号整数，便于加减法运算统一下层硬件实现。",
+    "tags": [
+      "计算机组成",
+      "补码"
+    ]
+  },
+  {
+    "id": "cs_016",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "下列哪个是编译型编程语言的典型代表？",
+    "options": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Ruby"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "C++是典型的编译型语言，代码运行前需通过编译器译为机器码。",
+    "tags": [
+      "编程语言"
+    ]
+  },
+  {
+    "id": "cs_017",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "死锁（Deadlock）的四个必要条件不包括以下哪一个？",
+    "options": [
+      "互斥条件",
+      "请求与保持条件",
+      "不可剥夺条件",
+      "非循环等待条件"
+    ],
+    "answer": [
+      3
+    ],
+    "difficulty": "hard",
+    "explanation": "死锁四个必要条件：互斥、持有并等待（请求与保持）、非抢占（不可剥夺）及循环等待。题目中是非循环等待。",
+    "tags": [
+      "操作系统",
+      "死锁"
+    ]
+  },
+  {
+    "id": "cs_018",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "栈（Stack）这种数据结构的特点是？",
+    "options": [
+      "先进先出 (FIFO)",
+      "后进先出 (LIFO)",
+      "随机存取",
+      "无序存储"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "栈的特性是后进先出（Last In, First Out）。",
+    "tags": [
+      "数据结构",
+      "栈"
+    ]
+  },
+  {
+    "id": "cs_019",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "树这种数据结构中，没有父节点的节点称为？",
+    "options": [
+      "叶子节点",
+      "根节点",
+      "分支节点",
+      "兄弟节点"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "树的最高层节点，唯一没有父节点的节点叫做根节点(Root)。",
+    "tags": [
+      "数据结构",
+      "树"
+    ]
+  },
+  {
+    "id": "cs_020",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "在Unix/Linux中，常用于更改文件权限的命令是？",
+    "options": [
+      "chown",
+      "mkdir",
+      "chmod",
+      "ls"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "chmod命令用于改变文件或目录的访问权限。",
+    "tags": [
+      "Linux命令"
+    ]
+  },
+  {
+    "id": "cs_021",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "IPv4地址的长度是？",
+    "options": [
+      "16位",
+      "32位",
+      "64位",
+      "128位"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "IPv4地址由32位二进制数构成，通常表示为4个十进制数。",
+    "tags": [
+      "网络基础",
+      "IPv4"
+    ]
+  },
+  {
+    "id": "cs_022",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "软件工程中，MVC架构模式代表的是？",
+    "options": [
+      "Machine, View, Content",
+      "Model, View, Controller",
+      "Main, Version, Control",
+      "Memory, Value, Context"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "MVC分别对应模型(Model)、视图(View)、控制器(Controller)。",
+    "tags": [
+      "软件工程",
+      "架构"
+    ]
+  },
+  {
+    "id": "cs_023",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "下面用来表示计算机处理速度的指标是？",
+    "options": [
+      "TB/s",
+      "MIPS 和 GHz",
+      "DPI",
+      "RPM"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "MIPS表示每秒百万条指令，主频GHz用来反应CPU时钟速度。",
+    "tags": [
+      "计算机性能"
+    ]
+  },
+  {
+    "id": "cs_024",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "Git是一种？",
+    "options": [
+      "关系数据库",
+      "操作系统内核",
+      "分布式版本控制系统",
+      "前端UI框架"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "Git是目前最流行的开源分布式版本控制系统。",
+    "tags": [
+      "工具",
+      "Git"
+    ]
+  },
+  {
+    "id": "cs_025",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "逻辑运算中，只有当两个输入同时为真，输出才为真的是？",
+    "options": [
+      "与 (AND)",
+      "或 (OR)",
+      "非 (NOT)",
+      "异或 (XOR)"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "easy",
+    "explanation": "逻辑与（AND）运算：只有所有输入为真时结果为真。",
+    "tags": [
+      "数字逻辑"
+    ]
+  },
+  {
+    "id": "cs_026",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "冯·诺依曼计算机五大组成部分不包括？",
+    "options": [
+      "运算器",
+      "控制器",
+      "存储器",
+      "操作系统"
+    ],
+    "answer": [
+      3
+    ],
+    "difficulty": "easy",
+    "explanation": "五大部件是：运算器、控制器、存储器、输入设备和输出设备。操作系统是软件。",
+    "tags": [
+      "组成原理"
+    ]
+  },
+  {
+    "id": "cs_027",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "二叉树的最坏情况深度往往会演退化为哪种数据结构？",
+    "options": [
+      "哈希表",
+      "数组",
+      "链表",
+      "图"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "极度不平衡的二叉树每个节点只有一个子节点，结构上退化为链表。",
+    "tags": [
+      "数据结构"
+    ]
+  },
+  {
+    "id": "cs_028",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "计算机发生死机，通常最硬核直接安全的重启方式是？",
+    "options": [
+      "拔掉电源电源插头",
+      "长按电源键进行硬件复位",
+      "点击鼠标",
+      "拼命敲打键盘"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "长按电源键发送硬复位信号是相对更合理的断电/重启法。",
+    "tags": [
+      "微机操作"
+    ]
+  },
+  {
+    "id": "cs_029",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "多线程或多进程并发访问共享资源而不加锁，可能导致？",
+    "options": [
+      "竞态条件(Race Condition)",
+      "内存泄露(Memory Leak)",
+      "栈溢出(Stack Overflow)",
+      "空指针异常"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "hard",
+    "explanation": "没有经过互斥同步的并发访问可能引起数据不一致，即所谓竞态条件。",
+    "tags": [
+      "并发编程"
+    ]
+  },
+  {
+    "id": "cs_030",
+    "domain": "计算机基础",
+    "type": "single",
+    "question": "摩尔定律预测，集成电路上可容纳的晶体管数目大约每隔多长时间增加一倍？",
+    "options": [
+      "1个月",
+      "6个月",
+      "18-24个月",
+      "10年"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "由戈登·摩尔提出，集成电路晶体管数约每18至24个月翻一倍。",
+    "tags": [
+      "半导体",
+      "摩尔定律"
+    ]
+  },
+  {
+    "id": "cs_031",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "高级语言程序的执行方式通常包括？",
+    "options": [
+      "编译执行",
+      "解释执行",
+      "人工口算执行",
+      "混合执行（如JIT编译）"
+    ],
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "difficulty": "medium",
+    "explanation": "代码可编译成机器码，或者逐行解释执行，或者如Java/C#等先编译字节码再JIT解释编译混合执行。",
+    "tags": [
+      "编程基础"
+    ]
+  },
+  {
+    "id": "cs_032",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "下面哪些属于常见的数据结构？",
+    "options": [
+      "队列",
+      "图",
+      "B+树",
+      "HTML"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "HTML是超文本标记语言，不是表示内存中数据的结构。队列、图和树(B+树)是经典数据结构。",
+    "tags": [
+      "数据结构"
+    ]
+  },
+  {
+    "id": "cs_033",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "常见的进程调度算法有？",
+    "options": [
+      "先来先服务(FCFS)",
+      "时间片轮转(RR)",
+      "最短作业优先(SJF)",
+      "RSA加密算法"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "hard",
+    "explanation": "RSA是非对称加密算法，其余均为操作系统的进程调度算法。",
+    "tags": [
+      "操作系统",
+      "调度算法"
+    ]
+  },
+  {
+    "id": "cs_034",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "关系型数据库中，事务（Transaction）具备的ACID特性包括？",
+    "options": [
+      "原子性 (Atomicity)",
+      "一致性 (Consistency)",
+      "隔离性 (Isolation)",
+      "持久性 (Durability)"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "difficulty": "hard",
+    "explanation": "ACID即这四大特性，是关系型数据库保证事务安全的核心依据。",
+    "tags": [
+      "数据库",
+      "ACID"
+    ]
+  },
+  {
+    "id": "cs_035",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "以下哪些选项属于面向对象编程的核心概念？",
+    "options": [
+      "封装",
+      "继承",
+      "多态",
+      "闭包"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "多态、继承和封装是OOP的三大护法。闭包更多强调于函数式编程或作用域特性。",
+    "tags": [
+      "编程模式",
+      "OOP"
+    ]
+  },
+  {
+    "id": "cs_036",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "常用的无损数据压缩算法或工具有？",
+    "options": [
+      "ZIP",
+      "JPEG",
+      "MP3",
+      "GZIP"
+    ],
+    "answer": [
+      0,
+      3
+    ],
+    "difficulty": "medium",
+    "explanation": "ZIP和GZIP是无损压缩，解压后和原文件完全一致。JPEG和MP3分别是图像和音频的有损压缩。",
+    "tags": [
+      "算法",
+      "压缩"
+    ]
+  },
+  {
+    "id": "cs_037",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "下列属于非易失性存储器的有？",
+    "options": [
+      "硬盘(HDD/SSD)",
+      "U盘(Flash Drive)",
+      "只读存储器(ROM)",
+      "静态随机存取存储器(SRAM)"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "硬盘、U盘和ROM断电均不丢失数据。而SRAM属于RAM的一种，掉电丢失数据。",
+    "tags": [
+      "硬件",
+      "存储"
+    ]
+  },
+  {
+    "id": "cs_038",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "为了提高硬盘读写性能和数据容错冗余能力，常使用的技术类型是？",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "VGA"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "RAID（独立磁盘冗余阵列）技术用于硬盘扩容、提速或备份。VGA是显示接口。",
+    "tags": [
+      "硬件",
+      "磁盘阵列"
+    ]
+  },
+  {
+    "id": "cs_039",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "常见的操作系统有？",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Microsoft Office"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "Office是应用软件，其余三个是广为人知的操作系统。",
+    "tags": [
+      "操作系统"
+    ]
+  },
+  {
+    "id": "cs_040",
+    "domain": "计算机基础",
+    "type": "multiple",
+    "question": "在衡量算法好坏时，主要考虑哪两个方面的复杂度？",
+    "options": [
+      "时间复杂度",
+      "空间复杂度",
+      "网络复杂度",
+      "编译复杂度"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "评价算法通常关注其耗费的执行时间（时间复杂度）及占用内存资源（空间复杂度）。",
+    "tags": [
+      "算法",
+      "复杂度"
+    ]
+  }
+]

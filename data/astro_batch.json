@@ -1,0 +1,431 @@
+[
+  {
+    "id": "astro_001",
+    "domain": "天文学",
+    "type": "single",
+    "question": "太阳系中体积最大的行星是？",
+    "options": [
+      "火星",
+      "地球",
+      "木星",
+      "土星"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "木星是太阳系中质量和体积最大的行星。",
+    "tags": [
+      "太阳系",
+      "行星"
+    ]
+  },
+  {
+    "id": "astro_002",
+    "domain": "天文学",
+    "type": "single",
+    "question": "距离地球最近的恒星是？",
+    "options": [
+      "比邻星",
+      "天狼星",
+      "太阳",
+      "北极星"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "太阳是距离地球最近的恒星，比邻星是距离太阳系最近的恒星。",
+    "tags": [
+      "恒星"
+    ]
+  },
+  {
+    "id": "astro_003",
+    "domain": "天文学",
+    "type": "single",
+    "question": "光年是什么的单位？",
+    "options": [
+      "时间",
+      "距离",
+      "速度",
+      "亮度"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "光年是长度单位，指光在真空中行走一年的距离。",
+    "tags": [
+      "天文单位"
+    ]
+  },
+  {
+    "id": "astro_004",
+    "domain": "天文学",
+    "type": "single",
+    "question": "人类首次登月乘坐的阿波罗登月舱属于哪个国家？",
+    "options": [
+      "苏联",
+      "中国",
+      "美国",
+      "英国"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "1969年，美国阿波罗11号实现了人类首次登月。",
+    "tags": [
+      "天文史",
+      "登月"
+    ]
+  },
+  {
+    "id": "astro_005",
+    "domain": "天文学",
+    "type": "single",
+    "question": "银河系属于哪种星系类型？",
+    "options": [
+      "椭圆星系",
+      "漩涡星系",
+      "不规则星系",
+      "透镜星系"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "银河系是一个棒旋星系，属于漩涡星系的一种。",
+    "tags": [
+      "星系",
+      "银河系"
+    ]
+  },
+  {
+    "id": "astro_006",
+    "domain": "天文学",
+    "type": "single",
+    "question": "太阳系八大行星中，唯一自转方向是从东向西的行星是？",
+    "options": [
+      "火星",
+      "木星",
+      "金星",
+      "海王星"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "金星的自转方向不仅与太阳系大部分行星相反（自东向西），并且自转周期比公转周期还长。",
+    "tags": [
+      "太阳系",
+      "金星"
+    ]
+  },
+  {
+    "id": "astro_007",
+    "domain": "天文学",
+    "type": "single",
+    "question": "由于光速有限，当我们仰望夜空看到星星时，实际上看到的是它们的？",
+    "options": [
+      "现在",
+      "过去",
+      "未来",
+      "幻影"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "easy",
+    "explanation": "星光传到地球需要时间，所以看到的是星星过去的状态。",
+    "tags": [
+      "光速",
+      "常识"
+    ]
+  },
+  {
+    "id": "astro_008",
+    "domain": "天文学",
+    "type": "single",
+    "question": "著名的哈雷彗星绕太阳公转的周期大约是？",
+    "options": [
+      "24年",
+      "50年",
+      "76年",
+      "100年"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "哈雷彗星的公转周期约为76年，最近一次过近日点是1986年。",
+    "tags": [
+      "彗星",
+      "哈雷"
+    ]
+  },
+  {
+    "id": "astro_009",
+    "domain": "天文学",
+    "type": "single",
+    "question": "第一位提出“日心说”的近代天文学家是？",
+    "options": [
+      "托勒密",
+      "伽利略",
+      "哥白尼",
+      "开普勒"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "easy",
+    "explanation": "尼古拉·哥白尼在《天体运行论》中提出了日心说。",
+    "tags": [
+      "天文史",
+      "日心说"
+    ]
+  },
+  {
+    "id": "astro_010",
+    "domain": "天文学",
+    "type": "single",
+    "question": "脉冲星实际上是快速自转的哪种天体？",
+    "options": [
+      "白矮星",
+      "中子星",
+      "黑洞",
+      "恒星"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "脉冲星是快速自转并发出电磁脉冲的中子星。",
+    "tags": [
+      "恒星演化",
+      "脉冲星"
+    ]
+  },
+  {
+    "id": "astro_011",
+    "domain": "天文学",
+    "type": "single",
+    "question": "太阳的主要成分是？",
+    "options": [
+      "氢和氦",
+      "氧和碳",
+      "氮和氢",
+      "硅和铁"
+    ],
+    "answer": [
+      0
+    ],
+    "difficulty": "medium",
+    "explanation": "太阳主要由氢（约四分之三总量）和氦构成。",
+    "tags": [
+      "太阳恒星",
+      "化学组成"
+    ]
+  },
+  {
+    "id": "astro_012",
+    "domain": "天文学",
+    "type": "single",
+    "question": "根据大爆炸宇宙学模型，宇宙的年龄大约是多少？",
+    "options": [
+      "约46亿年",
+      "约138亿年",
+      "约1000亿年",
+      "永恒无限"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "medium",
+    "explanation": "普朗克卫星测量等多种观测支持宇宙年龄约为138亿年。",
+    "tags": [
+      "宇宙学",
+      "大爆炸"
+    ]
+  },
+  {
+    "id": "astro_013",
+    "domain": "天文学",
+    "type": "single",
+    "question": "大质量恒星生命演化的最终归宿是？",
+    "options": [
+      "白矮星",
+      "红巨星",
+      "黑洞",
+      "褐矮星"
+    ],
+    "answer": [
+      2
+    ],
+    "difficulty": "hard",
+    "explanation": "极高质量的恒星核心坍缩，突破奥本海默-沃尔科夫极限，最终形成黑洞。较小质量核心形成中子星。",
+    "tags": [
+      "恒星演化",
+      "黑洞"
+    ]
+  },
+  {
+    "id": "astro_014",
+    "domain": "天文学",
+    "type": "single",
+    "question": "在天文距离测量中，1个秒差距(pc)大约等于多少光年？",
+    "options": [
+      "1光年",
+      "3.26光年",
+      "8光年",
+      "10光年"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "hard",
+    "explanation": "秒差距是由视差定义的距离单位，1 pc ≈ 3.26 光年。",
+    "tags": [
+      "天文单位",
+      "测距"
+    ]
+  },
+  {
+    "id": "astro_015",
+    "domain": "天文学",
+    "type": "single",
+    "question": "类星体（Quasar）通常被认为是极度明亮的活动星系核，它的能量来源主要依赖于？",
+    "options": [
+      "暗物质湮灭",
+      "中心超大质量黑洞的吸积",
+      "极化磁场",
+      "数千亿颗恒星的核聚变"
+    ],
+    "answer": [
+      1
+    ],
+    "difficulty": "hard",
+    "explanation": "类星本由宿主星系中心的超大质量黑洞吸积周围气体和物质释放巨大能量形成。",
+    "tags": [
+      "深空天体",
+      "类星体"
+    ]
+  },
+  {
+    "id": "astro_016",
+    "domain": "天文学",
+    "type": "multiple",
+    "question": "太阳系八大行星中，属于“类地行星”（岩石行星）的有？",
+    "options": [
+      "水星",
+      "金星",
+      "地球",
+      "木星"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "水星、金星、地球、火星为岩石星球，属于类地行星。木星是气态巨行星。",
+    "tags": [
+      "太阳系",
+      "行星分类"
+    ]
+  },
+  {
+    "id": "astro_017",
+    "domain": "天文学",
+    "type": "multiple",
+    "question": "现代天文学中，发现系外行星的主要方法有哪些？",
+    "options": [
+      "凌星法（凌日法）",
+      "径向速度法（多普勒法）",
+      "直接成像法",
+      "微引力透镜法"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "difficulty": "hard",
+    "explanation": "这四种均是主要的天文学中发现系外行星的探测方法，其中凌星法和视向速度法发现数量最多。",
+    "tags": [
+      "系外行星",
+      "探测方法"
+    ]
+  },
+  {
+    "id": "astro_018",
+    "domain": "天文学",
+    "type": "multiple",
+    "question": "以下哪些天体属于太阳系的矮行星？",
+    "options": [
+      "冥王星",
+      "谷神星",
+      "阋神星",
+      "海卫一"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "冥王星、谷神星、阋神星都是公认的矮行星。海卫一是海王星的卫星。",
+    "tags": [
+      "太阳系",
+      "矮行星"
+    ]
+  },
+  {
+    "id": "astro_019",
+    "domain": "天文学",
+    "type": "multiple",
+    "question": "关于黑洞的描述，正确的有？",
+    "options": [
+      "引力极强，光也无法逃脱",
+      "中间存在奇点",
+      "只能通过吸积盘和辐射间接观测",
+      "是由气态行星演化而来"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "medium",
+    "explanation": "恒星级黑洞由大质量恒星演化而来，并非气态行星。其他描述正确。",
+    "tags": [
+      "黑洞",
+      "引力"
+    ]
+  },
+  {
+    "id": "astro_020",
+    "domain": "天文学",
+    "type": "multiple",
+    "question": "宇宙微波背景辐射的特征包括？",
+    "options": [
+      "各向同性",
+      "温度约为2.7K",
+      "起源于大爆炸后约38万年",
+      "肉眼可见"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "difficulty": "hard",
+    "explanation": "宇宙微波背景辐射位于微波波段，肉眼不可见，其他均为正确特征。",
+    "tags": [
+      "宇宙学",
+      "微波背景"
+    ]
+  }
+]
