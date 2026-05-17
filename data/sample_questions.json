@@ -1,0 +1,112 @@
+[
+  {
+    "id": "geo_001",
+    "domain": "地理",
+    "type": "single",
+    "question": "以下哪个国家不与其首都同名？",
+    "options": ["新加坡", "墨西哥", "梵蒂冈", "澳大利亚"],
+    "answer": [3],
+    "difficulty": "easy",
+    "explanation": "澳大利亚的首都是堪培拉，而新加坡、墨西哥（墨西哥城）和梵蒂冈（梵蒂冈城）的首都可以认为与国家同名或核心重合。",
+    "tags": ["国家", "首都"]
+  },
+  {
+    "id": "his_001",
+    "domain": "历史",
+    "type": "single",
+    "question": "法国大革命爆发的标志性事件是？",
+    "options": ["处死路易十六", "发表《人权宣言》", "攻占巴士底狱", "热月政变"],
+    "answer": [2],
+    "difficulty": "medium",
+    "explanation": "1789年7月14日巴黎人民攻占巴士底狱，标志着法国大革命的爆发。",
+    "tags": ["法国大革命", "欧洲史"]
+  },
+  {
+    "id": "lit_001",
+    "domain": "文学",
+    "type": "multiple",
+    "question": "以下属于莎士比亚“四大悲剧”的是？",
+    "options": ["《哈姆雷特》", "《罗密欧与朱丽叶》", "《奥赛罗》", "《麦克白》"],
+    "answer": [0, 2, 3],
+    "difficulty": "easy",
+    "explanation": "莎士比亚的“四大悲剧”包括《哈姆雷特》、《奥赛罗》、《李尔王》、《麦克白》。《罗密欧与朱丽叶》虽然也是悲剧，但不属于“四大”之列。",
+    "tags": ["莎士比亚", "戏剧"]
+  },
+  {
+    "id": "math_001",
+    "domain": "数学常识",
+    "type": "single",
+    "question": "在微积分中，函数 f(x) = x^3 的导数是？",
+    "options": ["3x", "x^2", "3x^2", "1/4 x^4"],
+    "answer": [2],
+    "difficulty": "medium",
+    "explanation": "根据幂函数求导公式 (x^n)' = n*x^(n-1)，(x^3)' = 3x^2。",
+    "tags": ["微积分", "导数"]
+  },
+  {
+    "id": "phy_001",
+    "domain": "物理常识",
+    "type": "single",
+    "question": "量子力学中，提出“测不准原理”（不确定性原理）的物理学家是？",
+    "options": ["阿尔伯特·爱因斯坦", "维尔纳·海森堡", "埃尔温·薛定谔", "尼尔斯·玻尔"],
+    "answer": [1],
+    "difficulty": "medium",
+    "explanation": "1927年，海森堡提出了测不准原理，指出微观粒子的位置和动量不能同时被确定。",
+    "tags": ["量子力学", "著名科学家"]
+  },
+  {
+    "id": "chem_001",
+    "domain": "化学常识",
+    "type": "single",
+    "question": "人体胃酸的主要成分是？",
+    "options": ["硫酸", "盐酸", "硝酸", "乙酸"],
+    "answer": [1],
+    "difficulty": "easy",
+    "explanation": "胃酸的主要成分是盐酸(HCl)，有助于消化食物和杀灭细菌。",
+    "tags": ["人体化学", "酸碱"]
+  },
+  {
+    "id": "bio_001",
+    "domain": "生物常识",
+    "type": "multiple",
+    "question": "下列关于DNA的说法，正确的是？",
+    "options": ["基本骨架由脱氧核糖和磷酸交替连接而成", "含有尿嘧啶(U)碱基", "通常为双螺旋结构", "主要存在于细胞核中"],
+    "answer": [0, 2, 3],
+    "difficulty": "medium",
+    "explanation": "RNA中才含有尿嘧啶(U)，DNA中对应的是胸腺嘧啶(T)。其他三项均正确。",
+    "tags": ["分子生物学", "核酸"]
+  },
+  {
+    "id": "astro_001",
+    "domain": "天文学",
+    "type": "single",
+    "question": "太阳系中质量最大的行星是？",
+    "options": ["地球", "火星", "木星", "土星"],
+    "answer": [2],
+    "difficulty": "easy",
+    "explanation": "木星是太阳系中体积和质量最大的行星，其质量是太阳系其他七大行星质量总和的2.5倍。",
+    "tags": ["太阳系", "行星"]
+  },
+  {
+    "id": "geo_sci_001",
+    "domain": "地球科学",
+    "type": "single",
+    "question": "衡量地震释放能量大小的等级指标被称为？",
+    "options": ["烈度", "震级", "震中距", "震源深度"],
+    "answer": [1],
+    "difficulty": "medium",
+    "explanation": "震级反映地震释放能量的大小；烈度反映地震在不同地点造成的影响和破坏程度。",
+    "tags": ["地震", "自然灾害"]
+  },
+  {
+    "id": "med_001",
+    "domain": "医学与健康",
+    "type": "single",
+    "question": "缺乏维生素C容易导致什么疾病？",
+    "options": ["夜盲症", "脚气病", "坏血病", "佝偻病"],
+    "answer": [2],
+    "difficulty": "easy",
+    "explanation": "缺乏维C导致坏血病，缺乏维A导致夜盲症，缺乏维B1导致脚气病，缺乏维D导致佝偻病。",
+    "tags": ["维生素", "营养学"]
+  }
+]
