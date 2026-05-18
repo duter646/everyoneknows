@@ -1,7 +1,7 @@
 [
     {
         "id": "nch_001",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在桌面角色扮演游戏（TRPG）中，“DND”通常是指什么规则？",
         "options": [
@@ -22,7 +22,7 @@
     },
     {
         "id": "nch_002",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "克苏鲁呼唤（COC）跑团中，玩家最害怕失去的属性通常是哪一个（归零会导致角色发疯）？",
         "options": [
@@ -43,7 +43,7 @@
     },
     {
         "id": "nch_003",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "在跑团中，负责设计剧情、扮演NPC、裁定规则的主持人通常被称为？",
         "options": [
@@ -66,7 +66,7 @@
     },
     {
         "id": "nch_004",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "TRPG中常说的“车卡”是指什么行为？",
         "options": [
@@ -87,7 +87,7 @@
     },
     {
         "id": "nch_005",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "DND 5E规则中，最核心用于检定是否成功的骰子是哪一种？",
         "options": [
@@ -108,7 +108,7 @@
     },
     {
         "id": "nch_006",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "跑团俗语中，“大成功”在COC规则（百分骰）下通常是指掷出了什么数字？",
         "options": [
@@ -129,7 +129,7 @@
     },
     {
         "id": "nch_007",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "TRPG玩家群体中，常说的“刁民”通常指哪些行为习惯的玩家？",
         "options": [
@@ -151,7 +151,7 @@
     },
     {
         "id": "nch_008",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在跑团中，“Meta-gaming（超游）”是指什么不被鼓励的行为？",
         "options": [
@@ -172,7 +172,7 @@
     },
     {
         "id": "nch_009",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "DND阵营九宫格中，既不偏向善良也不偏向邪恶，既不偏向守序也不偏向混乱的阵营是？",
         "options": [
@@ -193,7 +193,7 @@
     },
     {
         "id": "nch_010",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "COC跑团中经常提到的“模组”是指什么？",
         "options": [
@@ -214,7 +214,7 @@
     },
     {
         "id": "nch_011",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "“Vtuber”全称Virtual YouTuber，通常中文被称为？",
         "options": [
@@ -235,7 +235,7 @@
     },
     {
         "id": "nch_012",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "Vocaloid家族中最具全球知名度的双马尾虚拟歌手是？",
         "options": [
@@ -256,7 +256,7 @@
     },
     {
         "id": "nch_013",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "V圈粉丝常用的弹幕“kksk”通常是什么意思的罗马音缩写？",
         "options": [
@@ -278,7 +278,7 @@
     },
     {
         "id": "nch_014",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "中国最具代表性的中文VOCALOID虚拟歌手（代表作《达拉崩吧》等）是？",
         "options": [
@@ -299,7 +299,7 @@
     },
     {
         "id": "nch_015",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "常常由Vtuber本人或字幕组剪辑的，提炼长时间直播中搞笑、高能片段的短视频被称为？",
         "options": [
@@ -320,7 +320,7 @@
     },
     {
         "id": "nch_016",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "在VTuber文化中，“中之人”或者“魂”是指？",
         "options": [
@@ -342,7 +342,7 @@
     },
     {
         "id": "nch_017",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "当某个虚拟主播宣布“毕业”时，这通常意味着什么？",
         "options": [
@@ -363,7 +363,7 @@
     },
     {
         "id": "nch_018",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "VOCALOID软件的本质是一种什么样的工具？",
         "options": [
@@ -384,7 +384,7 @@
     },
     {
         "id": "nch_019",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在V圈，粉丝们常称呼为主播绘制虚拟形象Live2D立绘的画师为？",
         "options": [
@@ -405,7 +405,7 @@
     },
     {
         "id": "nch_020",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "粉丝在观看偶像演唱会或Vtuber 3D live时，跟随节奏挥舞荧光棒的动作体系被称为？",
         "options": [
@@ -426,7 +426,7 @@
     },
     {
         "id": "nch_021",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "“三坑”通常指代哪三种容易让年轻人在此花费大量金钱的服饰爱好？",
         "options": [
@@ -447,7 +447,7 @@
     },
     {
         "id": "nch_022",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在JK制服文化中，“水手服”衣领上的几条线被称为？",
         "options": [
@@ -468,7 +468,7 @@
     },
     {
         "id": "nch_023",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "汉服圈中，常常会极其在意和区分的两个概念是？",
         "options": [
@@ -490,7 +490,7 @@
     },
     {
         "id": "nch_024",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "Lolita服饰（洛丽塔）主要受到历史上哪种欧洲服饰风格的影响？",
         "options": [
@@ -511,7 +511,7 @@
     },
     {
         "id": "nch_025",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在Lolita圈内，带有小熊、草莓、甜点等可爱印花图案，颜色多为粉色或浅色的风格被称为？",
         "options": [
@@ -532,7 +532,7 @@
     },
     {
         "id": "nch_026",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "购买JK制服时，常说的“轮褶”、“箱褶”指的是这件衣服哪个部位的工艺？",
         "options": [
@@ -553,7 +553,7 @@
     },
     {
         "id": "nch_027",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "汉服中著名的“马面裙”属于哪个朝代的代表性女性服饰之一？",
         "options": [
@@ -575,7 +575,7 @@
     },
     {
         "id": "nch_028",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "三坑文化中，由店家通过网络放出定金链接，根据定金数量进行生产后再补尾款发货的常见销售模式被称为？",
         "options": [
@@ -596,7 +596,7 @@
     },
     {
         "id": "nch_029",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "Lolita圈内，为了让裙角完美撑起呈现出华丽的钟形或A字形弧度，必须穿在裙子里面的配件是？",
         "options": [
@@ -617,7 +617,7 @@
     },
     {
         "id": "nch_030",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "非JK制服设计，仅仅是为了模仿日常穿着而粗制滥造的形似裙子常被圈内贬称为？",
         "options": [
@@ -638,7 +638,7 @@
     },
     {
         "id": "nch_031",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "SCP基金会的核心理念口号是？",
         "options": [
@@ -659,7 +659,7 @@
     },
     {
         "id": "nch_032",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "SCP文档中，异常项目常被分为哪些基本的收容等级？",
         "options": [
@@ -683,7 +683,7 @@
     },
     {
         "id": "nch_033",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在都市传说 / 网络怪谈中，“后室 (The Backrooms)”的最经典的一层（Level 0）具有什么显著特征？",
         "options": [
@@ -704,7 +704,7 @@
     },
     {
         "id": "nch_034",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "SCP-173 是一尊雕像，如果人们移开视线或眨眼，它会怎么做？",
         "options": [
@@ -725,7 +725,7 @@
     },
     {
         "id": "nch_035",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "近年来互联网上流行一种“不要看月亮”之类的怪谈体裁，通过发布一系列充满矛盾或诡异警告的守则来营造恐怖感，被称为？",
         "options": [
@@ -746,7 +746,7 @@
     },
     {
         "id": "nch_036",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "SCP基金会中，常被用作消耗品、负责执行大多数危险实验和探索任务的死刑犯人员被称为？",
         "options": [
@@ -767,7 +767,7 @@
     },
     {
         "id": "nch_037",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "下列哪些属于经典的国外Creepypasta（都市怪谈/网络恐怖故事）角色？",
         "options": [
@@ -790,7 +790,7 @@
     },
     {
         "id": "nch_038",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "SCP-049（疫医）最热衷于做的事情是？",
         "options": [
@@ -811,7 +811,7 @@
     },
     {
         "id": "nch_039",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在Backrooms（后室）设定中，如果不小心“切出”（Noclip）了现实世界的边界，就会怎样？",
         "options": [
@@ -832,7 +832,7 @@
     },
     {
         "id": "nch_040",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "SCP基金会设定中，掌管基金会最高权力的神秘委员会是？",
         "options": [
@@ -853,7 +853,7 @@
     },
     {
         "id": "nch_041",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在球鞋爱好者（Sneakerhead）圈内，AJ通常是指哪个著名系列？",
         "options": [
@@ -874,7 +874,7 @@
     },
     {
         "id": "nch_042",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "抽签购买限量款球鞋时，鞋圈常说的“陪跑”和“中签”分别指什么？",
         "options": [
@@ -896,7 +896,7 @@
     },
     {
         "id": "nch_043",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "著名品牌 Supreme 的标志经典红底白字Logo，被粉丝戏称为什么？",
         "options": [
@@ -917,7 +917,7 @@
     },
     {
         "id": "nch_044",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "潮流盲盒/潮玩圈常说的“隐藏款/大隐/小隐”，其核心消费心理是利用了？",
         "options": [
@@ -938,7 +938,7 @@
     },
     {
         "id": "nch_045",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "潮鞋设计中很火的由日本设计师阿部千登势主导的品牌 sacai 典型的设计语言是？",
         "options": [
@@ -959,7 +959,7 @@
     },
     {
         "id": "nch_046",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在街头潮流圈，美国著名的艺术家 KAWS 代表性创作的玩偶形象最典型的特征是？",
         "options": [
@@ -980,7 +980,7 @@
     },
     {
         "id": "nch_047",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "炒卖限量球鞋和潮牌的人，在圈内通常被称为？",
         "options": [
@@ -1003,7 +1003,7 @@
     },
     {
         "id": "nch_048",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "阿迪达斯与著名rapper侃爷（Kanye West）合作推出的风靡全球的系列鞋款被称为？",
         "options": [
@@ -1024,7 +1024,7 @@
     },
     {
         "id": "nch_049",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "一双球鞋在二手平台被称为“原盒原漆套现、无瑕疵未试穿”，通常用哪个缩写来表示其为全新未使用状态？",
         "options": [
@@ -1045,7 +1045,7 @@
     },
     {
         "id": "nch_050",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "潮流玩具积木熊的著名品牌是源自日本Medicomo Toy的什么？",
         "options": [
@@ -1066,7 +1066,7 @@
     },
     {
         "id": "nch_051",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "Furry（兽迷）亚文化主要围绕什么主题展开？",
         "options": [
@@ -1087,7 +1087,7 @@
     },
     {
         "id": "nch_052",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "Furry圈内常常指代成员自己设定的专属拟人化动物形象的词语是？",
         "options": [
@@ -1108,7 +1108,7 @@
     },
     {
         "id": "nch_053",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "下列哪些动物是Furry圈内非常常见的兽设物种？",
         "options": [
@@ -1132,7 +1132,7 @@
     },
     {
         "id": "nch_054",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在大型的Furry展会（如MW、极兽聚）上，玩家穿着完整的动物拟人布偶装四处活动，这种服装被称为？",
         "options": [
@@ -1153,7 +1153,7 @@
     },
     {
         "id": "nch_055",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "不穿全套兽装，如果仅仅佩戴一个兽耳发箍和一条尾巴，这类装扮在二次元偏向哪种属性，而不是硬核Furry？",
         "options": [
@@ -1174,7 +1174,7 @@
     },
     {
         "id": "nch_056",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在推特或画师平台上，专门接受其他兽迷委托有偿绘制他们设定的行为称为？",
         "options": [
@@ -1195,7 +1195,7 @@
     },
     {
         "id": "nch_057",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "Furry兽装的风格根据头骨材质和眼睛设计主要可以分为哪几种典型风格？",
         "options": [
@@ -1218,7 +1218,7 @@
     },
     {
         "id": "nch_058",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "Furry圈对别人毛茸茸的毛皮设定常常产生触觉上的向往，衍生出一个喜爱抚摸、拥抱的特有圈内行为叫？",
         "options": [
@@ -1239,7 +1239,7 @@
     },
     {
         "id": "nch_059",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "由于Fursuit内部极其闷热，兽装扮演者必不可少的维持生命体征的隐藏装备通常是？",
         "options": [
@@ -1260,7 +1260,7 @@
     },
     {
         "id": "nch_060",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "以拟人化高中动物角色为班底的著名悬疑群像题材漫画/动画作品是？",
         "options": [
@@ -1281,7 +1281,7 @@
     },
     {
         "id": "nch_061",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在电子游戏速通（Speedrun）中，分类为“Any%”意思是？",
         "options": [
@@ -1302,7 +1302,7 @@
     },
     {
         "id": "nch_062",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "速通分类中“100%”跑法通常要求玩家做到哪些？",
         "options": [
@@ -1325,7 +1325,7 @@
     },
     {
         "id": "nch_063",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在速通中利用游戏的漏洞或代码缺陷直接穿墙、跳跃大段流程的技巧统称为？",
         "options": [
@@ -1346,7 +1346,7 @@
     },
     {
         "id": "nch_064",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "TAS速通 (Tool-Assisted Speedrun) 是指什么？",
         "options": [
@@ -1367,7 +1367,7 @@
     },
     {
         "id": "nch_065",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "利用游戏内存溢出漏洞或特定操作，将某些物品的代码强行改为结局通关触发器，此类极其硬核的底层邪道手法通常被称为？",
         "options": [
@@ -1388,7 +1388,7 @@
     },
     {
         "id": "nch_066",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "著名的每年举办两次，为慈善组织筹款的全球最大速通大会是？",
         "options": [
@@ -1410,7 +1410,7 @@
     },
     {
         "id": "nch_067",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "“OOB”是速通中频繁出现的一个术语缩写，它的全称是？",
         "options": [
@@ -1431,7 +1431,7 @@
     },
     {
         "id": "nch_068",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "如果速通类别标明了“Glitchless”，意味着玩家在通关过程中？",
         "options": [
@@ -1452,7 +1452,7 @@
     },
     {
         "id": "nch_069",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "某些游戏由于RNG（随机数生成器）极大地影响通关速度，速通玩家会通过特定复杂的开局输入来操控随机结果，这被称为？",
         "options": [
@@ -1473,7 +1473,7 @@
     },
     {
         "id": "nch_070",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "速通排行榜平台最权威的全球数据库网站是？",
         "options": [
@@ -1494,7 +1494,7 @@
     },
     {
         "id": "nch_071",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "业余无线电爱好者的通用英文绰号是？",
         "options": [
@@ -1515,7 +1515,7 @@
     },
     {
         "id": "nch_072",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "在中国想要合法操作发射业余无线电台（对讲机），必须具备哪两项手续文件？",
         "options": [
@@ -1537,7 +1537,7 @@
     },
     {
         "id": "nch_073",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "业余无线电中，用来代表呼叫者的唯一全球识别代码（如BG1XXX）称为？",
         "options": [
@@ -1558,7 +1558,7 @@
     },
     {
         "id": "nch_074",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "火腿们常在交谈结束时说“73”，在CW电报语言中这代表什么意思？",
         "options": [
@@ -1579,7 +1579,7 @@
     },
     {
         "id": "nch_075",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在无网无信号的深山里，许多越野爱好者依赖哪种频率段的电磁波通过电离层反射实现跨省市甚至跨国的超远距离通联？",
         "options": [
@@ -1600,7 +1600,7 @@
     },
     {
         "id": "nch_076",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "EDC圈子（Everyday Carry）核心崇尚的是什么文化？",
         "options": [
@@ -1621,7 +1621,7 @@
     },
     {
         "id": "nch_077",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "EDC玩家背包中非常热门的“多功能工具钳（Multi-tool）”的两个最著名代表品牌是？",
         "options": [
@@ -1643,7 +1643,7 @@
     },
     {
         "id": "nch_078",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "由于国内刀具管制非常严格，国内EDC玩家经常随身把玩的、且完全不带锋利刃口纯粹用来练手部动作的玩具刀被称为？",
         "options": [
@@ -1664,7 +1664,7 @@
     },
     {
         "id": "nch_079",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "EDC圈内玩家非常喜爱由钛合金、黄铜或锆合金等金属制成减压小玩具，下列属于此类减压玩具的是？",
         "options": [
@@ -1685,7 +1685,7 @@
     },
     {
         "id": "nch_080",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在EDC高级小手电领域，“流明 (Lumen)”这个单位常用来衡量手电筒的什么指标？",
         "options": [
@@ -1706,7 +1706,7 @@
     },
     {
         "id": "nch_081",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在三阶魔方还原中，“CFOP”高级玩法公式的第一个字母C代表什么？",
         "options": [
@@ -1727,7 +1727,7 @@
     },
     {
         "id": "nch_082",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "WCA（世界魔方协会）官方认可的正式比赛项目中，目前由谁保持着三阶魔方单次还原的绝对难以置信的世界纪录（截至2023年3.13秒）？",
         "options": [
@@ -1748,7 +1748,7 @@
     },
     {
         "id": "nch_083",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "转笔（Pen Spinning）中的四大基础基本招式（Fundamental）包含哪些？",
         "options": [
@@ -1772,7 +1772,7 @@
     },
     {
         "id": "nch_084",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "专属为转笔而打造、并且通常两端平衡配重无法写字的非正常用笔，在圈内被称为？",
         "options": [
@@ -1793,7 +1793,7 @@
     },
     {
         "id": "nch_085",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在竞技叠杯（Speed Stacks）运动中，最高殿堂级的循环花式（Cycle）总共由几个阶段的叠装和收杯组成？",
         "options": [
@@ -1814,7 +1814,7 @@
     },
     {
         "id": "nch_086",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "盲拧三阶魔方时，选手记忆使用的主要方法逻辑是将魔方的状态转化为？",
         "options": [
@@ -1835,7 +1835,7 @@
     },
     {
         "id": "nch_087",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "转笔中，连续不断地在手指间施展同一招式、形成永动机般无限循环连招的技巧统称为？",
         "options": [
@@ -1856,7 +1856,7 @@
     },
     {
         "id": "nch_088",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "速叠杯运动中，使用的杯子底部通常会有几个孔，这些孔的作用是？",
         "options": [
@@ -1877,7 +1877,7 @@
     },
     {
         "id": "nch_089",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "下列哪些魔方属于WCA赛事的官方正式项目？",
         "options": [
@@ -1900,7 +1900,7 @@
     },
     {
         "id": "nch_090",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "手指滑板（Fingerboard/滑板手指化）中，完成弹跳动作跳上台阶的最核心、最基础的招式是？",
         "options": [
@@ -1921,7 +1921,7 @@
     },
     {
         "id": "nch_091",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "摄影中所谓的“曝光三要素”包括以下哪些？ (部分多选)",
         "options": [
@@ -1944,7 +1944,7 @@
     },
     {
         "id": "nch_092",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "机械键盘轴体中，经典的Cherry“青轴”和“红轴”的区别主要在于？",
         "options": [
@@ -1966,7 +1966,7 @@
     },
     {
         "id": "nch_093",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "电脑CPU中，被玩家调侃为“牙膏厂”的是哪个品牌？",
         "options": [
@@ -1987,7 +1987,7 @@
     },
     {
         "id": "nch_094",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "对于专业单反/微单摄影，照片存储为了后期极大空间，通常必须开启什么格式？",
         "options": [
@@ -2008,7 +2008,7 @@
     },
     {
         "id": "nch_095",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "显示器参数中的“144Hz”或“240Hz”表示什么？",
         "options": [
@@ -2029,7 +2029,7 @@
     },
     {
         "id": "nch_096",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在音频玄学中，Hi-Fi发烧友用来说明新耳机需要长时间播放来让振膜状态达到最佳的术语是？",
         "options": [
@@ -2050,7 +2050,7 @@
     },
     {
         "id": "nch_097",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "在显卡（GPU）领域中，目前NVIDIA的RTX系列显卡主打的核心卖点技术包括？",
         "options": [
@@ -2072,7 +2072,7 @@
     },
     {
         "id": "nch_098",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "相机镜头“定焦镜头”相较于“变焦镜头”最大的劣势是？",
         "options": [
@@ -2093,7 +2093,7 @@
     },
     {
         "id": "nch_099",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "键盘客制化中，很多玩家会使用一种润滑脂（如杜邦105/205）去涂抹键盘轴体的内部，这称为？",
         "options": [
@@ -2114,7 +2114,7 @@
     },
     {
         "id": "nch_100",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "很多音响发烧友经常被圈外人调侃的一个老梗是说听得出电网的电是不一样的，那个梗叫做？",
         "options": [
@@ -2135,7 +2135,7 @@
     },
     {
         "id": "nch_101",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "铁路迷在“运转”（指体验和拍摄列车）时，常说到的黑话里，“套跑”是指什么？",
         "options": [
@@ -2156,7 +2156,7 @@
     },
     {
         "id": "nch_102",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "中国铁路客运中，“Z”字头的列车通常被称为什么？",
         "options": [
@@ -2177,7 +2177,7 @@
     },
     {
         "id": "nch_103",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "下列哪些中国的高铁站是知名的“巨无霸”超级枢纽高铁站？",
         "options": [
@@ -2201,7 +2201,7 @@
     },
     {
         "id": "nch_104",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "公交迷群体中，常常会热衷于拍摄一款经典公交车退役前的最后几天运行，这一行为被称作？",
         "options": [
@@ -2222,7 +2222,7 @@
     },
     {
         "id": "nch_105",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "列车行驶在铁轨上，中国国家标准铁路（准轨）以及世界大部分国家采用的轨距是多宽？",
         "options": [
@@ -2243,7 +2243,7 @@
     },
     {
         "id": "nch_106",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在公交枢纽或大城市主干道上推行的“BRT”是指什么系统？",
         "options": [
@@ -2264,7 +2264,7 @@
     },
     {
         "id": "nch_107",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "铁路信号中，“三灯四显示”信号系统里，为了指示前面区间占用情况给司机预警，会有哪几种颜色组合？",
         "options": [
@@ -2288,7 +2288,7 @@
     },
     {
         "id": "nch_108",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "国内铁道迷讨论电力机车时常说的“韶山”系列（SS），其主要是哪家巨头机车厂负责最初研制和主导生产的？",
         "options": [
@@ -2309,7 +2309,7 @@
     },
     {
         "id": "nch_109",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "近年来引发大量中国铁道迷关注和拍摄的“复兴号”CR200J动车组，因为其标志性的绿色涂装，被车迷调侃地称为？",
         "options": [
@@ -2330,7 +2330,7 @@
     },
     {
         "id": "nch_110",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "中国铁路爱好者常去拍摄火车通过的立交桥、跨线桥或铁路旁安全距离的地方，一蹲就是好几个小时的风雨无阻的行为被戏称作？",
         "options": [
@@ -2351,7 +2351,7 @@
     },
     {
         "id": "nch_111",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "音乐游戏谱面中经常提到的“BPM”是指什么？",
         "options": [
@@ -2372,7 +2372,7 @@
     },
     {
         "id": "nch_112",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "音游圈内所谓的“全白”、“AP(All Perfect)”意味着什么？",
         "options": [
@@ -2394,7 +2394,7 @@
     },
     {
         "id": "nch_113",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "在知名街机音游《maimai》（舞萌）中，玩家之间常将这台机器的形状戏称为？",
         "options": [
@@ -2415,7 +2415,7 @@
     },
     {
         "id": "nch_114",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "手游音游玩家常采用的操作流派通常被分为“拇指流（手持用两只大拇指打）”和什么流派（放在桌面上打）？",
         "options": [
@@ -2436,7 +2436,7 @@
     },
     {
         "id": "nch_115",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "游戏里掉下的判定音符（Notes），如果不止需要点击，还需要玩家一直按住不放直到其结束，这种音符通常被称为？",
         "options": [
@@ -2457,7 +2457,7 @@
     },
     {
         "id": "nch_116",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "multiple",
         "question": "著名日本音游大厂KONAMI旗下主导的BEMANI街机音乐游戏系列包括哪些？",
         "options": [
@@ -2480,7 +2480,7 @@
     },
     {
         "id": "nch_117",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "雷亚游戏（Rayark）开发的，在全球范围内极具影响力的下落式移动端音乐游戏（其界面有一根上下移动的扫描线）是？",
         "options": [
@@ -2501,7 +2501,7 @@
     },
     {
         "id": "nch_118",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "《Beat Saber》（节奏空间）是一款由于玩家手持光剑切砍飞来方块而火遍全球的音乐游戏，其依托的游戏设备平台是？",
         "options": [
@@ -2522,7 +2522,7 @@
     },
     {
         "id": "nch_119",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "很多音游（如《Arcaea》《PHIGROS》）除了最外显的判定线和下落键之外，还有悬浮在空中的、需要跟随划动的特殊音符，这种被戏称为底大欺客的要素是？",
         "options": [
@@ -2543,7 +2543,7 @@
     },
     {
         "id": "nch_120",
-        "domain": 35,
+        "domain": "一些猎奇小众知识",
         "type": "single",
         "question": "当玩家面对变态难度的音游谱面，发现手速和反应无法处理时，眼花缭乱的手指失控在屏幕上瞎按一气的行为常被自嘲为？",
         "options": [

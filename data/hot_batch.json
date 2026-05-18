@@ -1,7 +1,7 @@
 [
     {
         "id": "hot_001",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "2024年的夏季奥运会在哪座城市举办？",
         "options": [
@@ -22,7 +22,7 @@
     },
     {
         "id": "hot_002",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "近年来引发全球AI浪潮的ChatGPT，是由哪家公司开发的？",
         "options": [
@@ -43,7 +43,7 @@
     },
     {
         "id": "hot_003",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "multiple",
         "question": "下列哪些是近年来在碳中和与新能源领域的热门概念或技术？",
         "options": [
@@ -66,7 +66,7 @@
     },
     {
         "id": "hot_004",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "世界首套获批上市的抗击COVID-19的mRNA疫苗主要由哪些公司开发？",
         "options": [
@@ -87,7 +87,7 @@
     },
     {
         "id": "hot_005",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "2023年底，哪款由米哈游开发的二次元游戏在全球获得了TGA最佳移动游戏大奖？",
         "options": [
@@ -108,7 +108,7 @@
     },
     {
         "id": "hot_006",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "multiple",
         "question": "全球目前正面临哪些普遍性的严峻环境与气候问题？",
         "options": [
@@ -131,7 +131,7 @@
     },
     {
         "id": "hot_007",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "近年来，中国在航天领域建成的长期有人照料的国家级太空空间站名叫什么？",
         "options": [
@@ -152,7 +152,7 @@
     },
     {
         "id": "hot_008",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "在商业航天领域，首次实现运载火箭第一级垂直回收并重复使用的公司是？",
         "options": [
@@ -173,7 +173,7 @@
     },
     {
         "id": "hot_009",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "目前常说的“5G网络”主要相比4G的提升不包括哪一项？",
         "options": [
@@ -194,7 +194,7 @@
     },
     {
         "id": "hot_010",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "multiple",
         "question": "下列哪些属于近些年备受关注的“元宇宙（Metaverse）”领域的相关核心技术支撑？",
         "options": [
@@ -217,7 +217,7 @@
     },
     {
         "id": "hot_011",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "由苹果公司发布的混合现实（MR）头显设备，掀起了空间计算热潮，它的名字是？",
         "options": [
@@ -238,7 +238,7 @@
     },
     {
         "id": "hot_012",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "全球首个完全以比特币作为国家法定货币的国家是？",
         "options": [
@@ -259,7 +259,7 @@
     },
     {
         "id": "hot_013",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "multiple",
         "question": "近两年，国际地缘政治格局经历了诸多大变动因素，常被提及的全球供应链热点诉求包括？",
         "options": [
@@ -282,7 +282,7 @@
     },
     {
         "id": "hot_014",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "我国提出的“双碳”目标是指在什么时间节点前实现碳达峰及碳中和？",
         "options": [
@@ -303,7 +303,7 @@
     },
     {
         "id": "hot_015",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "诺贝尔奖物理学奖近年来曾颁发给研究什么的物理学家，证明了量子纠缠并排除了隐变量理论？",
         "options": [
@@ -324,7 +324,7 @@
     },
     {
         "id": "hot_016",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "multiple",
         "question": "下列哪些互联网现象或产品是近年来席卷全球的标志性风口？",
         "options": [
@@ -347,7 +347,7 @@
     },
     {
         "id": "hot_017",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "欧洲首家市值突破5000亿美元、并在肥胖和糖尿病治疗（如司美格鲁肽）领域取得全球瞩目成就的制药公司是？",
         "options": [
@@ -368,7 +368,7 @@
     },
     {
         "id": "hot_018",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "中国近年来下水的首艘国产大型邮轮名为？",
         "options": [
@@ -389,7 +389,7 @@
     },
     {
         "id": "hot_019",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "multiple",
         "question": "近期各国对大型科技巨头（如苹果、谷歌等）发起的反垄断焦点往往集中在哪些方面？",
         "options": [
@@ -412,7 +412,7 @@
     },
     {
         "id": "hot_020",
-        "domain": 36,
+        "domain": "时事热点",
         "type": "single",
         "question": "日本政府决定并将已经实施排放的争议性生态事件是？",
         "options": [

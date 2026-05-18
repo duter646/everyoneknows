@@ -1,7 +1,7 @@
 [
     {
         "id": "ind_001",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在机械工程中，用来降低转速并增加扭矩的装置通常是？",
         "options": [
@@ -22,7 +22,7 @@
     },
     {
         "id": "ind_002",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "下列哪些属于常见的机械传动方式？",
         "options": [
@@ -45,7 +45,7 @@
     },
     {
         "id": "ind_003",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在机械制图和加工中，用来表示零件尺寸允许变动范围的术语是？",
         "options": [
@@ -66,7 +66,7 @@
     },
     {
         "id": "ind_004",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "当零件承受交变应力时，即使应力低于材料的屈服极限，经过长时间循环后也会发生断裂，这种现象称为？",
         "options": [
@@ -87,7 +87,7 @@
     },
     {
         "id": "ind_005",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "常见的轴承(Bearing)主要分为哪两大类？",
         "options": [
@@ -109,7 +109,7 @@
     },
     {
         "id": "ind_006",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "帕斯卡定律是哪种工业传动系统的理论基础？",
         "options": [
@@ -130,7 +130,7 @@
     },
     {
         "id": "ind_007",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "机加工中常说的CNC是指？",
         "options": [
@@ -151,7 +151,7 @@
     },
     {
         "id": "ind_008",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "金属加工中，将金属加热到塑性状态后通过敲击或施加压力使其成型的工艺是？",
         "options": [
@@ -172,7 +172,7 @@
     },
     {
         "id": "ind_009",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "机械加工后的表面往往不是绝对光滑的。用来衡量表面微观不平度的指标通常用哪些参数表示？",
         "options": [
@@ -194,7 +194,7 @@
     },
     {
         "id": "ind_010",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "工业设备维护中经常提到的 MTBF 是指？",
         "options": [
@@ -215,7 +215,7 @@
     },
     {
         "id": "ind_011",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在自动控制系统中，PID控制器是应用最广泛的控制器。其中字母“I”代表什么作用？",
         "options": [
@@ -236,7 +236,7 @@
     },
     {
         "id": "ind_012",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "工业自动化中，典型的闭环控制系统（Closed-loop control）必须包含哪些环节？",
         "options": [
@@ -259,7 +259,7 @@
     },
     {
         "id": "ind_013",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "PLC是现代工业自动化的核心设备之一，它的全称是？",
         "options": [
@@ -280,7 +280,7 @@
     },
     {
         "id": "ind_014",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在运动控制中，能将电脉冲信号转换成角位移或线位移，常用于开环控制精确定位的电机是？",
         "options": [
@@ -301,7 +301,7 @@
     },
     {
         "id": "ind_015",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "为了检测设备的旋转角度或速度，工业上常在电机轴上安装什么传感器？",
         "options": [
@@ -322,7 +322,7 @@
     },
     {
         "id": "ind_016",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "工业SCADA（数据采集与监视控制）系统通常在哪些场景中广泛应用？",
         "options": [
@@ -345,7 +345,7 @@
     },
     {
         "id": "ind_017",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在控制工程理论中，传递函数 (Transfer Function) 通常是在哪个数学变换域中定义的？",
         "options": [
@@ -366,7 +366,7 @@
     },
     {
         "id": "ind_018",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "自动化工厂中提到的AGV是指什么？",
         "options": [
@@ -387,7 +387,7 @@
     },
     {
         "id": "ind_019",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "工业4.0 (Industry 4.0) 概念的核心特征通常包括？",
         "options": [
@@ -410,7 +410,7 @@
     },
     {
         "id": "ind_020",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "PWM是指在保持波形周期不变的情况下，通过改变脉冲宽度来控制输出电压/电流平均值的一种技术，其全称是？",
         "options": [
@@ -431,7 +431,7 @@
     },
     {
         "id": "ind_021",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在齿轮传动中，为了防止因制造误差和热膨胀引起干涉卡死，齿轮啮合时非工作齿面间必须留有一定的间隙。这个间隙被称为？",
         "options": [
@@ -452,7 +452,7 @@
     },
     {
         "id": "ind_022",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "对于工业机器人 (Industrial Robot)，按机构拓扑和运动坐标系，常见的分类有哪些？",
         "options": [
@@ -476,7 +476,7 @@
     },
     {
         "id": "ind_023",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "液压泵中，利用一对相互啮合的齿轮的齿间容积的变化来输送液体的液压泵称为？",
         "options": [
@@ -497,7 +497,7 @@
     },
     {
         "id": "ind_024",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "伺服控制系统中通常存在所谓的三环控制：位置环、速度环以及？",
         "options": [
@@ -518,7 +518,7 @@
     },
     {
         "id": "ind_025",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在大规模流程工业（如石油化工厂、炼钢厂）中，用于控制成百上千个回路的集散控制系统简称为？",
         "options": [
@@ -539,7 +539,7 @@
     },
     {
         "id": "ind_026",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "用于测量微小形变，常粘贴于金属或弹性体表面，通过电阻变化来感应受力的传感器元件是？",
         "options": [
@@ -560,7 +560,7 @@
     },
     {
         "id": "ind_027",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "关于内燃机 (ICE) 的基本工作循环（以四冲程为例），包含下列哪些冲程？",
         "options": [
@@ -584,7 +584,7 @@
     },
     {
         "id": "ind_028",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "“数控机床中用来使工作台在各个方向上移动并克服很高摩擦载荷的一种具有高精度的螺纹传动元件是？”",
         "options": [
@@ -605,7 +605,7 @@
     },
     {
         "id": "ind_029",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "下列属于“增材制造 (Additive Manufacturing)”技术的是？",
         "options": [
@@ -626,7 +626,7 @@
     },
     {
         "id": "ind_030",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "工业控制网络（现场总线/工业以太网）中，由于对时间确定性要求极高，常使用哪些专门设计的工业通讯协议？",
         "options": [
@@ -649,7 +649,7 @@
     },
     {
         "id": "ind_031",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "材料力学中，描述材料在弹性变形阶段，应力与应变之间成正比关系的定律是？",
         "options": [
@@ -670,7 +670,7 @@
     },
     {
         "id": "ind_032",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "大型机械中普遍使用“联轴器 (Coupling)”，其主要作用是？",
         "options": [
@@ -691,7 +691,7 @@
     },
     {
         "id": "ind_033",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "PID调节中，哪一种环节能对误差的变化趋势做出提前反应，有“预测”的效果从而改善系统动态特性？",
         "options": [
@@ -712,7 +712,7 @@
     },
     {
         "id": "ind_034",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "气动系统中常见的基础气动三大件（气动辅助元件）通常指？",
         "options": [
@@ -735,7 +735,7 @@
     },
     {
         "id": "ind_035",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "用来防止流体介质倒流（逆流）的阀门被称为？",
         "options": [
@@ -756,7 +756,7 @@
     },
     {
         "id": "ind_036",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "飞机在平飞巡航时，要保持平衡需要四个力的互相抵消；升力对抗重力，而推动飞机向前的推力（Thrust）必须对抗什么是？",
         "options": [
@@ -777,7 +777,7 @@
     },
     {
         "id": "ind_037",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "固定翼飞机的三大主操纵面（用来控制滚转、俯仰、偏航）包括？",
         "options": [
@@ -800,7 +800,7 @@
     },
     {
         "id": "ind_038",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "描述飞行器飞行速度相对于当地音速比值的无量纲参数是？",
         "options": [
@@ -821,7 +821,7 @@
     },
     {
         "id": "ind_039",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "现代大型民航客机（如波音737、空客A320）最常使用哪种喷气式发动机，因其高亚音速下燃油经济性良好？",
         "options": [
@@ -842,7 +842,7 @@
     },
     {
         "id": "ind_040",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "关于液体火箭发动机方程“齐奥尔科夫斯基火箭方程”，其揭示了火箭可以达到的理想速度主要取决于（喷气速度）和什么参数的比值？",
         "options": [
@@ -863,7 +863,7 @@
     },
     {
         "id": "ind_041",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "下列关于人造卫星轨道的描述，正确的有哪些？",
         "options": [
@@ -885,7 +885,7 @@
     },
     {
         "id": "ind_042",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "使航天器克服地球引力，能够环绕地球不掉下来的最小发射速度（又称环绕速度）被称为？",
         "options": [
@@ -906,7 +906,7 @@
     },
     {
         "id": "ind_043",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "常被航空航天界定义为“地球大气层与外层空间（太空）的边界线”（高度约100公里/62英里处）被称为？",
         "options": [
@@ -927,7 +927,7 @@
     },
     {
         "id": "ind_044",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "用于记录飞机飞行参数、语音等数据的“黑匣子 (Black Box)”，在现实中为了便于空难搜救寻找，通常被涂装成什么颜色？",
         "options": [
@@ -948,7 +948,7 @@
     },
     {
         "id": "ind_045",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "直升机尾部通常安装有一个小型的尾桨 (Tail rotor)，这个尾桨的主要物理作用是？",
         "options": [
@@ -969,7 +969,7 @@
     },
     {
         "id": "ind_046",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "拉格朗日点被广泛用于放置深空探测望远镜。下列哪些点位于地球公转轨道所在的直线上？",
         "options": [
@@ -992,7 +992,7 @@
     },
     {
         "id": "ind_047",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "大疆等消费级四旋翼/多旋翼无人机，不使用传统的倾斜盘与舵面，主要是通过调节什么参数来控制无人机的飞行姿态？",
         "options": [
@@ -1013,7 +1013,7 @@
     },
     {
         "id": "ind_048",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "民航干线客机通常在此段大气层飞行（其特点是不易形成对流云雨），能够保证飞行平稳并节省燃料？",
         "options": [
@@ -1034,7 +1034,7 @@
     },
     {
         "id": "ind_049",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "近年来由SpaceX主导建设的“星链 (Starlink)”属于哪一种类型的卫星星座？",
         "options": [
@@ -1055,7 +1055,7 @@
     },
     {
         "id": "ind_050",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "太空站里的宇航员之所以看起来呈现“失重”状态漂浮，真正原因是？",
         "options": [
@@ -1076,7 +1076,7 @@
     },
     {
         "id": "ind_051",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "潜艇能够实现上浮和下沉，其基本的物理原理是调节什么物理量从而改变潜艇自身受到的重力浮力平衡？",
         "options": [
@@ -1097,7 +1097,7 @@
     },
     {
         "id": "ind_052",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "航空母舰舰载机的起降技术主要分为哪几类？",
         "options": [
@@ -1120,7 +1120,7 @@
     },
     {
         "id": "ind_053",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "现代多数商船的船体侧面有一组涂装的水平线，表明在不同季节/水域允许吃水的最大界限，这条标记线被称为？",
         "options": [
@@ -1141,7 +1141,7 @@
     },
     {
         "id": "ind_054",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在水下航行时，现代潜艇无法使用无线电雷达探测距离，最依赖的探测设备是什么？",
         "options": [
@@ -1162,7 +1162,7 @@
     },
     {
         "id": "ind_055",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "水利工程中，为了让船舶跨越巨大的大坝水位落差，通常依靠连通器原理采用哪种建筑物过渡？",
         "options": [
@@ -1183,7 +1183,7 @@
     },
     {
         "id": "ind_056",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "现代常规动力潜艇中使用的 AIP 系统，它的主要功能是？",
         "options": [
@@ -1204,7 +1204,7 @@
     },
     {
         "id": "ind_057",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "关于全球卫星导航系统 (GNSS)，目前国际上得到联合国认可的四大核心系统包括？",
         "options": [
@@ -1228,7 +1228,7 @@
     },
     {
         "id": "ind_058",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "船舶工程中，为减少船只航行时由于水浪造成的侧面横滚幅度，底部通常会装有什么结构？",
         "options": [
@@ -1249,7 +1249,7 @@
     },
     {
         "id": "ind_059",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在空气动力学中，通过上方流速快压强小、下方流速慢压强大来定性解释机翼升力（虽然不完全准确），这常归类于哪个著名的原理？",
         "options": [
@@ -1270,7 +1270,7 @@
     },
     {
         "id": "ind_060",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "外太空环境极端恶劣，航天器的设计必须考虑应对下列哪些挑战？",
         "options": [
@@ -1294,7 +1294,7 @@
     },
     {
         "id": "ind_061",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "1903年，标志着世界上第一次受控的、带动力重于空气的飞行器持续飞行是由谁完成的？",
         "options": [
@@ -1315,7 +1315,7 @@
     },
     {
         "id": "ind_062",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在大型液体火箭中，综合比冲极高，但非常难以储存（需极低温维持液态）的推进剂绝佳组合是？",
         "options": [
@@ -1336,7 +1336,7 @@
     },
     {
         "id": "ind_063",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "下列哪些装备成就，标志着中国在深海深地探测和载人航天器领域的里程碑？",
         "options": [
@@ -1360,7 +1360,7 @@
     },
     {
         "id": "ind_064",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "深潜器要想下潜上万米深度（如马里亚纳海沟底层），工程上必须要攻克的最核心物理环境挑战是？",
         "options": [
@@ -1381,7 +1381,7 @@
     },
     {
         "id": "ind_065",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "在半导体制造流程中，被称为精密加工工业皇冠上的明珠的核“印刷机”设备是？",
         "options": [
@@ -1402,7 +1402,7 @@
     },
     {
         "id": "ind_066",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "成功实现第一级火箭反推垂直着陆回收并彻底商业化的航天公司是？",
         "options": [
@@ -1423,7 +1423,7 @@
     },
     {
         "id": "ind_067",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "multiple",
         "question": "关于新能源载具动力，除了EV纯蓄电池路线外，很多企业还在投入研发利用化学反应直接将高纯度（轻质燃料）气体转化成电能的装置，这个技术一般涉及？",
         "options": [
@@ -1445,7 +1445,7 @@
     },
     {
         "id": "ind_068",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "冶金大高炉炼铁中，加入焦炭的核心化学作用不仅是发热燃烧，更重要的是为反应提供？",
         "options": [
@@ -1466,7 +1466,7 @@
     },
     {
         "id": "ind_069",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "现代动车组（EMU）与普通绿皮机车牵引火车最大的物理区别（动力的分布方式上）在于？",
         "options": [
@@ -1487,7 +1487,7 @@
     },
     {
         "id": "ind_070",
-        "domain": 38,
+        "domain": "工业界常识",
         "type": "single",
         "question": "开发并维持全球最大的GPS卫星导航系统运行的国家主导方是？",
         "options": [
