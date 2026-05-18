@@ -1,4 +1,4 @@
-import { Difficulty, Question, QuestionType } from "./types";
+import { Difficulty, Question, QuestionType } from "./types.ts";
 
 export type ValidationLevel = "error" | "warning";
 

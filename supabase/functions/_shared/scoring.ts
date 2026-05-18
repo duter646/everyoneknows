@@ -1,4 +1,4 @@
-import { AnswerInput, Question, ScoreSummary } from "./types";
+import { AnswerInput, ScoreQuestion, ScoreSummary } from "./types.ts";
 
 const FULL_SCORE = 5;
 const PARTIAL_SCORE = 2;
@@ -12,7 +12,7 @@ function isSameSet(a: number[], b: number[]) {
 }
 
 export function scoreAnswers(
-  questionMap: Map<string, Question>,
+  questionMap: Map<string, ScoreQuestion>,
   questionOrder: string[],
   answers: AnswerInput[]
 ): ScoreSummary {

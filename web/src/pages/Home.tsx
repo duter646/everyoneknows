@@ -1,20 +1,14 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { apiGet } from "../lib/api";
-
-interface Meta {
-  questionCount: number;
-  domainCount: number;
-  domains: string[];
-  loadedAt: number;
-}
+import { fetchMeta } from "../lib/api";
+import { Meta } from "../lib/types";
 
 export default function Home() {
   const [meta, setMeta] = useState<Meta | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    apiGet<Meta>("/api/meta")
+    fetchMeta()
       .then(setMeta)
       .catch(() => setMeta(null));
   }, []);

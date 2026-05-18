@@ -34,6 +34,14 @@ export interface AnswerInput {
   timeSec?: number;
 }
 
+export interface ScoreQuestion {
+  id: string;
+  domain: string;
+  type: QuestionType;
+  difficulty: Difficulty;
+  answer: number[];
+}
+
 export interface ScoreItem {
   id: string;
   domain: string;
@@ -56,4 +64,10 @@ export interface ScoreSummary {
     missedOne: number;
     subsetOnly: number;
   };
+}
+
+export interface PaperTokenPayload {
+  qids: string[];
+  createdAt: number;
+  version: number;
 }

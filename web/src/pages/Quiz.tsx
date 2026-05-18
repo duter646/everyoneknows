@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { apiGet, apiPost } from "../lib/api";
+import { fetchPaper, scorePaper } from "../lib/api";
 import { AnswerPayload, PaperResponse, QuestionView, ScoreSummary } from "../lib/types";
 
 interface ResultPayload {
@@ -33,7 +33,7 @@ export default function Quiz() {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    apiGet<PaperResponse>(`/api/paper?count=${count}`)
+    fetchPaper(count)
       .then((data) => {
         setPaper(data);
         setCurrentIndex(0);
@@ -126,13 +126,10 @@ export default function Quiz() {
     const payloadAnswers = Object.values(updatedAnswers);
 
     try {
-      const result = await apiPost<{ summary: ScoreSummary }>("/api/score", {
-        token: paper.token,
-        answers: payloadAnswers
-      });
+      const summary = await scorePaper(paper.token, payloadAnswers);
       const durationSec = Math.max(1, Math.floor((Date.now() - quizStartRef.current) / 1000));
       const payload: ResultPayload = {
-        summary: result.summary,
+        summary,
         answers: payloadAnswers,
         token: paper.token,
         durationSec,

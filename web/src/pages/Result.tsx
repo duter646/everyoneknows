@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend
 } from "chart.js";
-import { apiPost } from "../lib/api";
+import { submitLeaderboard } from "../lib/api";
 import { AnswerPayload, ScoreSummary } from "../lib/types";
 import { formatDuration, formatPercent } from "../lib/format";
 import { DISCIPLINES, scoreIdentity } from "../lib/identity";
@@ -164,13 +164,13 @@ export default function Result() {
     setUploading(true);
     setUploadStatus(null);
     try {
-      const result = await apiPost<{ entry: { nickname: string; score: number } }>("/api/leaderboard", {
-        token: payload.token,
-        answers: payload.answers,
+      const entry = await submitLeaderboard(
+        payload.token,
+        payload.answers,
         nickname,
-        durationSec: payload.durationSec
-      });
-      setUploadStatus(`已上传：${result.entry.nickname} / ${result.entry.score} 分`);
+        payload.durationSec
+      );
+      setUploadStatus(`已上传：${entry.nickname} / ${entry.score} 分`);
     } catch {
       setUploadStatus("上传失败，请稍后再试。");
     } finally {

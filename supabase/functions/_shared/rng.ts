@@ -16,7 +16,3 @@ export function shuffle<T>(items: T[], rng: () => number) {
   }
   return result;
 }
-
-export function randomInt(rng: () => number, min: number, max: number) {
-  return Math.floor(rng() * (max - min)) + min;
-}

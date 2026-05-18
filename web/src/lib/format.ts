@@ -11,8 +11,8 @@ export function formatDuration(seconds: number) {
   return `${mins}m ${secs}s`;
 }
 
-export function formatDate(timestamp: number) {
-  const date = new Date(timestamp);
+export function formatDate(value: number | string) {
+  const date = new Date(value);
   return `${date.toLocaleDateString()} ${date.toLocaleTimeString([], {
     hour: "2-digit",
     minute: "2-digit"

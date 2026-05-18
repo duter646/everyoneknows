@@ -16,6 +16,26 @@ export interface QuestionView {
   tags?: string[];
 }
 
+export interface Meta {
+  questionCount: number;
+  domainCount: number;
+  domains: string[];
+  loadedAt: number;
+}
+
+export interface AdminSummary {
+  questionCount: number;
+  domainCount: number;
+  importedCount: number;
+  disabledCount: number;
+}
+
+export interface AdminImportResult {
+  added: number;
+  skipped: number;
+  issues?: { message: string }[];
+}
+
 export interface PaperResponse {
   token: string;
   questions: QuestionView[];
@@ -61,4 +81,15 @@ export interface LeaderboardEntry {
   accuracy: number;
   durationSec: number;
   submittedAt: number;
+}
+
+export interface LeaderboardRow {
+  id: string;
+  nickname: string;
+  score: number;
+  correct_count: number;
+  total_count: number;
+  accuracy: number | string;
+  duration_sec: number;
+  submitted_at: string;
 }

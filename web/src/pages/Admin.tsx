@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
-import { apiGet, apiPost } from "../lib/api";
+import { fetchAdminSummary, importQuestions, setQuestionStatus } from "../lib/api";
 import { validateQuestionsClient } from "../lib/validation";
-
-interface AdminSummary {
-  questionCount: number;
-  domainCount: number;
-  importedCount: number;
-  disabledCount: number;
-}
+import { AdminSummary } from "../lib/types";
 
 function parseArray(value: string, separator = "|") {
   if (!value) {
@@ -46,6 +40,7 @@ function parseNumberArray(value: string) {
 
 export default function Admin() {
   const [summary, setSummary] = useState<AdminSummary | null>(null);
+  const [adminSecret, setAdminSecret] = useState("");
   const [fileName, setFileName] = useState<string | null>(null);
   const [questions, setQuestions] = useState<Record<string, unknown>[]>([]);
   const [issues, setIssues] = useState<string[]>([]);
@@ -55,7 +50,7 @@ export default function Admin() {
   const [toggleStatus, setToggleStatus] = useState<string | null>(null);
 
   useEffect(() => {
-    apiGet<AdminSummary>("/api/admin/summary")
+    fetchAdminSummary()
       .then(setSummary)
       .catch(() => setSummary(null));
   }, []);
@@ -112,10 +107,7 @@ export default function Admin() {
       return;
     }
     try {
-      const result = await apiPost<{ added: number; skipped: number; issues: { message: string }[] }>(
-        "/api/admin/import",
-        { questions }
-      );
+      const result = await importQuestions(questions, adminSecret || undefined);
       setImportStatus(`导入成功：新增 ${result.added} 道，跳过 ${result.skipped} 道。`);
       setIssues(result.issues?.map((issue) => issue.message) || []);
     } catch {
@@ -129,7 +121,7 @@ export default function Admin() {
       return;
     }
     try {
-      await apiPost("/api/admin/status", { id: toggleId, enabled: toggleEnabled });
+      await setQuestionStatus(toggleId, toggleEnabled, adminSecret || undefined);
       setToggleStatus(toggleEnabled ? "已启用" : "已停用");
     } catch {
       setToggleStatus("操作失败，请检查 ID。");
@@ -162,6 +154,16 @@ export default function Admin() {
 
       <div className="section">
         <h2>导入题库（JSON / CSV）</h2>
+        <div className="form-row" style={{ marginBottom: 12 }}>
+          <input
+            className="input"
+            placeholder="管理密钥（可选）"
+            type="password"
+            value={adminSecret}
+            onChange={(event) => setAdminSecret(event.target.value)}
+          />
+          <span className="note">部署后建议设置 ADMIN_SECRET。</span>
+        </div>
         <input
           type="file"
           accept=".json,.csv"

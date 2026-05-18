@@ -1,5 +1,5 @@
-import { Difficulty, Question, QuestionType } from "./types";
-import { shuffle } from "./rng";
+import { Difficulty, Question, QuestionType } from "./types.ts";
+import { shuffle } from "./rng.ts";
 
 interface Bucket {
   type: QuestionType;

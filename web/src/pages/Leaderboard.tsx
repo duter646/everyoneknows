@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { apiGet } from "../lib/api";
+import { fetchLeaderboard } from "../lib/api";
 import { LeaderboardEntry } from "../lib/types";
 import { formatDate, formatDuration, formatPercent } from "../lib/format";
 
@@ -8,8 +8,8 @@ export default function Leaderboard() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    apiGet<{ leaderboard: LeaderboardEntry[] }>("/api/leaderboard?limit=100")
-      .then((data) => setEntries(data.leaderboard))
+    fetchLeaderboard(100)
+      .then(setEntries)
       .catch(() => setError("排行榜加载失败"));
   }, []);
 
