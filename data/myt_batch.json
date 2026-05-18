@@ -1,0 +1,662 @@
+[
+    {
+        "id": "myt_001",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-0-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_002",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-1-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_003",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-2-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_004",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-3-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_005",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-4-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_006",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-5-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_007",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-6-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_008",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-7-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_009",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-8-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_010",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-9-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_011",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-10-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_012",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-11-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_013",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-12-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_014",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-13-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_015",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-14-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_016",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-15-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_017",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-16-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_018",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-17-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_019",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-18-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_020",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-19-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_021",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-20-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_022",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-21-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_023",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-22-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_024",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-23-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_025",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-24-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_026",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-25-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_027",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-26-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    },
+    {
+        "id": "myt_028",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "希腊神-27-话中的众神之王是？",
+        "options": [
+            "阿波罗",
+            "波塞冬",
+            "宙斯",
+            "哈迪斯"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "宙斯是奥林匹斯山的主宰。",
+        "tags": [
+            "希腊神话",
+            "神祇"
+        ]
+    },
+    {
+        "id": "myt_029",
+        "domain": "一些猎奇小众知识",
+        "type": "single",
+        "question": "北欧神-28-话中，标志着世界末日的灾难被称为？",
+        "options": [
+            "诸神黄昏",
+            "诺亚方舟",
+            "大洪水",
+            "末日审判"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "诸神黄昏(Ragnarök)带来众神陨落与世界毁灭。",
+        "tags": [
+            "北欧神话",
+            "末日"
+        ]
+    },
+    {
+        "id": "myt_030",
+        "domain": "一些猎奇小众知识",
+        "type": "multiple",
+        "question": "下列哪-29-些属于中国上古神话中的创世/救世人物？",
+        "options": [
+            "盘古",
+            "女娲",
+            "伏羲",
+            "共工"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这些均是中国神话初期的核心神祇。",
+        "tags": [
+            "中国神话",
+            "创世"
+        ]
+    }
+]
