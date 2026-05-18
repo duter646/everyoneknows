@@ -1,0 +1,65 @@
+[
+    {
+        "id": "supp_med_001",
+        "domain": "Medicine",
+        "type": "single",
+        "question": "心肺复苏(CPR)操作中，成人胸外按压与人工呼吸的比例通常建议为？",
+        "options": [
+            "15:2",
+            "30:2",
+            "15:1",
+            "30:1"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "对于成人，单人或双人心肺复苏的按压通气比推荐为30:2。",
+        "tags": [
+            "急救尝试",
+            "急救医学"
+        ]
+    },
+    {
+        "id": "supp_med_002",
+        "domain": "Medicine",
+        "type": "single",
+        "question": "目前公认的全球主要的性传播疾病中，哪一种由人类免疫缺陷病毒引起？",
+        "options": [
+            "艾滋病",
+            "梅毒",
+            "淋病",
+            "生殖器疱疹"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "艾滋病(AIDS)是由HIV(人类免疫缺陷病毒)引起的。",
+        "tags": [
+            "传染病防护",
+            "公共卫生"
+        ]
+    },
+    {
+        "id": "supp_med_003",
+        "domain": "Medicine",
+        "type": "single",
+        "question": "遇到突发火灾，以下逃生方法错误的是？",
+        "options": [
+            "使用湿毛巾捂住口鼻",
+            "低姿弯腰前行",
+            "乘坐电梯快速下楼",
+            "从安全通道撤离"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "火灾时可能会断电，乘坐电梯极易被困或者遇到烟囱效应，十分危险。",
+        "tags": [
+            "生存技能",
+            "应急避险"
+        ]
+    }
+]

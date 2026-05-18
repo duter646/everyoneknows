@@ -1,0 +1,44 @@
+[
+    {
+        "id": "supp_eco_001",
+        "domain": "Economics",
+        "type": "single",
+        "question": "在宏观经济学中，CPI通常用来衡量什么？",
+        "options": [
+            "通货膨胀率",
+            "失业率",
+            "经济增长率",
+            "国际贸易差额"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "CPI指居民消费价格指数，是反映通货膨胀水平的重要指标。",
+        "tags": [
+            "宏观指标",
+            "经济学原理"
+        ]
+    },
+    {
+        "id": "supp_eco_002",
+        "domain": "Economics",
+        "type": "single",
+        "question": "GDP(国内生产总值)不包括以下哪项内容？",
+        "options": [
+            "外企在国内的生产价值",
+            "国内企业在国外的生产价值",
+            "政府购买的公共服务",
+            "居民购买的消费品"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "GDP按地域原则计算，国内企业在国外的产值属于GNP而不属于GDP。",
+        "tags": [
+            "宏观指标",
+            "国民经济"
+        ]
+    }
+]

@@ -1,643 +1,838 @@
 [
-  {
-    "id": "net_001",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "在OSI七层模型中，负责路径选择和路由的是哪一层？",
-    "options": [
-      "物理层",
-      "数据链路层",
-      "网络层",
-      "传输层"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "网络层主要设备是路由器，负责数据包从源到目的地的路由。",
-    "tags": [
-      "OSI模型",
-      "网络层"
-    ]
-  },
-  {
-    "id": "net_002",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "Web浏览器访问网页时，默认使用的HTTP协议通信端口是？",
-    "options": [
-      "21",
-      "22",
-      "80",
-      "443"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "HTTP默认端口为80，HTTPS默认端口为443。",
-    "tags": [
-      "协议",
-      "HTTP"
-    ]
-  },
-  {
-    "id": "net_003",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "哪个协议是互联网基础，负责在网络中传输数据包而不保证送达的可靠性？",
-    "options": [
-      "TCP",
-      "IP",
-      "FTP",
-      "SMTP"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "IP(互联网协议)提供无连接、不可靠的数据报投递服务；TCP在此之上保证可靠性。",
-    "tags": [
-      "TCP/IP",
-      "IP协议"
-    ]
-  },
-  {
-    "id": "net_004",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "用于将域名（如 www.google.com）转换为IP地址的系统服务是？",
-    "options": [
-      "DHCP",
-      "DNS",
-      "NAT",
-      "VPN"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "DNS（域名系统）即网络中的电话簿，负责域名到IP的解析。",
-    "tags": [
-      "DNS"
-    ]
-  },
-  {
-    "id": "net_005",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "局域网(LAN)中最广泛使用的有线网络标准技术是？",
-    "options": [
-      "蓝牙 (Bluetooth)",
-      "以太网 (Ethernet)",
-      "光纤通道",
-      "LTE"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "以太网(Ethernet)是使用跨度最广的局域网技术规范。",
-    "tags": [
-      "局域网",
-      "以太网"
-    ]
-  },
-  {
-    "id": "net_006",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "URL的全拼是指Uniform Resource Locator，中文常称为什么？",
-    "options": [
-      "超级网关",
-      "统一资源定位符",
-      "文件传输协议",
-      "虚拟局域网"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "URL即统一资源定位符，即俗称的网页地址(网址)。",
-    "tags": [
-      "Web",
-      "URL"
-    ]
-  },
-  {
-    "id": "net_007",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "在TCP三次握手中，客户端发送的首个同步报文段标志位是？",
-    "options": [
-      "ACK",
-      "SYN",
-      "FIN",
-      "RST"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "第一次握手客户端发送SYN(同步序列编号)标志报文，请求建立连接。",
-    "tags": [
-      "TCP/IP",
-      "三次握手"
-    ]
-  },
-  {
-    "id": "net_008",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "Wi-Fi的商标名通常指代电气电子工程师学会的哪一项无线标准？",
-    "options": [
-      "IEEE 802.3",
-      "IEEE 802.11",
-      "IEEE 802.15",
-      "IEEE 802.16"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "802.11家族是无线局域网标准，被广泛认证运用为Wi-Fi。",
-    "tags": [
-      "无线网络",
-      "Wi-Fi"
-    ]
-  },
-  {
-    "id": "net_009",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "家用路由器通常具有自动为内部设备分配IP地址的功能，该功能依赖的协议是？",
-    "options": [
-      "DHCP",
-      "DNS",
-      "HTTP",
-      "ICMP"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "DHCP（动态主机配置协议）自动分配IP、子网掩码和默认网关。",
-    "tags": [
-      "网络协议",
-      "DHCP"
-    ]
-  },
-  {
-    "id": "net_010",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "MAC地址（物理地址）通常包含几位二进制并且常以十六进制表示？",
-    "options": [
-      "32位",
-      "48位",
-      "64位",
-      "128位"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "MAC地址是48位的，一般被表示为6组两个十六进制字符（如00:1A:2B:3C:4D:5E）。",
-    "tags": [
-      "链路层",
-      "MAC"
-    ]
-  },
-  {
-    "id": "net_011",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "HTTPS比HTTP多出一个安全层，这通常是指？",
-    "options": [
-      "TCP",
-      "SSL/TLS",
-      "IPsec",
-      "SSH"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "HTTPS全称HTTP over SSL/TLS，利用加密算法保证传输信息的安全防窃听。",
-    "tags": [
-      "网络安全",
-      "HTTPS"
-    ]
-  },
-  {
-    "id": "net_012",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "用于发送电子邮件的标准协议主要是？",
-    "options": [
-      "POP3",
-      "IMAP",
-      "SMTP",
-      "SNMP"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "简单邮件传输协议 (SMTP) 用于发信。POP3和IMAP用于收信。",
-    "tags": [
-      "电子邮件",
-      "SMTP"
-    ]
-  },
-  {
-    "id": "net_013",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "IPv6的地址长度是多少位？",
-    "options": [
-      "32",
-      "64",
-      "128",
-      "256"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "IPv6将IPv4的32位扩充到了128位，号称可以给地球上每粒沙子分配一个IP。",
-    "tags": [
-      "网络基础",
-      "IPv6"
-    ]
-  },
-  {
-    "id": "net_014",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "在CMD终端测试主机间网络连通性的日常命令（运用ICMP协议）是？",
-    "options": [
-      "ipconfig",
-      "netstat",
-      "ping",
-      "arp"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "Ping命令通过发送ICMP回显请求并等待响应来测试网络连通性。",
-    "tags": [
-      "网络命令",
-      "Ping"
-    ]
-  },
-  {
-    "id": "net_015",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "局域网内的设备为了获得公网服务的应答，常将内部的私有IP映射为网关的公网IP，这个技术叫？",
-    "options": [
-      "NAT (网络地址转换)",
-      "DMZ (隔离区)",
-      "VLAN (虚拟局域网)",
-      "CDN (内容分发)"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "NAT技术允许多台设备共享一个或少量公网IP从而缓解IPv4枯竭。",
-    "tags": [
-      "网络配置",
-      "NAT"
-    ]
-  },
-  {
-    "id": "net_016",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "VPN的全称是指？",
-    "options": [
-      "虚拟局域网",
-      "虚拟专用网络",
-      "虚拟专用服务器",
-      "文件传输网"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "VPN即Virtual Private Network（虚拟专用网络），用于建立加密安全的网络隧道。",
-    "tags": [
-      "网络连接",
-      "VPN"
-    ]
-  },
-  {
-    "id": "net_017",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "万维网即World Wide Web（WWW）的发明者是？",
-    "options": [
-      "蒂姆·伯纳斯-李",
-      "文顿·瑟夫",
-      "马克·扎克伯格",
-      "拉里·佩奇"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "伯纳斯-李于1989年发明了万维网，提出了HTTP、HTML和首个浏览器概念。",
-    "tags": [
-      "互联网史",
-      "WWW"
-    ]
-  },
-  {
-    "id": "net_018",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "将前端网络内容分发到离用户更近的边缘服务器以加速访问速度的服务系统是？",
-    "options": [
-      "DNS",
-      "BGP",
-      "CDN",
-      "SQL"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "内容分发网络（CDN）能够避开互联网上有可能影响数据传输速度的瓶颈和环节环节，加速网站访问。",
-    "tags": [
-      "网络架构",
-      "CDN"
-    ]
-  },
-  {
-    "id": "net_019",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "P2P下载（如BitTorrent）全称是？",
-    "options": [
-      "Peer-to-Peer",
-      "Point-to-Point",
-      "Person-to-Person",
-      "Pay-to-Play"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "对等网络(Peer-to-Peer)，指网络中各节点既是客户端也是服务端互相传输文件。",
-    "tags": [
-      "下载技术",
-      "P2P"
-    ]
-  },
-  {
-    "id": "net_020",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "光纤通信中，保证光信号能够沿光纤无严重泄漏向前传输的物理原理是光线在纤芯和包层界面上的？",
-    "options": [
-      "折射",
-      "全反射",
-      "干涉",
-      "衍射"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "光纤芯的折射率高，光由光密进光疏发生全反射，信号得以前进且无甚能量损失。",
-    "tags": [
-      "通信传输",
-      "光纤"
-    ]
-  },
-  {
-    "id": "net_021",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "一般情况下，192.168.x.x网段属于？",
-    "options": [
-      "公有IP网段",
-      "私有IP网段",
-      "多播网段",
-      "组播网段"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "按照RFC标准，192.168开头是经典的C类私有IP地址段。",
-    "tags": [
-      "IP地址",
-      "私网"
-    ]
-  },
-  {
-    "id": "net_022",
-    "domain": "互联网与网络",
-    "type": "single",
-    "question": "云计算模式中，提供运行环境和开发工具给消费者的服务模式称为？",
-    "options": [
-      "IaaS (基础设施即服务)",
-      "PaaS (平台即服务)",
-      "SaaS (软件即服务)",
-      "DaaS (数据即服务)"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "IaaS提供软硬件资源底座；PaaS提供环境、库；SaaS直接提供应用软件。",
-    "tags": [
-      "云计算",
-      "PaaS"
-    ]
-  },
-  {
-    "id": "net_023",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "在TCP/IP协议栈中，传输层的主要协议包括？",
-    "options": [
-      "TCP",
-      "UDP",
-      "IP",
-      "HTTP"
-    ],
-    "answer": [
-      0,
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "传输大类中主将有面向可靠连接的TCP协议和面向无连接的尽力投递协议UDP。",
-    "tags": [
-      "网络协议栈",
-      "传输层"
-    ]
-  },
-  {
-    "id": "net_024",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "下列哪些属于局域网或短距离通信常用的无线技术？",
-    "options": [
-      "Wi-Fi",
-      "蓝牙 (Bluetooth)",
-      "NFC (近场通信)",
-      "BGP (边界网关协议)"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "BGP是核心骨干网自治系统间的外部网关路由协议，不是短距无线电通信。",
-    "tags": [
-      "无线技术"
-    ]
-  },
-  {
-    "id": "net_025",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "从应用层看，下列协议中主要采用TCP协议来进行数据传输服务的有？",
-    "options": [
-      "HTTP",
-      "FTP",
-      "DNS",
-      "SSH"
-    ],
-    "answer": [
-      0,
-      1,
-      3
-    ],
-    "difficulty": "hard",
-    "explanation": "网页HTTP、文件FTP、安全登录SSH都需要可靠连接故使用TCP；DNS普通查询通常用UDP提升速度。",
-    "tags": [
-      "应用层",
-      "TCP"
-    ]
-  },
-  {
-    "id": "net_026",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "构成一个基本的网络数据包(Packet)，其至少需要包括哪些关键部分信息？",
-    "options": [
-      "源IP地址",
-      "目的IP地址",
-      "负载数据(Payload)",
-      "显示器的分辨率设定"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "IP头部须有源和目的地址标识来源和去向，以及携带的有效荷载。",
-    "tags": [
-      "数据包"
-    ]
-  },
-  {
-    "id": "net_027",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "关于光纤宽带相比于传统铜双绞线的优势，正确的是？",
-    "options": [
-      "传输带宽更大",
-      "抗电磁干扰性极强",
-      "信号衰减更慢，距离可以更远",
-      "极其容易弯折布线且无损"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "光纤主要是玻璃石英抗干扰大带宽长距离；但其质脆忌讳过度弯折，易折断导致光漏损。",
-    "tags": [
-      "传输介质",
-      "光纤"
-    ]
-  },
-  {
-    "id": "net_028",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "常见的HTTP响应状态码中，代表客户端或服务端有错误的是哪些系列？",
-    "options": [
-      "1xx (如100)",
-      "2xx (如200)",
-      "4xx (如404)",
-      "5xx (如500)"
-    ],
-    "answer": [
-      2,
-      3
-    ],
-    "difficulty": "medium",
-    "explanation": "4xx通常是客户端请求错误(如未找到页面)，5xx代表服务端出现内部错误。",
-    "tags": [
-      "网页开发",
-      "HTTP状态码"
-    ]
-  },
-  {
-    "id": "net_029",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "防火墙 (Firewall) 在电脑网络安全里的主要作用是？",
-    "options": [
-      "抵御和隔离外部未授权访问",
-      "根据访问控制规则封堵危险IP或端口数据",
-      "杀除计算机内的所有木马",
-      "内部网络与外部互联的审控大门"
-    ],
-    "answer": [
-      0,
-      1,
-      3
-    ],
-    "difficulty": "medium",
-    "explanation": "防火墙主要是内外阻断隔离控制门，而非杀毒软件（杀软才是主要杀木马手段）。",
-    "tags": [
-      "网络安全",
-      "防火墙"
-    ]
-  },
-  {
-    "id": "net_030",
-    "domain": "互联网与网络",
-    "type": "multiple",
-    "question": "当前互联网架构下防范和缓解DDoS（分布式拒绝服务攻击）的常见方法包括？",
-    "options": [
-      "扩大网络总接入带宽",
-      "使用CDN分流流量",
-      "高防IP清洗流量",
-      "把电脑主机搬到更安全的物理机房"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "hard",
-    "explanation": "网络攻击是流量层面的，物理机房搬迁解决不了网络层的拥堵堵塞。",
-    "tags": [
-      "网络安全",
-      "DDoS"
-    ]
-  }
+    {
+        "id": "net_001",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "在OSI七层模型中，负责路径选择和路由的是哪一层？",
+        "options": [
+            "物理层",
+            "数据链路层",
+            "网络层",
+            "传输层"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "网络层主要设备是路由器，负责数据包从源到目的地的路由。",
+        "tags": [
+            "OSI模型",
+            "网络层"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_002",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "Web浏览器访问网页时，默认使用的HTTP协议通信端口是？",
+        "options": [
+            "21",
+            "22",
+            "80",
+            "443"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "HTTP默认端口为80，HTTPS默认端口为443。",
+        "tags": [
+            "协议",
+            "HTTP"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_003",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "哪个协议是互联网基础，负责在网络中传输数据包而不保证送达的可靠性？",
+        "options": [
+            "TCP",
+            "IP",
+            "FTP",
+            "SMTP"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "IP(互联网协议)提供无连接、不可靠的数据报投递服务；TCP在此之上保证可靠性。",
+        "tags": [
+            "TCP/IP",
+            "IP协议"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_004",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "用于将域名（如 www.google.com）转换为IP地址的系统服务是？",
+        "options": [
+            "DHCP",
+            "DNS",
+            "NAT",
+            "VPN"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "DNS（域名系统）即网络中的电话簿，负责域名到IP的解析。",
+        "tags": [
+            "DNS"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_005",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "局域网(LAN)中最广泛使用的有线网络标准技术是？",
+        "options": [
+            "蓝牙 (Bluetooth)",
+            "以太网 (Ethernet)",
+            "光纤通道",
+            "LTE"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "以太网(Ethernet)是使用跨度最广的局域网技术规范。",
+        "tags": [
+            "局域网",
+            "以太网"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_006",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "URL的全拼是指Uniform Resource Locator，中文常称为什么？",
+        "options": [
+            "超级网关",
+            "统一资源定位符",
+            "文件传输协议",
+            "虚拟局域网"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "URL即统一资源定位符，即俗称的网页地址(网址)。",
+        "tags": [
+            "Web",
+            "URL"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_007",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "在TCP三次握手中，客户端发送的首个同步报文段标志位是？",
+        "options": [
+            "ACK",
+            "SYN",
+            "FIN",
+            "RST"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "第一次握手客户端发送SYN(同步序列编号)标志报文，请求建立连接。",
+        "tags": [
+            "TCP/IP",
+            "三次握手"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_008",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "Wi-Fi的商标名通常指代电气电子工程师学会的哪一项无线标准？",
+        "options": [
+            "IEEE 802.3",
+            "IEEE 802.11",
+            "IEEE 802.15",
+            "IEEE 802.16"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "802.11家族是无线局域网标准，被广泛认证运用为Wi-Fi。",
+        "tags": [
+            "无线网络",
+            "Wi-Fi"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_009",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "家用路由器通常具有自动为内部设备分配IP地址的功能，该功能依赖的协议是？",
+        "options": [
+            "DHCP",
+            "DNS",
+            "HTTP",
+            "ICMP"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "DHCP（动态主机配置协议）自动分配IP、子网掩码和默认网关。",
+        "tags": [
+            "网络协议",
+            "DHCP"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_010",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "MAC地址（物理地址）通常包含几位二进制并且常以十六进制表示？",
+        "options": [
+            "32位",
+            "48位",
+            "64位",
+            "128位"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "MAC地址是48位的，一般被表示为6组两个十六进制字符（如00:1A:2B:3C:4D:5E）。",
+        "tags": [
+            "链路层",
+            "MAC"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_011",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "HTTPS比HTTP多出一个安全层，这通常是指？",
+        "options": [
+            "TCP",
+            "SSL/TLS",
+            "IPsec",
+            "SSH"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "HTTPS全称HTTP over SSL/TLS，利用加密算法保证传输信息的安全防窃听。",
+        "tags": [
+            "网络安全",
+            "HTTPS"
+        ],
+        "vector": {
+            "医学": 0.8,
+            "交叉/生活学科": 1.0,
+            "工学": 0.45,
+            "文学": 0.2,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_012",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "用于发送电子邮件的标准协议主要是？",
+        "options": [
+            "POP3",
+            "IMAP",
+            "SMTP",
+            "SNMP"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "简单邮件传输协议 (SMTP) 用于发信。POP3和IMAP用于收信。",
+        "tags": [
+            "电子邮件",
+            "SMTP"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_013",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "IPv6的地址长度是多少位？",
+        "options": [
+            "32",
+            "64",
+            "128",
+            "256"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "IPv6将IPv4的32位扩充到了128位，号称可以给地球上每粒沙子分配一个IP。",
+        "tags": [
+            "网络基础",
+            "IPv6"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_014",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "在CMD终端测试主机间网络连通性的日常命令（运用ICMP协议）是？",
+        "options": [
+            "ipconfig",
+            "netstat",
+            "ping",
+            "arp"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "Ping命令通过发送ICMP回显请求并等待响应来测试网络连通性。",
+        "tags": [
+            "网络命令",
+            "Ping"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_015",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "局域网内的设备为了获得公网服务的应答，常将内部的私有IP映射为网关的公网IP，这个技术叫？",
+        "options": [
+            "NAT (网络地址转换)",
+            "DMZ (隔离区)",
+            "VLAN (虚拟局域网)",
+            "CDN (内容分发)"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "NAT技术允许多台设备共享一个或少量公网IP从而缓解IPv4枯竭。",
+        "tags": [
+            "网络配置",
+            "NAT"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_016",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "VPN的全称是指？",
+        "options": [
+            "虚拟局域网",
+            "虚拟专用网络",
+            "虚拟专用服务器",
+            "文件传输网"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "VPN即Virtual Private Network（虚拟专用网络），用于建立加密安全的网络隧道。",
+        "tags": [
+            "网络连接",
+            "VPN"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_017",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "万维网即World Wide Web（WWW）的发明者是？",
+        "options": [
+            "蒂姆·伯纳斯-李",
+            "文顿·瑟夫",
+            "马克·扎克伯格",
+            "拉里·佩奇"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "伯纳斯-李于1989年发明了万维网，提出了HTTP、HTML和首个浏览器概念。",
+        "tags": [
+            "互联网史",
+            "WWW"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_018",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "将前端网络内容分发到离用户更近的边缘服务器以加速访问速度的服务系统是？",
+        "options": [
+            "DNS",
+            "BGP",
+            "CDN",
+            "SQL"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "内容分发网络（CDN）能够避开互联网上有可能影响数据传输速度的瓶颈和环节环节，加速网站访问。",
+        "tags": [
+            "网络架构",
+            "CDN"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_019",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "P2P下载（如BitTorrent）全称是？",
+        "options": [
+            "Peer-to-Peer",
+            "Point-to-Point",
+            "Person-to-Person",
+            "Pay-to-Play"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "对等网络(Peer-to-Peer)，指网络中各节点既是客户端也是服务端互相传输文件。",
+        "tags": [
+            "下载技术",
+            "P2P"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_020",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "光纤通信中，保证光信号能够沿光纤无严重泄漏向前传输的物理原理是光线在纤芯和包层界面上的？",
+        "options": [
+            "折射",
+            "全反射",
+            "干涉",
+            "衍射"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "光纤芯的折射率高，光由光密进光疏发生全反射，信号得以前进且无甚能量损失。",
+        "tags": [
+            "通信传输",
+            "光纤"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_021",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "一般情况下，192.168.x.x网段属于？",
+        "options": [
+            "公有IP网段",
+            "私有IP网段",
+            "多播网段",
+            "组播网段"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "按照RFC标准，192.168开头是经典的C类私有IP地址段。",
+        "tags": [
+            "IP地址",
+            "私网"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_022",
+        "domain": "互联网与网络",
+        "type": "single",
+        "question": "云计算模式中，提供运行环境和开发工具给消费者的服务模式称为？",
+        "options": [
+            "IaaS (基础设施即服务)",
+            "PaaS (平台即服务)",
+            "SaaS (软件即服务)",
+            "DaaS (数据即服务)"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "IaaS提供软硬件资源底座；PaaS提供环境、库；SaaS直接提供应用软件。",
+        "tags": [
+            "云计算",
+            "PaaS"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_023",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "在TCP/IP协议栈中，传输层的主要协议包括？",
+        "options": [
+            "TCP",
+            "UDP",
+            "IP",
+            "HTTP"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "传输大类中主将有面向可靠连接的TCP协议和面向无连接的尽力投递协议UDP。",
+        "tags": [
+            "网络协议栈",
+            "传输层"
+        ],
+        "vector": {
+            "交叉/生活学科": 1.0,
+            "文学": 0.2,
+            "工学": 0.45,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_024",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "下列哪些属于局域网或短距离通信常用的无线技术？",
+        "options": [
+            "Wi-Fi",
+            "蓝牙 (Bluetooth)",
+            "NFC (近场通信)",
+            "BGP (边界网关协议)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "BGP是核心骨干网自治系统间的外部网关路由协议，不是短距无线电通信。",
+        "tags": [
+            "无线技术"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_025",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "从应用层看，下列协议中主要采用TCP协议来进行数据传输服务的有？",
+        "options": [
+            "HTTP",
+            "FTP",
+            "DNS",
+            "SSH"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "difficulty": "hard",
+        "explanation": "网页HTTP、文件FTP、安全登录SSH都需要可靠连接故使用TCP；DNS普通查询通常用UDP提升速度。",
+        "tags": [
+            "应用层",
+            "TCP"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_026",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "构成一个基本的网络数据包(Packet)，其至少需要包括哪些关键部分信息？",
+        "options": [
+            "源IP地址",
+            "目的IP地址",
+            "负载数据(Payload)",
+            "显示器的分辨率设定"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "IP头部须有源和目的地址标识来源和去向，以及携带的有效荷载。",
+        "tags": [
+            "数据包"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_027",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "关于光纤宽带相比于传统铜双绞线的优势，正确的是？",
+        "options": [
+            "传输带宽更大",
+            "抗电磁干扰性极强",
+            "信号衰减更慢，距离可以更远",
+            "极其容易弯折布线且无损"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "光纤主要是玻璃石英抗干扰大带宽长距离；但其质脆忌讳过度弯折，易折断导致光漏损。",
+        "tags": [
+            "传输介质",
+            "光纤"
+        ],
+        "vector": {
+            "工学": 0.9,
+            "交叉/生活学科": 0.3,
+            "管理学": 0.1,
+            "理学": 0.5
+        }
+    },
+    {
+        "id": "net_028",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "常见的HTTP响应状态码中，代表客户端或服务端有错误的是哪些系列？",
+        "options": [
+            "1xx (如100)",
+            "2xx (如200)",
+            "4xx (如404)",
+            "5xx (如500)"
+        ],
+        "answer": [
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "4xx通常是客户端请求错误(如未找到页面)，5xx代表服务端出现内部错误。",
+        "tags": [
+            "网页开发",
+            "HTTP状态码"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.15,
+            "管理学": 0.05
+        }
+    },
+    {
+        "id": "net_029",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "防火墙 (Firewall) 在电脑网络安全里的主要作用是？",
+        "options": [
+            "抵御和隔离外部未授权访问",
+            "根据访问控制规则封堵危险IP或端口数据",
+            "杀除计算机内的所有木马",
+            "内部网络与外部互联的审控大门"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "防火墙主要是内外阻断隔离控制门，而非杀毒软件（杀软才是主要杀木马手段）。",
+        "tags": [
+            "网络安全",
+            "防火墙"
+        ],
+        "vector": {
+            "医学": 0.8,
+            "交叉/生活学科": 1.0,
+            "工学": 0.45,
+            "文学": 0.2,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    },
+    {
+        "id": "net_030",
+        "domain": "互联网与网络",
+        "type": "multiple",
+        "question": "当前互联网架构下防范和缓解DDoS（分布式拒绝服务攻击）的常见方法包括？",
+        "options": [
+            "扩大网络总接入带宽",
+            "使用CDN分流流量",
+            "高防IP清洗流量",
+            "把电脑主机搬到更安全的物理机房"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "hard",
+        "explanation": "网络攻击是流量层面的，物理机房搬迁解决不了网络层的拥堵堵塞。",
+        "tags": [
+            "网络安全",
+            "DDoS"
+        ],
+        "vector": {
+            "医学": 0.8,
+            "交叉/生活学科": 1.0,
+            "工学": 0.45,
+            "文学": 0.2,
+            "管理学": 0.05,
+            "理学": 0.25
+        }
+    }
 ]

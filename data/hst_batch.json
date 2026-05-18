@@ -1,718 +1,893 @@
 [
-  {
-    "id": "hst_001",
-    "domain": "科技史",
-    "type": "single",
-    "question": "蒸汽机是谁改良的",
-    "options": [
-      "瓦特",
-      "纽科门",
-      "牛顿",
-      "爱迪生"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "瓦特改良了蒸汽机",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_002",
-    "domain": "科技史",
-    "type": "single",
-    "question": "第一台电子计算机是",
-    "options": [
-      "ENIAC",
-      "EDVAC",
-      "UNIVAC",
-      "ABC"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "ENIAC于1946诞生",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_003",
-    "domain": "科技史",
-    "type": "single",
-    "question": "电话是谁发明的",
-    "options": [
-      "贝尔",
-      "爱迪生",
-      "莫尔斯",
-      "特斯拉"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "贝尔",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_004",
-    "domain": "科技史",
-    "type": "single",
-    "question": "飞机最早的发明者",
-    "options": [
-      "莱特兄弟",
-      "卢米埃尔兄弟",
-      "蒙特哥菲尔兄弟",
-      "达芬奇"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "莱特兄弟",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_005",
-    "domain": "科技史",
-    "type": "single",
-    "question": "活字印刷术的发明者",
-    "options": [
-      "毕昇",
-      "蔡伦",
-      "张衡",
-      "王祯"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "毕昇",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_006",
-    "domain": "科技史",
-    "type": "single",
-    "question": "地心说的集大成者",
-    "options": [
-      "托勒密",
-      "哥白尼",
-      "伽利略",
-      "开普勒"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "托勒密",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_007",
-    "domain": "科技史",
-    "type": "single",
-    "question": "日心说的提出者",
-    "options": [
-      "托勒密",
-      "哥白尼",
-      "伽利略",
-      "布鲁诺"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "哥白尼",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_008",
-    "domain": "科技史",
-    "type": "single",
-    "question": "相对论提出者",
-    "options": [
-      "牛顿",
-      "爱因斯坦",
-      "麦克斯韦",
-      "普朗克"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "爱因斯坦",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_009",
-    "domain": "科技史",
-    "type": "single",
-    "question": "发现了万有引力",
-    "options": [
-      "牛顿",
-      "爱因斯坦",
-      "伽利略",
-      "胡克"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "牛顿",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_010",
-    "domain": "科技史",
-    "type": "single",
-    "question": "进化论的创立者",
-    "options": [
-      "拉马克",
-      "达尔文",
-      "孟德尔",
-      "摩尔根"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "达尔文",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_011",
-    "domain": "科技史",
-    "type": "single",
-    "question": "第一颗人造卫星属于哪个国家",
-    "options": [
-      "美国",
-      "苏联",
-      "德国",
-      "中国"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "苏联1957",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_012",
-    "domain": "科技史",
-    "type": "single",
-    "question": "阿波罗计划登月是哪一年",
-    "options": [
-      "1969",
-      "1970",
-      "1968",
-      "1972"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "1969年",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_013",
-    "domain": "科技史",
-    "type": "single",
-    "question": "X射线的发现者",
-    "options": [
-      "居里夫人",
-      "伦琴",
-      "卢瑟福",
-      "玻尔"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "伦琴",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_014",
-    "domain": "科技史",
-    "type": "single",
-    "question": "青霉素的发现者",
-    "options": [
-      "弗莱明",
-      "巴斯德",
-      "科赫",
-      "华佗"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "弗莱明",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_015",
-    "domain": "科技史",
-    "type": "single",
-    "question": "基因双螺旋结构发现者",
-    "options": [
-      "沃森和克里克",
-      "孟德尔",
-      "摩尔根",
-      "达尔文"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "沃森和克里克",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_016",
-    "domain": "科技史",
-    "type": "single",
-    "question": "发明避雷针的科学家",
-    "options": [
-      "富兰克林",
-      "法拉第",
-      "特斯拉",
-      "伏特"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "富兰克林",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_017",
-    "domain": "科技史",
-    "type": "single",
-    "question": "四大发明的造纸术改良者",
-    "options": [
-      "毕昇",
-      "蔡伦",
-      "张衡",
-      "祖冲之"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "蔡伦",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_018",
-    "domain": "科技史",
-    "type": "single",
-    "question": "圆周率算到小数点后七位的是",
-    "options": [
-      "刘徽",
-      "祖冲之",
-      "郭守敬",
-      "张衡"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "祖冲之",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_019",
-    "domain": "科技史",
-    "type": "single",
-    "question": "第一台实用的电视机发明者",
-    "options": [
-      "贝尔德",
-      "爱迪生",
-      "马可尼",
-      "特斯拉"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "贝尔德",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_020",
-    "domain": "科技史",
-    "type": "single",
-    "question": "交流电系统的推广者",
-    "options": [
-      "爱迪生",
-      "特斯拉",
-      "富兰克林",
-      "伏特"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "特斯拉",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_021",
-    "domain": "科技史",
-    "type": "single",
-    "question": "镭的发现者",
-    "options": [
-      "居里夫人",
-      "伦琴",
-      "爱因斯坦",
-      "普朗克"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "居里夫人",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_022",
-    "domain": "科技史",
-    "type": "single",
-    "question": "微积分的创立者",
-    "options": [
-      "牛顿与莱布尼茨",
-      "笛卡尔",
-      "欧拉",
-      "高斯"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "牛顿莱布尼茨",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_023",
-    "domain": "科技史",
-    "type": "single",
-    "question": "量子力学的普朗克常数提出者",
-    "options": [
-      "普朗克",
-      "爱因斯坦",
-      "玻尔",
-      "海森堡"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "普朗克",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_024",
-    "domain": "科技史",
-    "type": "single",
-    "question": "创立了近代化学元素分类",
-    "options": [
-      "门捷列夫",
-      "拉瓦锡",
-      "波义耳",
-      "道尔顿"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "门捷列夫元素周期表",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_025",
-    "domain": "科技史",
-    "type": "single",
-    "question": "证明了大气压存在的实验是",
-    "options": [
-      "马德堡半球实验",
-      "比萨斜塔实验",
-      "双缝干涉实验",
-      "迈克尔逊莫雷实验"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "马德堡半球",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_026",
-    "domain": "科技史",
-    "type": "single",
-    "question": "提出燃烧氧化学说的是",
-    "options": [
-      "拉瓦锡",
-      "普里斯特利",
-      "卡文迪许",
-      "道尔顿"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "拉瓦锡",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_027",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "第三次工业革命标志",
-    "options": [
-      "计算机",
-      "信息技术",
-      "新能源",
-      "蒸汽机"
-    ],
-    "answer": [
-      0,
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "计算机和网络",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_028",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "第二次工业革命的核心",
-    "options": [
-      "电力",
-      "内燃机",
-      "核能",
-      "互联网"
-    ],
-    "answer": [
-      0,
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "电力和内燃机",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_029",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "中国的四大发明",
-    "options": [
-      "造纸",
-      "指南针",
-      "火药",
-      "印刷术"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "easy",
-    "explanation": "著名四大发明",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_030",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "经典力学三大定律包含",
-    "options": [
-      "惯性定律",
-      "F=ma",
-      "作用力与反作用力",
-      "能量守恒"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "不是能量守恒",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_031",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "哪些科学家获得过诺贝尔奖",
-    "options": [
-      "爱因斯坦",
-      "居里夫人",
-      "门捷列夫",
-      "爱迪生"
-    ],
-    "answer": [
-      0,
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "门捷列夫和爱迪生未获得",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_032",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "两次获得诺贝尔奖的人物有",
-    "options": [
-      "居里夫人",
-      "巴德恩",
-      "鲍林",
-      "牛顿"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "hard",
-    "explanation": "牛顿时代无诺奖",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_033",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "航天史上的重要里程碑",
-    "options": [
-      "加加林上天",
-      "阿波罗登月",
-      "空间站建立",
-      "深海潜水器"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "深海不属于航天",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_034",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "古希腊科学代表人物",
-    "options": [
-      "阿基米德",
-      "亚里士多德",
-      "毕达哥拉斯",
-      "伽利略"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "伽利略是文艺复兴后",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "hst_035",
-    "domain": "科技史",
-    "type": "multiple",
-    "question": "文艺复兴时期科学先驱",
-    "options": [
-      "达芬奇",
-      "哥白尼",
-      "开普勒",
-      "牛顿"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "hard",
-    "explanation": "牛顿更晚",
-    "tags": [
-      "综合"
-    ]
-  }
+    {
+        "id": "hst_001",
+        "domain": "科技史",
+        "type": "single",
+        "question": "蒸汽机是谁改良的",
+        "options": [
+            "瓦特",
+            "纽科门",
+            "牛顿",
+            "爱迪生"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "瓦特改良了蒸汽机",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_002",
+        "domain": "科技史",
+        "type": "single",
+        "question": "第一台电子计算机是",
+        "options": [
+            "ENIAC",
+            "EDVAC",
+            "UNIVAC",
+            "ABC"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "ENIAC于1946诞生",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_003",
+        "domain": "科技史",
+        "type": "single",
+        "question": "电话是谁发明的",
+        "options": [
+            "贝尔",
+            "爱迪生",
+            "莫尔斯",
+            "特斯拉"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "贝尔",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_004",
+        "domain": "科技史",
+        "type": "single",
+        "question": "飞机最早的发明者",
+        "options": [
+            "莱特兄弟",
+            "卢米埃尔兄弟",
+            "蒙特哥菲尔兄弟",
+            "达芬奇"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "莱特兄弟",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_005",
+        "domain": "科技史",
+        "type": "single",
+        "question": "活字印刷术的发明者",
+        "options": [
+            "毕昇",
+            "蔡伦",
+            "张衡",
+            "王祯"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "毕昇",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_006",
+        "domain": "科技史",
+        "type": "single",
+        "question": "地心说的集大成者",
+        "options": [
+            "托勒密",
+            "哥白尼",
+            "伽利略",
+            "开普勒"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "托勒密",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_007",
+        "domain": "科技史",
+        "type": "single",
+        "question": "日心说的提出者",
+        "options": [
+            "托勒密",
+            "哥白尼",
+            "伽利略",
+            "布鲁诺"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "哥白尼",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_008",
+        "domain": "科技史",
+        "type": "single",
+        "question": "相对论提出者",
+        "options": [
+            "牛顿",
+            "爱因斯坦",
+            "麦克斯韦",
+            "普朗克"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "爱因斯坦",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_009",
+        "domain": "科技史",
+        "type": "single",
+        "question": "发现了万有引力",
+        "options": [
+            "牛顿",
+            "爱因斯坦",
+            "伽利略",
+            "胡克"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "牛顿",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_010",
+        "domain": "科技史",
+        "type": "single",
+        "question": "进化论的创立者",
+        "options": [
+            "拉马克",
+            "达尔文",
+            "孟德尔",
+            "摩尔根"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "达尔文",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_011",
+        "domain": "科技史",
+        "type": "single",
+        "question": "第一颗人造卫星属于哪个国家",
+        "options": [
+            "美国",
+            "苏联",
+            "德国",
+            "中国"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "苏联1957",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_012",
+        "domain": "科技史",
+        "type": "single",
+        "question": "阿波罗计划登月是哪一年",
+        "options": [
+            "1969",
+            "1970",
+            "1968",
+            "1972"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "1969年",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_013",
+        "domain": "科技史",
+        "type": "single",
+        "question": "X射线的发现者",
+        "options": [
+            "居里夫人",
+            "伦琴",
+            "卢瑟福",
+            "玻尔"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "伦琴",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_014",
+        "domain": "科技史",
+        "type": "single",
+        "question": "青霉素的发现者",
+        "options": [
+            "弗莱明",
+            "巴斯德",
+            "科赫",
+            "华佗"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "弗莱明",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_015",
+        "domain": "科技史",
+        "type": "single",
+        "question": "基因双螺旋结构发现者",
+        "options": [
+            "沃森和克里克",
+            "孟德尔",
+            "摩尔根",
+            "达尔文"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "沃森和克里克",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_016",
+        "domain": "科技史",
+        "type": "single",
+        "question": "发明避雷针的科学家",
+        "options": [
+            "富兰克林",
+            "法拉第",
+            "特斯拉",
+            "伏特"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "富兰克林",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_017",
+        "domain": "科技史",
+        "type": "single",
+        "question": "四大发明的造纸术改良者",
+        "options": [
+            "毕昇",
+            "蔡伦",
+            "张衡",
+            "祖冲之"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "蔡伦",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_018",
+        "domain": "科技史",
+        "type": "single",
+        "question": "圆周率算到小数点后七位的是",
+        "options": [
+            "刘徽",
+            "祖冲之",
+            "郭守敬",
+            "张衡"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "祖冲之",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_019",
+        "domain": "科技史",
+        "type": "single",
+        "question": "第一台实用的电视机发明者",
+        "options": [
+            "贝尔德",
+            "爱迪生",
+            "马可尼",
+            "特斯拉"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "贝尔德",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_020",
+        "domain": "科技史",
+        "type": "single",
+        "question": "交流电系统的推广者",
+        "options": [
+            "爱迪生",
+            "特斯拉",
+            "富兰克林",
+            "伏特"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "特斯拉",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_021",
+        "domain": "科技史",
+        "type": "single",
+        "question": "镭的发现者",
+        "options": [
+            "居里夫人",
+            "伦琴",
+            "爱因斯坦",
+            "普朗克"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "居里夫人",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_022",
+        "domain": "科技史",
+        "type": "single",
+        "question": "微积分的创立者",
+        "options": [
+            "牛顿与莱布尼茨",
+            "笛卡尔",
+            "欧拉",
+            "高斯"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "牛顿莱布尼茨",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_023",
+        "domain": "科技史",
+        "type": "single",
+        "question": "量子力学的普朗克常数提出者",
+        "options": [
+            "普朗克",
+            "爱因斯坦",
+            "玻尔",
+            "海森堡"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "普朗克",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_024",
+        "domain": "科技史",
+        "type": "single",
+        "question": "创立了近代化学元素分类",
+        "options": [
+            "门捷列夫",
+            "拉瓦锡",
+            "波义耳",
+            "道尔顿"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "门捷列夫元素周期表",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_025",
+        "domain": "科技史",
+        "type": "single",
+        "question": "证明了大气压存在的实验是",
+        "options": [
+            "马德堡半球实验",
+            "比萨斜塔实验",
+            "双缝干涉实验",
+            "迈克尔逊莫雷实验"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "马德堡半球",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_026",
+        "domain": "科技史",
+        "type": "single",
+        "question": "提出燃烧氧化学说的是",
+        "options": [
+            "拉瓦锡",
+            "普里斯特利",
+            "卡文迪许",
+            "道尔顿"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "拉瓦锡",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_027",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "第三次工业革命标志",
+        "options": [
+            "计算机",
+            "信息技术",
+            "新能源",
+            "蒸汽机"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "计算机和网络",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_028",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "第二次工业革命的核心",
+        "options": [
+            "电力",
+            "内燃机",
+            "核能",
+            "互联网"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "电力和内燃机",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_029",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "中国的四大发明",
+        "options": [
+            "造纸",
+            "指南针",
+            "火药",
+            "印刷术"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "easy",
+        "explanation": "著名四大发明",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_030",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "经典力学三大定律包含",
+        "options": [
+            "惯性定律",
+            "F=ma",
+            "作用力与反作用力",
+            "能量守恒"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "不是能量守恒",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_031",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "哪些科学家获得过诺贝尔奖",
+        "options": [
+            "爱因斯坦",
+            "居里夫人",
+            "门捷列夫",
+            "爱迪生"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "门捷列夫和爱迪生未获得",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_032",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "两次获得诺贝尔奖的人物有",
+        "options": [
+            "居里夫人",
+            "巴德恩",
+            "鲍林",
+            "牛顿"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "hard",
+        "explanation": "牛顿时代无诺奖",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_033",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "航天史上的重要里程碑",
+        "options": [
+            "加加林上天",
+            "阿波罗登月",
+            "空间站建立",
+            "深海潜水器"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "深海不属于航天",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_034",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "古希腊科学代表人物",
+        "options": [
+            "阿基米德",
+            "亚里士多德",
+            "毕达哥拉斯",
+            "伽利略"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "伽利略是文艺复兴后",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    },
+    {
+        "id": "hst_035",
+        "domain": "科技史",
+        "type": "multiple",
+        "question": "文艺复兴时期科学先驱",
+        "options": [
+            "达芬奇",
+            "哥白尼",
+            "开普勒",
+            "牛顿"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "hard",
+        "explanation": "牛顿更晚",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "历史学": 0.7,
+            "理学": 0.9,
+            "工学": 0.9
+        }
+    }
 ]

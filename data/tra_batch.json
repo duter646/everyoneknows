@@ -1,826 +1,1026 @@
 [
-  {
-    "id": "tra_001",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "世界第一条高铁线路在哪个国家开通",
-    "options": [
-      "日本",
-      "法国",
-      "德国",
-      "中国"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "日本东海道新干线",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_002",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "著名的巴拿马运河连接了哪两大洋",
-    "options": [
-      "太平洋和大西洋",
-      "印度洋和太平洋",
-      "大西洋和北冰洋",
-      "印度洋和大西洋"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "连接太平洋与大西洋",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_003",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "按货物吞吐量世界上最大的港口是",
-    "options": [
-      "宁波舟山港",
-      "新加坡港",
-      "鹿特丹港",
-      "纽约港"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "宁波舟山港",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_004",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "英吉利海峡隧道主要是一种",
-    "options": [
-      "海底铁路隧道",
-      "海底公路隧道",
-      "水面悬浮隧道",
-      "桥隧结合"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "主要是铁路隧道",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_005",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "红绿灯中红灯代表",
-    "options": [
-      "停止",
-      "减速",
-      "倒车",
-      "加速"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "常识",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_006",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "苏伊士运河连接了",
-    "options": [
-      "红海和地中海",
-      "黑海和地中海",
-      "红海和阿拉伯海",
-      "波罗的海和北海"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "红海地中海",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_007",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "人类历史上第一段铁路建在",
-    "options": [
-      "英国",
-      "法国",
-      "美国",
-      "德国"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "英国斯托克顿-达灵顿",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_008",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "第一架商业喷气式客机是",
-    "options": [
-      "彗星号",
-      "波音707",
-      "协和式",
-      "图-104"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "哈维兰彗星型",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_009",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "京沪高铁连接了",
-    "options": [
-      "北京和上海",
-      "北京和广州",
-      "北京和哈尔滨",
-      "上海和广州"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "京沪",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_010",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "海运运载量最大的船型是",
-    "options": [
-      "油轮",
-      "散货船",
-      "集装箱船",
-      "客轮"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "超级油轮",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_011",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "GPS是哪个国家的卫星导航系统",
-    "options": [
-      "美国",
-      "俄罗斯",
-      "中国",
-      "欧洲"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "美国",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_012",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "北斗是哪个国家的",
-    "options": [
-      "中国",
-      "俄罗斯",
-      "美国",
-      "日本"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "中国",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_013",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "世界上最长的跨海大桥是",
-    "options": [
-      "港珠澳大桥",
-      "杭州湾跨海大桥",
-      "青岛海湾大桥",
-      "金门大桥"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "港珠澳",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_014",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "汽车靠右行驶的国家是",
-    "options": [
-      "中国",
-      "英国",
-      "日本",
-      "澳大利亚"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "中右",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_015",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "黑匣子通常是什么颜色",
-    "options": [
-      "黑色",
-      "明亮的橙红色",
-      "白色",
-      "黄色"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "橙红色便于寻找",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_016",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "航空母舰上帮助飞机起飞的设备是",
-    "options": [
-      "弹射器",
-      "拦阻索",
-      "升降机",
-      "雷达"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "弹射器",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_017",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "马六甲海峡位于",
-    "options": [
-      "东南亚",
-      "中东",
-      "欧洲",
-      "南美洲"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "东南亚",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_018",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "欧洲之星列车主要往返于",
-    "options": [
-      "伦敦、巴黎、布鲁塞尔",
-      "柏林、巴黎、罗马",
-      "马德里、里斯本",
-      "维也纳、布拉格"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "伦敦巴黎等地",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_019",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "地铁的运行轨道通常是",
-    "options": [
-      "全封闭的",
-      "开放的",
-      "半开放的",
-      "混合的"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "全封闭保障安全和效率",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_020",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "世界上最大的商用客机",
-    "options": [
-      "空客A380",
-      "波音747",
-      "空客A350",
-      "波音777"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "A380",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_021",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "港珠澳大桥全长约",
-    "options": [
-      "55公里",
-      "35公里",
-      "45公里",
-      "65公里"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "55km",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_022",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "中国标准动车组被称为",
-    "options": [
-      "复兴号",
-      "和谐号",
-      "新干线",
-      "TGV"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "复兴号",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_023",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "高铁列车的弓网系统主要作用是",
-    "options": [
-      "受流取电",
-      "刹车系统",
-      "通讯网络",
-      "空调供风"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "受电弓",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_024",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "隧道掘进机(TBM)主要用于",
-    "options": [
-      "全断面岩石隧道开挖",
-      "海底沉管",
-      "架空桥梁",
-      "铺设铁轨"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "岩石隧道",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_025",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "无砟轨道相比有砟轨道的优点是",
-    "options": [
-      "更平顺少维护",
-      "造价更低",
-      "施工更简单",
-      "噪音更小"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "平顺且少维护",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_026",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "世界上第一条地铁在",
-    "options": [
-      "伦敦",
-      "纽约",
-      "巴黎",
-      "莫斯科"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "伦敦大都会铁路",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_027",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "悬索桥的主要承重构件是",
-    "options": [
-      "主缆",
-      "桥墩",
-      "桥面",
-      "吊索"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "medium",
-    "explanation": "主缆",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_028",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "斜拉桥和悬索桥的区别在于",
-    "options": [
-      "索直接拉在塔上",
-      "有主缆",
-      "只能建短桥",
-      "没有塔"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "拉索直接到塔",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_029",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "汽车引擎冷却系统主要使用",
-    "options": [
-      "水或防冻液",
-      "机油",
-      "制动液",
-      "空气"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "防冻液",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_030",
-    "domain": "交通与工程",
-    "type": "single",
-    "question": "交通流理论的三大基本参数是",
-    "options": [
-      "流量、速度、密度",
-      "车长、车宽、载重",
-      "油耗、排量、马力",
-      "时间、距离、金钱"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "hard",
-    "explanation": "交通工程学基本参数",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_031",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "现代五大交通运输方式包含",
-    "options": [
-      "公路",
-      "铁路",
-      "水路",
-      "航空及管道"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "easy",
-    "explanation": "五大类",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_032",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "桥梁的基本结构形式有",
-    "options": [
-      "梁桥",
-      "拱桥",
-      "悬索桥",
-      "斜拉桥"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "medium",
-    "explanation": "常见类",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_033",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "全球三大卫星导航系统包括",
-    "options": [
-      "美国的GPS",
-      "中国的北斗",
-      "欧洲的伽利略",
-      "俄罗斯的格洛纳斯"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "hard",
-    "explanation": "四大系统",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_034",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "缓解城市交通拥堵的措施有",
-    "options": [
-      "发展公共交通",
-      "限行限号",
-      "收取拥堵费",
-      "鼓励买私家车"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "买车加剧拥堵",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_035",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "新能源汽车的主要动力类型包括",
-    "options": [
-      "纯电动",
-      "插电混动",
-      "氢燃料电池",
-      "传统柴油"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "柴油不是",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_036",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "智能交通系统(ITS)的应用包括",
-    "options": [
-      "电子不停车收费(ETC)",
-      "自动驾驶",
-      "交通信号协调控制",
-      "人工售票"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "智能控制",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_037",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "高铁和普通火车的区别包括",
-    "options": [
-      "运行速度更快",
-      "轨道要求更高",
-      "通常是动车组",
-      "使用内燃机车"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "高铁使用电力",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_038",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "商用航空器的主要制造商有",
-    "options": [
-      "波音",
-      "空客",
-      "商飞",
-      "福特"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "福特造汽车",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_039",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "集装箱运输的优点",
-    "options": [
-      "装卸效率高",
-      "货物损伤小",
-      "标准化",
-      "只能运液体"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "液体一般用散水运",
-    "tags": [
-      "综合"
-    ]
-  },
-  {
-    "id": "tra_040",
-    "domain": "交通与工程",
-    "type": "multiple",
-    "question": "城市轨道交通包含",
-    "options": [
-      "地铁",
-      "轻轨",
-      "有轨电车",
-      "磁悬浮列车"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "easy",
-    "explanation": "形式多样",
-    "tags": [
-      "综合"
-    ]
-  }
+    {
+        "id": "tra_001",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "世界第一条高铁线路在哪个国家开通",
+        "options": [
+            "日本",
+            "法国",
+            "德国",
+            "中国"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "日本东海道新干线",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_002",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "著名的巴拿马运河连接了哪两大洋",
+        "options": [
+            "太平洋和大西洋",
+            "印度洋和太平洋",
+            "大西洋和北冰洋",
+            "印度洋和大西洋"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "连接太平洋与大西洋",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_003",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "按货物吞吐量世界上最大的港口是",
+        "options": [
+            "宁波舟山港",
+            "新加坡港",
+            "鹿特丹港",
+            "纽约港"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "宁波舟山港",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_004",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "英吉利海峡隧道主要是一种",
+        "options": [
+            "海底铁路隧道",
+            "海底公路隧道",
+            "水面悬浮隧道",
+            "桥隧结合"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "主要是铁路隧道",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_005",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "红绿灯中红灯代表",
+        "options": [
+            "停止",
+            "减速",
+            "倒车",
+            "加速"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "常识",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_006",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "苏伊士运河连接了",
+        "options": [
+            "红海和地中海",
+            "黑海和地中海",
+            "红海和阿拉伯海",
+            "波罗的海和北海"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "红海地中海",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_007",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "人类历史上第一段铁路建在",
+        "options": [
+            "英国",
+            "法国",
+            "美国",
+            "德国"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "英国斯托克顿-达灵顿",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_008",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "第一架商业喷气式客机是",
+        "options": [
+            "彗星号",
+            "波音707",
+            "协和式",
+            "图-104"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "哈维兰彗星型",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_009",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "京沪高铁连接了",
+        "options": [
+            "北京和上海",
+            "北京和广州",
+            "北京和哈尔滨",
+            "上海和广州"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "京沪",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_010",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "海运运载量最大的船型是",
+        "options": [
+            "油轮",
+            "散货船",
+            "集装箱船",
+            "客轮"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "超级油轮",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_011",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "GPS是哪个国家的卫星导航系统",
+        "options": [
+            "美国",
+            "俄罗斯",
+            "中国",
+            "欧洲"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "美国",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_012",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "北斗是哪个国家的",
+        "options": [
+            "中国",
+            "俄罗斯",
+            "美国",
+            "日本"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "中国",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_013",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "世界上最长的跨海大桥是",
+        "options": [
+            "港珠澳大桥",
+            "杭州湾跨海大桥",
+            "青岛海湾大桥",
+            "金门大桥"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "港珠澳",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_014",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "汽车靠右行驶的国家是",
+        "options": [
+            "中国",
+            "英国",
+            "日本",
+            "澳大利亚"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "中右",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_015",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "黑匣子通常是什么颜色",
+        "options": [
+            "黑色",
+            "明亮的橙红色",
+            "白色",
+            "黄色"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "橙红色便于寻找",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_016",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "航空母舰上帮助飞机起飞的设备是",
+        "options": [
+            "弹射器",
+            "拦阻索",
+            "升降机",
+            "雷达"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "弹射器",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_017",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "马六甲海峡位于",
+        "options": [
+            "东南亚",
+            "中东",
+            "欧洲",
+            "南美洲"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "东南亚",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_018",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "欧洲之星列车主要往返于",
+        "options": [
+            "伦敦、巴黎、布鲁塞尔",
+            "柏林、巴黎、罗马",
+            "马德里、里斯本",
+            "维也纳、布拉格"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "伦敦巴黎等地",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_019",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "地铁的运行轨道通常是",
+        "options": [
+            "全封闭的",
+            "开放的",
+            "半开放的",
+            "混合的"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "全封闭保障安全和效率",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_020",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "世界上最大的商用客机",
+        "options": [
+            "空客A380",
+            "波音747",
+            "空客A350",
+            "波音777"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "A380",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_021",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "港珠澳大桥全长约",
+        "options": [
+            "55公里",
+            "35公里",
+            "45公里",
+            "65公里"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "55km",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_022",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "中国标准动车组被称为",
+        "options": [
+            "复兴号",
+            "和谐号",
+            "新干线",
+            "TGV"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "复兴号",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_023",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "高铁列车的弓网系统主要作用是",
+        "options": [
+            "受流取电",
+            "刹车系统",
+            "通讯网络",
+            "空调供风"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "受电弓",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_024",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "隧道掘进机(TBM)主要用于",
+        "options": [
+            "全断面岩石隧道开挖",
+            "海底沉管",
+            "架空桥梁",
+            "铺设铁轨"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "岩石隧道",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_025",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "无砟轨道相比有砟轨道的优点是",
+        "options": [
+            "更平顺少维护",
+            "造价更低",
+            "施工更简单",
+            "噪音更小"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "平顺且少维护",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_026",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "世界上第一条地铁在",
+        "options": [
+            "伦敦",
+            "纽约",
+            "巴黎",
+            "莫斯科"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "伦敦大都会铁路",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_027",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "悬索桥的主要承重构件是",
+        "options": [
+            "主缆",
+            "桥墩",
+            "桥面",
+            "吊索"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "主缆",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_028",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "斜拉桥和悬索桥的区别在于",
+        "options": [
+            "索直接拉在塔上",
+            "有主缆",
+            "只能建短桥",
+            "没有塔"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "拉索直接到塔",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_029",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "汽车引擎冷却系统主要使用",
+        "options": [
+            "水或防冻液",
+            "机油",
+            "制动液",
+            "空气"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "防冻液",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_030",
+        "domain": "交通与工程",
+        "type": "single",
+        "question": "交通流理论的三大基本参数是",
+        "options": [
+            "流量、速度、密度",
+            "车长、车宽、载重",
+            "油耗、排量、马力",
+            "时间、距离、金钱"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "hard",
+        "explanation": "交通工程学基本参数",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_031",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "现代五大交通运输方式包含",
+        "options": [
+            "公路",
+            "铁路",
+            "水路",
+            "航空及管道"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "easy",
+        "explanation": "五大类",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_032",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "桥梁的基本结构形式有",
+        "options": [
+            "梁桥",
+            "拱桥",
+            "悬索桥",
+            "斜拉桥"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "常见类",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_033",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "全球三大卫星导航系统包括",
+        "options": [
+            "美国的GPS",
+            "中国的北斗",
+            "欧洲的伽利略",
+            "俄罗斯的格洛纳斯"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "hard",
+        "explanation": "四大系统",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_034",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "缓解城市交通拥堵的措施有",
+        "options": [
+            "发展公共交通",
+            "限行限号",
+            "收取拥堵费",
+            "鼓励买私家车"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "买车加剧拥堵",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_035",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "新能源汽车的主要动力类型包括",
+        "options": [
+            "纯电动",
+            "插电混动",
+            "氢燃料电池",
+            "传统柴油"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "柴油不是",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_036",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "智能交通系统(ITS)的应用包括",
+        "options": [
+            "电子不停车收费(ETC)",
+            "自动驾驶",
+            "交通信号协调控制",
+            "人工售票"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "智能控制",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_037",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "高铁和普通火车的区别包括",
+        "options": [
+            "运行速度更快",
+            "轨道要求更高",
+            "通常是动车组",
+            "使用内燃机车"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "高铁使用电力",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_038",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "商用航空器的主要制造商有",
+        "options": [
+            "波音",
+            "空客",
+            "商飞",
+            "福特"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "福特造汽车",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_039",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "集装箱运输的优点",
+        "options": [
+            "装卸效率高",
+            "货物损伤小",
+            "标准化",
+            "只能运液体"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "液体一般用散水运",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "tra_040",
+        "domain": "交通与工程",
+        "type": "multiple",
+        "question": "城市轨道交通包含",
+        "options": [
+            "地铁",
+            "轻轨",
+            "有轨电车",
+            "磁悬浮列车"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "easy",
+        "explanation": "形式多样",
+        "tags": [
+            "综合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "管理学": 0.3,
+            "交叉/生活学科": 0.3
+        }
+    }
 ]

@@ -1,642 +1,793 @@
 [
-  {
-    "id": "ai_001",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "1956年奠定人工智能这一学科术语的历史性会议被称为？",
-    "options": [
-      "日内瓦会议",
-      "达特矛斯会议",
-      "布雷顿森林会议",
-      "图灵学术研讨会"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "1956年的美国达特矛斯会议（Dartmouth Conference）被公认为是人工智能（AI）学科诞生的标志。",
-    "tags": [
-      "AI史",
-      "达特矛斯"
-    ]
-  },
-  {
-    "id": "ai_002",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "阿兰·图灵提出的“图灵测试”主要目的是为了判断机器是否具有？",
-    "options": [
-      "逻辑纠错能力",
-      "超越人类的计算速度",
-      "表现出与人类同等的智能",
-      "自我修复能力"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "图灵测试旨在判断一台机器能否表现出让测试者无法分辨其为机器的人类智能水平。",
-    "tags": [
-      "人工智能",
-      "图灵测试"
-    ]
-  },
-  {
-    "id": "ai_003",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "机器学习（Machine Learning）与人工智能（AI）的关系是？",
-    "options": [
-      "两者是不同的完全独立学科",
-      "AI是机器学习的一个子领域",
-      "机器学习是实现AI的一种途径和子领域",
-      "两者等价且可随时互换"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "人工智能是大概念，机器学习是实现人工智能的一个极其重要的子集/子领域。",
-    "tags": [
-      "基础概念"
-    ]
-  },
-  {
-    "id": "ai_004",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "击败人类围棋世界冠军的AI系统AlphaGo，其核心技术主要依赖于深度学习和？",
-    "options": [
-      "专家系统",
-      "强化学习 (Reinforcement Learning)",
-      "KNN分类算法",
-      "线性回归"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "AlphaGo主要结合了深度卷积神经网络与蒙特卡洛树搜索，并使用了强化学习进行自我对弈进化。",
-    "tags": [
-      "AlphaGo",
-      "强化学习"
-    ]
-  },
-  {
-    "id": "ai_005",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "如果在训练分类模型时，给予的数据集带有明确的正确标签（Label），这种学习方式称为？",
-    "options": [
-      "监督学习",
-      "无监督学习",
-      "半监督学习",
-      "强化学习"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "使用带有标签的数据进行模型训练被称为监督学习（Supervised Learning）。",
-    "tags": [
-      "机器学习",
-      "监督学习"
-    ]
-  },
-  {
-    "id": "ai_006",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "无监督学习中最典型的一种任务是？",
-    "options": [
-      "图像分类",
-      "机器翻译",
-      "聚类 (Clustering)",
-      "回归预测"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "聚类（如K-Means算法）是在没有标签的数据中寻找内部结构和相似性，是典型的无监督学习。",
-    "tags": [
-      "无监督学习",
-      "聚类"
-    ]
-  },
-  {
-    "id": "ai_007",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "在人工神经网络（ANN）中，引入非线性特征，使得网络能够拟合复杂函数的关键组件是？",
-    "options": [
-      "权重 (Weights)",
-      "偏置 (Bias)",
-      "激活函数 (Activation Function)",
-      "池化层 (Pooling)"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "激活函数（如ReLU、Sigmoid）引入了非线性，否则多层神经网络的叠加效果等同于一层线性模型。",
-    "tags": [
-      "神经网络",
-      "激活函数"
-    ]
-  },
-  {
-    "id": "ai_008",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "专门针对于图像识别、对象分类等视觉任务设计，并在近十年取得巨大成功的深度学习网络架构是？",
-    "options": [
-      "CNN (卷积神经网络)",
-      "RNN (循环神经网络)",
-      "GAN (生成对抗网络)",
-      "SVM (支持向量机)"
-    ],
-    "answer": [
-      0
-    ],
-    "difficulty": "easy",
-    "explanation": "卷积神经网络（CNN）通过卷积核提取局部特征，是计算机视觉领域的核心模型结构。",
-    "tags": [
-      "深度学习",
-      "CNN"
-    ]
-  },
-  {
-    "id": "ai_009",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "在自然语言处理(NLP)中，目前占据统治地位，且为GPT模型基础的架构是？",
-    "options": [
-      "RNN",
-      "LSTM",
-      "Transformer",
-      "决策树"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "Transformer是Google于2017年提出的基于自注意力机制的架构，彻底改变了NLP领域。",
-    "tags": [
-      "NLP",
-      "Transformer"
-    ]
-  },
-  {
-    "id": "ai_010",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "在机器学习中，“过拟合”（Overfitting）意味着模型？",
-    "options": [
-      "在训练集和测试集上表现都极差",
-      "在训练集上表现极好，但在未见过的测试集上表现差",
-      "训练速度极慢",
-      "模型过于简单，无法学习数据的特征"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "过拟合是指模型过于复杂，把训练数据的噪音也学去了，导致泛化能力差。",
-    "tags": [
-      "模型评估",
-      "过拟合"
-    ]
-  },
-  {
-    "id": "ai_011",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "在优化神经网络的过程中，用于不断调整参数以最小化损失函数的核心算法通常是？",
-    "options": [
-      "二分查找",
-      "梯度下降 (Gradient Descent)",
-      "贪心算法",
-      "动态规划"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "梯度下降算法是深度学习最基础的优化算法，通过计算损失函数关于参数的梯度来更新权重。",
-    "tags": [
-      "优化算法",
-      "梯度下降"
-    ]
-  },
-  {
-    "id": "ai_012",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "能够通过两个网络（生成器和判别器）相互博弈来生成逼真图像或数据的模型是？",
-    "options": [
-      "CNN",
-      "GAN (生成对抗网络)",
-      "GNN (图神经网络)",
-      "Autoencoder (自编码器)"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "GAN（Generative Adversarial Network）由Ian Goodfellow发明，包含生成器和判别器的零和博弈。",
-    "tags": [
-      "生成模型",
-      "GAN"
-    ]
-  },
-  {
-    "id": "ai_013",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "ChatGPT等大模型属于AIGC，AIGC的核心含义是指？",
-    "options": [
-      "AI芯片制造",
-      "人工智能生成内容",
-      "人工智能通用计算",
-      "AI全球控制"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "easy",
-    "explanation": "AIGC全称 AI-Generated Content，即利用人工智能技术来自动生成文本、图像、音频等内容。",
-    "tags": [
-      "前沿概念",
-      "AIGC"
-    ]
-  },
-  {
-    "id": "ai_014",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "大语言模型（LLM）常会出现“幻觉”（Hallucination），在此语境下幻觉指的是？",
-    "options": [
-      "电脑屏幕闪烁",
-      "模型产生自我意识并做梦",
-      "模型一本正经地生成虚假或不符合事实的信息",
-      "模型拒绝回答任何问题"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "幻觉指AI生成的看似合理连贯但实际上是不正确或与现实不符的虚假陈述。",
-    "tags": [
-      "大模型",
-      "AI幻觉"
-    ]
-  },
-  {
-    "id": "ai_015",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "GPT全称为 Generative Pre-trained Transformer，其中“Pre-trained”指的是？",
-    "options": [
-      "前向传播",
-      "预训练",
-      "预测准确",
-      "精确调整"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "Pre-trained指模型在使用特定数据微调（Fine-tuning）之前，已在海量无标注文本上完成了预训练。",
-    "tags": [
-      "NLP",
-      "GPT"
-    ]
-  },
-  {
-    "id": "ai_016",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "深度学习广泛采用GPU而非仅仅用CPU进行训练的原因主要是？",
-    "options": [
-      "GPU功耗更低",
-      "GPU适合海量数据的并行矩阵运算",
-      "GPU显存通常比主机内存大",
-      "算法要求只能在显卡上运行"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "medium",
-    "explanation": "GPU具备成千上万个计算核心，非常适合深度学习中必须的大规模并行矩阵相乘操作。",
-    "tags": [
-      "硬件",
-      "GPU"
-    ]
-  },
-  {
-    "id": "ai_017",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "通用人工智能 (AGI) 与 弱人工智能 (ANI) 的主要区别在于？",
-    "options": [
-      "前者的运算速度更快",
-      "前者需要量子计算机",
-      "前者能够像人类一样跨领域理解、学习并执行各种智能任务",
-      "前者是目前的行业主流"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "目前的AI都是弱/专用人工智能(ANI)。AGI指的是具备等同甚至超越人类的广泛认知能力的智能体。",
-    "tags": [
-      "AI分类",
-      "AGI"
-    ]
-  },
-  {
-    "id": "ai_018",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "为了评估多分类模型的综合性能，常常用来表示所有分类情况的正误统计矩阵被称为？",
-    "options": [
-      "协方差矩阵",
-      "混淆矩阵 (Confusion Matrix)",
-      "海森矩阵",
-      "单位矩阵"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "混淆矩阵能直观地反应出模型正确分类与误分类分布（包含TP, TN, FP, FN）。",
-    "tags": [
-      "模型评估"
-    ]
-  },
-  {
-    "id": "ai_019",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "将输入的自然语言句子切分成模型可以处理的基础单元的过程叫做？",
-    "options": [
-      "切片运算",
-      "Tokenization (词元化)",
-      "正则化",
-      "归一化"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "Tokenization是将长文本分解为可以被向量化表示的片段（Tokens，如字、词或子词单元）的关键语言预处理步骤。",
-    "tags": [
-      "NLP",
-      "数据预处理"
-    ]
-  },
-  {
-    "id": "ai_020",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "在强化学习中，智能体（Agent）根据什么信号来不断调整自己的动作策略以实现最终目标？",
-    "options": [
-      "异常报错",
-      "重置信号",
-      "奖励 (Reward) 或惩罚",
-      "标签标注"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "medium",
-    "explanation": "Agent通过与环境互动，接收奖励(Reward)信号来最大化长期期望收益。",
-    "tags": [
-      "强化学习"
-    ]
-  },
-  {
-    "id": "ai_021",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "在经典算法中，常用于寻找图或迷宫中最短路径的启发式搜索算法是？",
-    "options": [
-      "冒泡排序",
-      "K-Means",
-      "A* (A-star) 算法",
-      "Apriori算法"
-    ],
-    "answer": [
-      2
-    ],
-    "difficulty": "hard",
-    "explanation": "A* 算法是一种利用启发函数评估优先级的经典寻路算法，在自动驾驶、游戏AI中常用。",
-    "tags": [
-      "经典AI学",
-      "寻路算法"
-    ]
-  },
-  {
-    "id": "ai_022",
-    "domain": "人工智能基础",
-    "type": "single",
-    "question": "解决深度神经网络层数增加带来的“梯度消失/爆炸”问题的一个重要网络结构创新是（常用于ResNet）？",
-    "options": [
-      "增加全连接层",
-      "引入残差连接 (Residual Connection/Skip Connection)",
-      "删除隐藏层",
-      "使用Sigmoid全替代ReLU"
-    ],
-    "answer": [
-      1
-    ],
-    "difficulty": "hard",
-    "explanation": "残差网络(ResNet)通过跳跃连接使得梯度能直接向回传递，成功解决了超深网络的训练难题。",
-    "tags": [
-      "深度学习",
-      "ResNet"
-    ]
-  },
-  {
-    "id": "ai_023",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "按照学习范式，经典的机器学习主要包括哪几种类型？",
-    "options": [
-      "监督学习",
-      "无监督学习",
-      "强化学习",
-      "睡眠学习"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "经典的机器学习三大范式即：监督学习、无监督学习和强化学习。",
-    "tags": [
-      "机器学习"
-    ]
-  },
-  {
-    "id": "ai_024",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "以下哪些是目前工业界及学术界主流的深度学习开源框架？",
-    "options": [
-      "TensorFlow",
-      "PyTorch",
-      "Microsoft Word",
-      "Keras"
-    ],
-    "answer": [
-      0,
-      1,
-      3
-    ],
-    "difficulty": "medium",
-    "explanation": "PyTorch、TensorFlow和构建在其之上的Keras是主流DL框架。Word是文字处理器。",
-    "tags": [
-      "开发工具"
-    ]
-  },
-  {
-    "id": "ai_025",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "自然语言处理（NLP）在生活中的典型应用场景有？",
-    "options": [
-      "机器自动翻译",
-      "语音助手对话",
-      "文本情感分析",
-      "人脸识别门禁"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "前三者均处理文本或语音，属于NLP。人脸识别属于计算机视觉（CV）。",
-    "tags": [
-      "应用场景",
-      "NLP"
-    ]
-  },
-  {
-    "id": "ai_026",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "减轻或防止大模型/神经网络训练中“过拟合”的常见方法有？",
-    "options": [
-      "增加训练数据的多样性和数量",
-      "使用正则化技术（如L1/L2）",
-      "引入Dropout层",
-      "提前停止训练 (Early Stopping)"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "hard",
-    "explanation": "数据增强、正则化约束权重、Dropout随机失活神经元与通过验证集监控Early Stopping均是抗过拟合的重要手段。",
-    "tags": [
-      "模型训练",
-      "优化"
-    ]
-  },
-  {
-    "id": "ai_027",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "在评价一个二分类模型的准确情况时，常涉及哪些评估指标？",
-    "options": [
-      "准确率 (Accuracy)",
-      "精确率 (Precision)",
-      "召回率 (Recall)",
-      "F1分数 (F1 Score)"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "medium",
-    "explanation": "这四大指标全面衡量了分类器对正负样本拦截、检出及平衡性能。",
-    "tags": [
-      "评估指标"
-    ]
-  },
-  {
-    "id": "ai_028",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "历史上的“AI寒冬”（AI Winter）主要是由哪些原因导致的？",
-    "options": [
-      "当时计算能力严重不足",
-      "可用以训练的数据极度匮乏",
-      "专家过度承诺未兑现导致资金撤走",
-      "早期模型如单纯感知机无法解决非线性（如异或）问题"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "difficulty": "medium",
-    "explanation": "硬件落后、无大数据、感知机缺陷导致的理论瓶颈加上资本的失望共同导致了冷冬。",
-    "tags": [
-      "AI史"
-    ]
-  },
-  {
-    "id": "ai_029",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "获得2018年图灵奖，被称为“深度学习三剑客”的科学家有哪些？",
-    "options": [
-      "Geoffrey Hinton",
-      "Yann LeCun",
-      "Yoshua Bengio",
-      "Andrew Ng (吴恩达)"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "hard",
-    "explanation": "Hinton、LeCun 和 Bengio 因在深度学习领域的开创性贡献共获此殊荣。吴恩达也是大牛，但非这三人之列。",
-    "tags": [
-      "主要贡献者"
-    ]
-  },
-  {
-    "id": "ai_030",
-    "domain": "人工智能基础",
-    "type": "multiple",
-    "question": "近年来大火的大型语言模型（LLM）包括以下哪些产品或模型族？",
-    "options": [
-      "GPT-4 (OpenAI)",
-      "Claude (Anthropic)",
-      "Llama (Meta)",
-      "Photoshop (Adobe)"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "difficulty": "easy",
-    "explanation": "GPT、Claude和Llama是近年来最具代表性的大语言模型。Photoshop是图像处理软件。",
-    "tags": [
-      "通用大模型"
-    ]
-  }
+    {
+        "id": "ai_001",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "1956年奠定人工智能这一学科术语的历史性会议被称为？",
+        "options": [
+            "日内瓦会议",
+            "达特矛斯会议",
+            "布雷顿森林会议",
+            "图灵学术研讨会"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "1956年的美国达特矛斯会议（Dartmouth Conference）被公认为是人工智能（AI）学科诞生的标志。",
+        "tags": [
+            "AI史",
+            "达特矛斯"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_002",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "阿兰·图灵提出的“图灵测试”主要目的是为了判断机器是否具有？",
+        "options": [
+            "逻辑纠错能力",
+            "超越人类的计算速度",
+            "表现出与人类同等的智能",
+            "自我修复能力"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "图灵测试旨在判断一台机器能否表现出让测试者无法分辨其为机器的人类智能水平。",
+        "tags": [
+            "人工智能",
+            "图灵测试"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_003",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "机器学习（Machine Learning）与人工智能（AI）的关系是？",
+        "options": [
+            "两者是不同的完全独立学科",
+            "AI是机器学习的一个子领域",
+            "机器学习是实现AI的一种途径和子领域",
+            "两者等价且可随时互换"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "人工智能是大概念，机器学习是实现人工智能的一个极其重要的子集/子领域。",
+        "tags": [
+            "基础概念"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_004",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "击败人类围棋世界冠军的AI系统AlphaGo，其核心技术主要依赖于深度学习和？",
+        "options": [
+            "专家系统",
+            "强化学习 (Reinforcement Learning)",
+            "KNN分类算法",
+            "线性回归"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "AlphaGo主要结合了深度卷积神经网络与蒙特卡洛树搜索，并使用了强化学习进行自我对弈进化。",
+        "tags": [
+            "AlphaGo",
+            "强化学习"
+        ],
+        "vector": {
+            "理学": 1.0,
+            "工学": 0.6,
+            "交叉/生活学科": 0.15
+        }
+    },
+    {
+        "id": "ai_005",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "如果在训练分类模型时，给予的数据集带有明确的正确标签（Label），这种学习方式称为？",
+        "options": [
+            "监督学习",
+            "无监督学习",
+            "半监督学习",
+            "强化学习"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "使用带有标签的数据进行模型训练被称为监督学习（Supervised Learning）。",
+        "tags": [
+            "机器学习",
+            "监督学习"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_006",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "无监督学习中最典型的一种任务是？",
+        "options": [
+            "图像分类",
+            "机器翻译",
+            "聚类 (Clustering)",
+            "回归预测"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "聚类（如K-Means算法）是在没有标签的数据中寻找内部结构和相似性，是典型的无监督学习。",
+        "tags": [
+            "无监督学习",
+            "聚类"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_007",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "在人工神经网络（ANN）中，引入非线性特征，使得网络能够拟合复杂函数的关键组件是？",
+        "options": [
+            "权重 (Weights)",
+            "偏置 (Bias)",
+            "激活函数 (Activation Function)",
+            "池化层 (Pooling)"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "激活函数（如ReLU、Sigmoid）引入了非线性，否则多层神经网络的叠加效果等同于一层线性模型。",
+        "tags": [
+            "神经网络",
+            "激活函数"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 1.0,
+            "文学": 0.2
+        }
+    },
+    {
+        "id": "ai_008",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "专门针对于图像识别、对象分类等视觉任务设计，并在近十年取得巨大成功的深度学习网络架构是？",
+        "options": [
+            "CNN (卷积神经网络)",
+            "RNN (循环神经网络)",
+            "GAN (生成对抗网络)",
+            "SVM (支持向量机)"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "卷积神经网络（CNN）通过卷积核提取局部特征，是计算机视觉领域的核心模型结构。",
+        "tags": [
+            "深度学习",
+            "CNN"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_009",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "在自然语言处理(NLP)中，目前占据统治地位，且为GPT模型基础的架构是？",
+        "options": [
+            "RNN",
+            "LSTM",
+            "Transformer",
+            "决策树"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "Transformer是Google于2017年提出的基于自注意力机制的架构，彻底改变了NLP领域。",
+        "tags": [
+            "NLP",
+            "Transformer"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_010",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "在机器学习中，“过拟合”（Overfitting）意味着模型？",
+        "options": [
+            "在训练集和测试集上表现都极差",
+            "在训练集上表现极好，但在未见过的测试集上表现差",
+            "训练速度极慢",
+            "模型过于简单，无法学习数据的特征"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "过拟合是指模型过于复杂，把训练数据的噪音也学去了，导致泛化能力差。",
+        "tags": [
+            "模型评估",
+            "过拟合"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_011",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "在优化神经网络的过程中，用于不断调整参数以最小化损失函数的核心算法通常是？",
+        "options": [
+            "二分查找",
+            "梯度下降 (Gradient Descent)",
+            "贪心算法",
+            "动态规划"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "梯度下降算法是深度学习最基础的优化算法，通过计算损失函数关于参数的梯度来更新权重。",
+        "tags": [
+            "优化算法",
+            "梯度下降"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.15
+        }
+    },
+    {
+        "id": "ai_012",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "能够通过两个网络（生成器和判别器）相互博弈来生成逼真图像或数据的模型是？",
+        "options": [
+            "CNN",
+            "GAN (生成对抗网络)",
+            "GNN (图神经网络)",
+            "Autoencoder (自编码器)"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "GAN（Generative Adversarial Network）由Ian Goodfellow发明，包含生成器和判别器的零和博弈。",
+        "tags": [
+            "生成模型",
+            "GAN"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_013",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "ChatGPT等大模型属于AIGC，AIGC的核心含义是指？",
+        "options": [
+            "AI芯片制造",
+            "人工智能生成内容",
+            "人工智能通用计算",
+            "AI全球控制"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "AIGC全称 AI-Generated Content，即利用人工智能技术来自动生成文本、图像、音频等内容。",
+        "tags": [
+            "前沿概念",
+            "AIGC"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_014",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "大语言模型（LLM）常会出现“幻觉”（Hallucination），在此语境下幻觉指的是？",
+        "options": [
+            "电脑屏幕闪烁",
+            "模型产生自我意识并做梦",
+            "模型一本正经地生成虚假或不符合事实的信息",
+            "模型拒绝回答任何问题"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "幻觉指AI生成的看似合理连贯但实际上是不正确或与现实不符的虚假陈述。",
+        "tags": [
+            "大模型",
+            "AI幻觉"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_015",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "GPT全称为 Generative Pre-trained Transformer，其中“Pre-trained”指的是？",
+        "options": [
+            "前向传播",
+            "预训练",
+            "预测准确",
+            "精确调整"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "Pre-trained指模型在使用特定数据微调（Fine-tuning）之前，已在海量无标注文本上完成了预训练。",
+        "tags": [
+            "NLP",
+            "GPT"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_016",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "深度学习广泛采用GPU而非仅仅用CPU进行训练的原因主要是？",
+        "options": [
+            "GPU功耗更低",
+            "GPU适合海量数据的并行矩阵运算",
+            "GPU显存通常比主机内存大",
+            "算法要求只能在显卡上运行"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "GPU具备成千上万个计算核心，非常适合深度学习中必须的大规模并行矩阵相乘操作。",
+        "tags": [
+            "硬件",
+            "GPU"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.15
+        }
+    },
+    {
+        "id": "ai_017",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "通用人工智能 (AGI) 与 弱人工智能 (ANI) 的主要区别在于？",
+        "options": [
+            "前者的运算速度更快",
+            "前者需要量子计算机",
+            "前者能够像人类一样跨领域理解、学习并执行各种智能任务",
+            "前者是目前的行业主流"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "目前的AI都是弱/专用人工智能(ANI)。AGI指的是具备等同甚至超越人类的广泛认知能力的智能体。",
+        "tags": [
+            "AI分类",
+            "AGI"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_018",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "为了评估多分类模型的综合性能，常常用来表示所有分类情况的正误统计矩阵被称为？",
+        "options": [
+            "协方差矩阵",
+            "混淆矩阵 (Confusion Matrix)",
+            "海森矩阵",
+            "单位矩阵"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "混淆矩阵能直观地反应出模型正确分类与误分类分布（包含TP, TN, FP, FN）。",
+        "tags": [
+            "模型评估"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_019",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "将输入的自然语言句子切分成模型可以处理的基础单元的过程叫做？",
+        "options": [
+            "切片运算",
+            "Tokenization (词元化)",
+            "正则化",
+            "归一化"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "Tokenization是将长文本分解为可以被向量化表示的片段（Tokens，如字、词或子词单元）的关键语言预处理步骤。",
+        "tags": [
+            "NLP",
+            "数据预处理"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_020",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "在强化学习中，智能体（Agent）根据什么信号来不断调整自己的动作策略以实现最终目标？",
+        "options": [
+            "异常报错",
+            "重置信号",
+            "奖励 (Reward) 或惩罚",
+            "标签标注"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "Agent通过与环境互动，接收奖励(Reward)信号来最大化长期期望收益。",
+        "tags": [
+            "强化学习"
+        ],
+        "vector": {
+            "理学": 1.0,
+            "工学": 0.6,
+            "交叉/生活学科": 0.15
+        }
+    },
+    {
+        "id": "ai_021",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "在经典算法中，常用于寻找图或迷宫中最短路径的启发式搜索算法是？",
+        "options": [
+            "冒泡排序",
+            "K-Means",
+            "A* (A-star) 算法",
+            "Apriori算法"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "hard",
+        "explanation": "A* 算法是一种利用启发函数评估优先级的经典寻路算法，在自动驾驶、游戏AI中常用。",
+        "tags": [
+            "经典AI学",
+            "寻路算法"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_022",
+        "domain": "人工智能基础",
+        "type": "single",
+        "question": "解决深度神经网络层数增加带来的“梯度消失/爆炸”问题的一个重要网络结构创新是（常用于ResNet）？",
+        "options": [
+            "增加全连接层",
+            "引入残差连接 (Residual Connection/Skip Connection)",
+            "删除隐藏层",
+            "使用Sigmoid全替代ReLU"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "残差网络(ResNet)通过跳跃连接使得梯度能直接向回传递，成功解决了超深网络的训练难题。",
+        "tags": [
+            "深度学习",
+            "ResNet"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_023",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "按照学习范式，经典的机器学习主要包括哪几种类型？",
+        "options": [
+            "监督学习",
+            "无监督学习",
+            "强化学习",
+            "睡眠学习"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "经典的机器学习三大范式即：监督学习、无监督学习和强化学习。",
+        "tags": [
+            "机器学习"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_024",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "以下哪些是目前工业界及学术界主流的深度学习开源框架？",
+        "options": [
+            "TensorFlow",
+            "PyTorch",
+            "Microsoft Word",
+            "Keras"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "PyTorch、TensorFlow和构建在其之上的Keras是主流DL框架。Word是文字处理器。",
+        "tags": [
+            "开发工具"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.15
+        }
+    },
+    {
+        "id": "ai_025",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "自然语言处理（NLP）在生活中的典型应用场景有？",
+        "options": [
+            "机器自动翻译",
+            "语音助手对话",
+            "文本情感分析",
+            "人脸识别门禁"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "前三者均处理文本或语音，属于NLP。人脸识别属于计算机视觉（CV）。",
+        "tags": [
+            "应用场景",
+            "NLP"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_026",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "减轻或防止大模型/神经网络训练中“过拟合”的常见方法有？",
+        "options": [
+            "增加训练数据的多样性和数量",
+            "使用正则化技术（如L1/L2）",
+            "引入Dropout层",
+            "提前停止训练 (Early Stopping)"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "hard",
+        "explanation": "数据增强、正则化约束权重、Dropout随机失活神经元与通过验证集监控Early Stopping均是抗过拟合的重要手段。",
+        "tags": [
+            "模型训练",
+            "优化"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_027",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "在评价一个二分类模型的准确情况时，常涉及哪些评估指标？",
+        "options": [
+            "准确率 (Accuracy)",
+            "精确率 (Precision)",
+            "召回率 (Recall)",
+            "F1分数 (F1 Score)"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "这四大指标全面衡量了分类器对正负样本拦截、检出及平衡性能。",
+        "tags": [
+            "评估指标"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_028",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "历史上的“AI寒冬”（AI Winter）主要是由哪些原因导致的？",
+        "options": [
+            "当时计算能力严重不足",
+            "可用以训练的数据极度匮乏",
+            "专家过度承诺未兑现导致资金撤走",
+            "早期模型如单纯感知机无法解决非线性（如异或）问题"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "medium",
+        "explanation": "硬件落后、无大数据、感知机缺陷导致的理论瓶颈加上资本的失望共同导致了冷冬。",
+        "tags": [
+            "AI史"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_029",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "获得2018年图灵奖，被称为“深度学习三剑客”的科学家有哪些？",
+        "options": [
+            "Geoffrey Hinton",
+            "Yann LeCun",
+            "Yoshua Bengio",
+            "Andrew Ng (吴恩达)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "hard",
+        "explanation": "Hinton、LeCun 和 Bengio 因在深度学习领域的开创性贡献共获此殊荣。吴恩达也是大牛，但非这三人之列。",
+        "tags": [
+            "主要贡献者"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    },
+    {
+        "id": "ai_030",
+        "domain": "人工智能基础",
+        "type": "multiple",
+        "question": "近年来大火的大型语言模型（LLM）包括以下哪些产品或模型族？",
+        "options": [
+            "GPT-4 (OpenAI)",
+            "Claude (Anthropic)",
+            "Llama (Meta)",
+            "Photoshop (Adobe)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "GPT、Claude和Llama是近年来最具代表性的大语言模型。Photoshop是图像处理软件。",
+        "tags": [
+            "通用大模型"
+        ],
+        "vector": {
+            "工学": 1.0,
+            "理学": 0.8,
+            "交叉/生活学科": 0.3
+        }
+    }
 ]
