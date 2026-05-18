@@ -1,6 +1,6 @@
 [
     {
-        "id": "gam_001",
+        "id": "game_001",
         "domain": "游戏知识",
         "type": "single",
         "question": "在经典的《超级马里奥兄弟》中，马里奥为了救谁而踏上冒险？",
@@ -26,7 +26,7 @@
         }
     },
     {
-        "id": "gam_002",
+        "id": "game_002",
         "domain": "游戏知识",
         "type": "single",
         "question": "被誉为“电子竞技常青树”、由Valve公司开发的知名第一人称射击游戏系列是？",
@@ -52,7 +52,7 @@
         }
     },
     {
-        "id": "gam_003",
+        "id": "game_003",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "MOBA类（多人在线战术竞技）游戏的代表作有哪些？",
@@ -80,7 +80,7 @@
         }
     },
     {
-        "id": "gam_004",
+        "id": "game_004",
         "domain": "游戏知识",
         "type": "single",
         "question": "《塞尔达传说：旷野之息》是任天堂哪台主机首发时的护航神作？",
@@ -106,7 +106,7 @@
         }
     },
     {
-        "id": "gam_005",
+        "id": "game_005",
         "domain": "游戏知识",
         "type": "single",
         "question": "著名游戏制作人“宫崎英高”主导开发，以极高难度和碎片化叙事闻名并在2022年斩获年度游戏的魂系代表作是？",
@@ -132,7 +132,7 @@
         }
     },
     {
-        "id": "gam_006",
+        "id": "game_006",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "《我的世界》(Minecraft)中的核心玩法通常包括哪些？",
@@ -160,7 +160,7 @@
         }
     },
     {
-        "id": "gam_007",
+        "id": "game_007",
         "domain": "游戏知识",
         "type": "single",
         "question": "《巫师3：狂猎》的主角名叫？",
@@ -186,7 +186,7 @@
         }
     },
     {
-        "id": "gam_008",
+        "id": "game_008",
         "domain": "游戏知识",
         "type": "single",
         "question": "被称为“吃鸡”玩法的游戏类型，其正式名称是？",
@@ -212,7 +212,7 @@
         }
     },
     {
-        "id": "gam_009",
+        "id": "game_009",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "下列哪些是由暴雪娱乐（Valve主要竞争对手之一）开发的游戏？",
@@ -240,7 +240,7 @@
         }
     },
     {
-        "id": "gam_010",
+        "id": "game_010",
         "domain": "游戏知识",
         "type": "single",
         "question": "在《生化危机》(Resident Evil)系列中，制造丧尸病毒的邪恶垄断企业名叫什么？",
@@ -266,7 +266,7 @@
         }
     },
     {
-        "id": "gam_011",
+        "id": "game_011",
         "domain": "游戏知识",
         "type": "single",
         "question": "在著名的沙盒射击游戏《侠盗猎车手5》(GTA V)中，游戏的主要舞台洛圣都（Los Santos）是基于现实中的哪座城市设计的？",
@@ -292,7 +292,7 @@
         }
     },
     {
-        "id": "gam_012",
+        "id": "game_012",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "以下哪些是著名的主机游戏开发商第一方(独占)阵营？",
@@ -320,7 +320,7 @@
         }
     },
     {
-        "id": "gam_013",
+        "id": "game_013",
         "domain": "游戏知识",
         "type": "single",
         "question": "《荒野大镖客：救赎2》的故事背景设定在美国哪个历史时期？",
@@ -346,7 +346,7 @@
         }
     },
     {
-        "id": "gam_014",
+        "id": "game_014",
         "domain": "游戏知识",
         "type": "single",
         "question": "《最终幻想》 (Final Fantasy)系列是由哪家日本公司开发的？",
@@ -372,7 +372,7 @@
         }
     },
     {
-        "id": "gam_015",
+        "id": "game_015",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "传统桌游/实体桌面角色扮演游戏中，TRPG（如《龙与地下城》）进行判定和判决成败最常用的核心道具往往是？",
@@ -401,7 +401,7 @@
         }
     },
     {
-        "id": "gam_016",
+        "id": "game_016",
         "domain": "游戏知识",
         "type": "single",
         "question": "电子游戏中常说的“NPC”是指什么？",
@@ -429,7 +429,7 @@
         }
     },
     {
-        "id": "gam_017",
+        "id": "game_017",
         "domain": "游戏知识",
         "type": "single",
         "question": "被中国玩家称为“猛男捡树枝”的任天堂现象级社交模拟游戏是？",
@@ -455,7 +455,7 @@
         }
     },
     {
-        "id": "gam_018",
+        "id": "game_018",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "《文明》 (Civilization)系列游戏的主要特色玩法标签是“4X”，4X代表哪四个英文单词的缩写？",
@@ -484,7 +484,7 @@
         }
     },
     {
-        "id": "gam_019",
+        "id": "game_019",
         "domain": "游戏知识",
         "type": "single",
         "question": "游戏类型中的“Rogue-like/Rogue-lite”主要特征之一是？",
@@ -510,7 +510,7 @@
         }
     },
     {
-        "id": "gam_020",
+        "id": "game_020",
         "domain": "游戏知识",
         "type": "single",
         "question": "《半条命2》之所以被视为神作，其当时划时代的革命性进步主要体现在？",
@@ -536,7 +536,7 @@
         }
     },
     {
-        "id": "gam_021",
+        "id": "game_021",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "以下哪些是著名的格斗类(FTG)电子游戏系列？",
@@ -564,7 +564,7 @@
         }
     },
     {
-        "id": "gam_022",
+        "id": "game_022",
         "domain": "游戏知识",
         "type": "single",
         "question": "在电竞比赛中，“APM”是衡量选手操作水平的一个重要指标，它代表？",
@@ -590,7 +590,7 @@
         }
     },
     {
-        "id": "gam_023",
+        "id": "game_023",
         "domain": "游戏知识",
         "type": "single",
         "question": "被称为“赛博朋克”风格的游戏《赛博朋克2077》，开发商是因《巫师3》备受赞誉的哪家波兰公司？",
@@ -617,7 +617,7 @@
         }
     },
     {
-        "id": "gam_024",
+        "id": "game_024",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "游戏圈中，玩家如果被称为“云玩家”，通常意味着他？",
@@ -645,7 +645,7 @@
         }
     },
     {
-        "id": "gam_025",
+        "id": "game_025",
         "domain": "游戏知识",
         "type": "single",
         "question": "魂类游戏中，当遇到强力Boss过不去时，玩家间戏称最根本的解决办法是“Git Gud”，这也是什么意思？",
@@ -672,7 +672,7 @@
         }
     },
     {
-        "id": "gam_026",
+        "id": "game_026",
         "domain": "游戏知识",
         "type": "single",
         "question": "知名沙盒游戏《泰拉瑞亚》（Terraria）由于也具有挖矿和建造系统，常被称为2D版的？",
@@ -698,7 +698,7 @@
         }
     },
     {
-        "id": "gam_027",
+        "id": "game_027",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "下列哪些电子游戏具有强烈的“银河恶魔城”（Metroidvania）标签特征？",
@@ -726,7 +726,7 @@
         }
     },
     {
-        "id": "gam_028",
+        "id": "game_028",
         "domain": "游戏知识",
         "type": "single",
         "question": "恐怖生存游戏的鼻祖之一《寂静岭》 (Silent Hill) 系列中，极具标志性压迫感的怪物是？",
@@ -752,7 +752,7 @@
         }
     },
     {
-        "id": "gam_029",
+        "id": "game_029",
         "domain": "游戏知识",
         "type": "single",
         "question": "经常有玩家将“DLC”称作“扩展包”，DLC的全称是什么？",
@@ -782,7 +782,7 @@
         }
     },
     {
-        "id": "gam_030",
+        "id": "game_030",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "在多人游戏中，哪几种定位分配（铁三角）是MMORPG（如魔兽世界）打副本的经典标配？",
@@ -810,7 +810,7 @@
         }
     },
     {
-        "id": "gam_031",
+        "id": "game_031",
         "domain": "游戏知识",
         "type": "single",
         "question": "任天堂著名的角色“卡比” (Kirby) 是一团粉色的圆球，他最主要的能力是？",
@@ -836,7 +836,7 @@
         }
     },
     {
-        "id": "gam_032",
+        "id": "game_032",
         "domain": "游戏知识",
         "type": "single",
         "question": "在《底特律：变人》等互动电影冒险游戏中，玩家常面临“QTE”，QTE代表什么？",
@@ -862,7 +862,7 @@
         }
     },
     {
-        "id": "gam_033",
+        "id": "game_033",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "电竞赛事“Ti” (The International的缩写)和“S赛”分别对应哪两款著名的MOBA游戏总决赛？",
@@ -891,7 +891,7 @@
         }
     },
     {
-        "id": "gam_034",
+        "id": "game_034",
         "domain": "游戏知识",
         "type": "single",
         "question": "被许多玩家视为神作的解谜游戏《传送门》(Portal)，其中贯穿始终、陪伴并刁难玩家的人工智能反派名叫？",
@@ -917,7 +917,7 @@
         }
     },
     {
-        "id": "gam_035",
+        "id": "game_035",
         "domain": "游戏知识",
         "type": "single",
         "question": "在《上古卷轴5》中，玩家因为在游戏中拥有吸收龙魂的力量，被称为？",
@@ -943,7 +943,7 @@
         }
     },
     {
-        "id": "gam_036",
+        "id": "game_036",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "近期在国内非常火的“国产独立游戏/派对游戏”如《猛兽派对》（Party Animals）或者《糖豆人》，其核心乐趣在于？",
@@ -970,7 +970,7 @@
         }
     },
     {
-        "id": "gam_037",
+        "id": "game_037",
         "domain": "游戏知识",
         "type": "single",
         "question": "老玩家常说的“FC”也就是“红白机”，是指任天堂的哪台游戏主机？",
@@ -996,7 +996,7 @@
         }
     },
     {
-        "id": "gam_038",
+        "id": "game_038",
         "domain": "游戏知识",
         "type": "single",
         "question": "主机游戏常常分为第一方、第二方和第三方，这里所说的“第三方”指的是？",
@@ -1022,7 +1022,7 @@
         }
     },
     {
-        "id": "gam_039",
+        "id": "game_039",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "下列哪些元素通常是被称为“生存建造类（Survival Crafting）”游戏（如《方舟》《Rust》《七日杀》）的机制？",
@@ -1051,7 +1051,7 @@
         }
     },
     {
-        "id": "gam_040",
+        "id": "game_040",
         "domain": "游戏知识",
         "type": "single",
         "question": "“G胖”是很多Steam玩家爱恨交加的男人，他是这家公司的联合创始人，其真名叫？",
@@ -1077,7 +1077,7 @@
         }
     },
     {
-        "id": "gam_041",
+        "id": "game_041",
         "domain": "游戏知识",
         "type": "single",
         "question": "著名科幻史诗RPG《质量效应》(Mass Effect) 是哪家曾经擅长刻画深邃剧情的公司制作的代表作？",
@@ -1103,7 +1103,7 @@
         }
     },
     {
-        "id": "gam_042",
+        "id": "game_042",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "索尼的“白金奖杯”、微软Xbox的“成就解锁”，这些系统的初衷是为了什么？",
@@ -1131,7 +1131,7 @@
         }
     },
     {
-        "id": "gam_043",
+        "id": "game_043",
         "domain": "游戏知识",
         "type": "single",
         "question": "很多速通(Speedrun)玩家在玩游戏时会故意利用地图穿模漏洞等跳过大段剧情，这种利用游戏漏洞速通的分类被称为？",
@@ -1157,7 +1157,7 @@
         }
     },
     {
-        "id": "gam_044",
+        "id": "game_044",
         "domain": "游戏知识",
         "type": "single",
         "question": "2016年现象级的移动AR游戏，让无数宅男宅女走上街头去捕捉虚拟怪物的是什么游戏？",
@@ -1183,7 +1183,7 @@
         }
     },
     {
-        "id": "gam_045",
+        "id": "game_045",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "目前游戏领域热议的“云游戏”（Cloud Gaming）其特点包括哪些？",
@@ -1211,7 +1211,7 @@
         }
     },
     {
-        "id": "gam_046",
+        "id": "game_046",
         "domain": "游戏知识",
         "type": "single",
         "question": "《暗黑破坏神》等装备驱动类刷子游戏(Looter)的终局体验（Endgame）往往是？",
@@ -1237,7 +1237,7 @@
         }
     },
     {
-        "id": "gam_047",
+        "id": "game_047",
         "domain": "游戏知识",
         "type": "single",
         "question": "“Rougelike”分类里的命名祖师爷《Rogue》游戏发售于什么时期？",
@@ -1266,7 +1266,7 @@
         }
     },
     {
-        "id": "gam_048",
+        "id": "game_048",
         "domain": "游戏知识",
         "type": "single",
         "question": "对于《英雄联盟》（LOL）这款游戏而言，“大龙”通常指代游戏地图上的哪一种史诗级野怪？",
@@ -1292,7 +1292,7 @@
         }
     },
     {
-        "id": "gam_049",
+        "id": "game_049",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "下列哪些是电子游戏常见的收费商业模式（Monetization）？",
@@ -1322,7 +1322,7 @@
         }
     },
     {
-        "id": "gam_050",
+        "id": "game_050",
         "domain": "游戏知识",
         "type": "single",
         "question": "《双人成行》(It Takes Two) 是哪位知名制作人（常在TGA大奖上飙脏话“Fuck the Oscars”）监制的需要强制两人合作的神作神作？",
@@ -1348,7 +1348,7 @@
         }
     },
     {
-        "id": "gam_051",
+        "id": "game_051",
         "domain": "游戏知识",
         "type": "single",
         "question": "对于游戏设计而言，“Hitbox” (受击判定框) 的作用是？",
@@ -1374,7 +1374,7 @@
         }
     },
     {
-        "id": "gam_052",
+        "id": "game_052",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "下列哪些中国本土开发的游戏作品属于著名的国产单机“三剑”？",
@@ -1402,7 +1402,7 @@
         }
     },
     {
-        "id": "gam_053",
+        "id": "game_053",
         "domain": "游戏知识",
         "type": "single",
         "question": "在经典的战略沙盘游戏《星际争霸》（StarCraft）中，三大种族是人族、神族以及？",
@@ -1428,7 +1428,7 @@
         }
     },
     {
-        "id": "gam_054",
+        "id": "game_054",
         "domain": "游戏知识",
         "type": "single",
         "question": "对于《反恐精英》 (CS:GO) 而言，“ECO局”通常是什么意思？",
@@ -1456,7 +1456,7 @@
         }
     },
     {
-        "id": "gam_055",
+        "id": "game_055",
         "domain": "游戏知识",
         "type": "single",
         "question": "《大航海时代》和《三国志》系列是日本哪家著名游戏公司开发的经典历史策略游戏老字号IP？",
@@ -1485,7 +1485,7 @@
         }
     },
     {
-        "id": "gam_056",
+        "id": "game_056",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "下列哪些平台属于PC（个人电脑）平台的数字游戏发行商城/商店？",
@@ -1513,7 +1513,7 @@
         }
     },
     {
-        "id": "gam_057",
+        "id": "game_057",
         "domain": "游戏知识",
         "type": "single",
         "question": "被称为魂系游戏祖师爷、“赞美太阳”文化来源的作品是？",
@@ -1539,7 +1539,7 @@
         }
     },
     {
-        "id": "gam_058",
+        "id": "game_058",
         "domain": "游戏知识",
         "type": "single",
         "question": "赛车游戏中通常有两类分支，一类像《极限竞速：地平线》《极品飞车》追求爽快，而另一类极其追求物理拟真硬核手感（如《神力科莎》《iRacing》《GT赛车》）的被称为？",
@@ -1565,7 +1565,7 @@
         }
     },
     {
-        "id": "gam_059",
+        "id": "game_059",
         "domain": "游戏知识",
         "type": "multiple",
         "question": "《动物森友会》（动森）里那只总是找你要房贷、掌控着海岛经济命脉的著名狸猫商人叫什么？",
@@ -1591,7 +1591,7 @@
         }
     },
     {
-        "id": "gam_060",
+        "id": "game_060",
         "domain": "游戏知识",
         "type": "single",
         "question": "电子游戏中，让角色能够连续在空中进行两次向上动作的操作通常被简称为？",
