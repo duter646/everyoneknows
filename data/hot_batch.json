@@ -1,0 +1,434 @@
+[
+    {
+        "id": "hot_001",
+        "domain": 36,
+        "type": "single",
+        "question": "2024年的夏季奥运会在哪座城市举办？",
+        "options": [
+            "东京",
+            "伦敦",
+            "巴黎",
+            "洛杉矶"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "第33届夏季奥林匹克运动会于2024年在法国巴黎举行。",
+        "tags": [
+            "时事",
+            "奥运会"
+        ]
+    },
+    {
+        "id": "hot_002",
+        "domain": 36,
+        "type": "single",
+        "question": "近年来引发全球AI浪潮的ChatGPT，是由哪家公司开发的？",
+        "options": [
+            "Google",
+            "Meta",
+            "OpenAI",
+            "Microsoft"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "ChatGPT是受微软投资的OpenAI公司推出的大型语言模型产品。",
+        "tags": [
+            "AI",
+            "科技"
+        ]
+    },
+    {
+        "id": "hot_003",
+        "domain": 36,
+        "type": "multiple",
+        "question": "下列哪些是近年来在碳中和与新能源领域的热门概念或技术？",
+        "options": [
+            "特高压直流输电",
+            "碳交易/碳配额",
+            "固态电池",
+            "蒸汽机复兴"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "新能源与节能降碳是各国政策核心，摒弃高污染的旧式蒸汽机等技术。",
+        "tags": [
+            "新能源",
+            "碳中和"
+        ]
+    },
+    {
+        "id": "hot_004",
+        "domain": 36,
+        "type": "single",
+        "question": "世界首套获批上市的抗击COVID-19的mRNA疫苗主要由哪些公司开发？",
+        "options": [
+            "辉瑞(Pfizer)/BioNTech 和 莫德纳(Moderna)",
+            "强生 和 诺华",
+            "阿斯利康 和 强生",
+            "赛诺菲 和 葛兰素史克"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "medium",
+        "explanation": "辉瑞和莫德纳(Moderna)是全球最早成功推出mRNA新冠疫苗的厂商。",
+        "tags": [
+            "医疗热点",
+            "公共卫生"
+        ]
+    },
+    {
+        "id": "hot_005",
+        "domain": 36,
+        "type": "single",
+        "question": "2023年底，哪款由米哈游开发的二次元游戏在全球获得了TGA最佳移动游戏大奖？",
+        "options": [
+            "《原神》",
+            "《崩坏：星穹铁道》",
+            "《绝区零》",
+            "《幻塔》"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "《崩坏：星穹铁道》获得了2023年TGA最佳移动端游戏奖。",
+        "tags": [
+            "游戏热点",
+            "TGA"
+        ]
+    },
+    {
+        "id": "hot_006",
+        "domain": 36,
+        "type": "multiple",
+        "question": "全球目前正面临哪些普遍性的严峻环境与气候问题？",
+        "options": [
+            "全球变暖导致极端天气频发",
+            "海平面上升",
+            "冰川加速融化",
+            "臭氧层空洞完全消失"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "臭氧层空洞近年来有恢复趋势，但环境危机依然体现在气候变暖及次生灾害。",
+        "tags": [
+            "环境气候",
+            "国际新闻"
+        ]
+    },
+    {
+        "id": "hot_007",
+        "domain": 36,
+        "type": "single",
+        "question": "近年来，中国在航天领域建成的长期有人照料的国家级太空空间站名叫什么？",
+        "options": [
+            "和平号",
+            "国际空间站 (ISS)",
+            "天宫空间站",
+            "神舟空间站"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "中国自主建设并投入运营的基础空间设施命名为“天宫”。",
+        "tags": [
+            "中国航天",
+            "科技成就"
+        ]
+    },
+    {
+        "id": "hot_008",
+        "domain": 36,
+        "type": "single",
+        "question": "在商业航天领域，首次实现运载火箭第一级垂直回收并重复使用的公司是？",
+        "options": [
+            "蓝色起源 (Blue Origin)",
+            "太空探索技术公司 (SpaceX)",
+            "波音",
+            "洛克希德·马丁"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "埃隆·马斯克创立的SpaceX利用猎鹰9号火箭开创了商业火箭可回收的新纪元。",
+        "tags": [
+            "商业航天",
+            "SpaceX"
+        ]
+    },
+    {
+        "id": "hot_009",
+        "domain": 36,
+        "type": "single",
+        "question": "目前常说的“5G网络”主要相比4G的提升不包括哪一项？",
+        "options": [
+            "极高的数据传输速率",
+            "超低的延迟",
+            "支持海量设备的连接",
+            "可以完全替代家庭自来水管"
+        ],
+        "answer": [
+            3
+        ],
+        "difficulty": "easy",
+        "explanation": "5G是通信技术，与输水等物理管道无关。",
+        "tags": [
+            "5G",
+            "通信技术"
+        ]
+    },
+    {
+        "id": "hot_010",
+        "domain": 36,
+        "type": "multiple",
+        "question": "下列哪些属于近些年备受关注的“元宇宙（Metaverse）”领域的相关核心技术支撑？",
+        "options": [
+            "VR/AR/MR 扩展现实技术",
+            "区块链与Web3网络",
+            "云计算与边缘计算",
+            "印刷术"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "元宇宙依赖于高速网络、算力、沉浸显示设备及去中心化技术体系支撑。",
+        "tags": [
+            "元宇宙",
+            "科技趋势"
+        ]
+    },
+    {
+        "id": "hot_011",
+        "domain": 36,
+        "type": "single",
+        "question": "由苹果公司发布的混合现实（MR）头显设备，掀起了空间计算热潮，它的名字是？",
+        "options": [
+            "Apple VR",
+            "Meta Quest",
+            "Apple Vision Pro",
+            "HoloLens"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "苹果于2023年发布了首款空间计算设备 Apple Vision Pro。",
+        "tags": [
+            "消费电子",
+            "苹果"
+        ]
+    },
+    {
+        "id": "hot_012",
+        "domain": 36,
+        "type": "single",
+        "question": "全球首个完全以比特币作为国家法定货币的国家是？",
+        "options": [
+            "美国",
+            "萨尔瓦多",
+            "日本",
+            "英国"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "萨尔瓦多共和国于2021年正式将比特币确立为法定货币。",
+        "tags": [
+            "加密货币",
+            "国际新闻"
+        ]
+    },
+    {
+        "id": "hot_013",
+        "domain": 36,
+        "type": "multiple",
+        "question": "近两年，国际地缘政治格局经历了诸多大变动因素，常被提及的全球供应链热点诉求包括？",
+        "options": [
+            "供应链重构与回流化",
+            "芯片（半导体）产能和技术保护制裁",
+            "逆全球化趋势抬头",
+            "各国完全开放所有核心科技共享"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "保护主义和供应链脱钩断链是近年国际政经的明显趋势。",
+        "tags": [
+            "国际政治",
+            "供应链"
+        ]
+    },
+    {
+        "id": "hot_014",
+        "domain": 36,
+        "type": "single",
+        "question": "我国提出的“双碳”目标是指在什么时间节点前实现碳达峰及碳中和？",
+        "options": [
+            "2025年碳达峰，2050年碳中和",
+            "2030年前实现碳达峰，2060年前实现碳中和",
+            "2050年碳达峰",
+            "2080年碳中和"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "“3060”目标是中国对国际社会的庄严承诺。",
+        "tags": [
+            "环保政策",
+            "双碳"
+        ]
+    },
+    {
+        "id": "hot_015",
+        "domain": 36,
+        "type": "single",
+        "question": "诺贝尔奖物理学奖近年来曾颁发给研究什么的物理学家，证明了量子纠缠并排除了隐变量理论？",
+        "options": [
+            "引力波",
+            "黑洞蒸发",
+            "量子信息科学（阿斯佩、克劳泽、蔡林格）",
+            "拓扑绝缘体"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "hard",
+        "explanation": "2022年诺贝尔物理学奖授予三位科学家以表彰其在量子通信与纠缠领域的奠基工作。",
+        "tags": [
+            "物理前沿",
+            "诺贝尔奖"
+        ]
+    },
+    {
+        "id": "hot_016",
+        "domain": 36,
+        "type": "multiple",
+        "question": "下列哪些互联网现象或产品是近年来席卷全球的标志性风口？",
+        "options": [
+            "短视频平台（如TikTok）的爆炸式增长",
+            "生成式AI工具（如Midjourney、ChatGPT）",
+            "直播带货商业模式崛起",
+            "BP机广泛使用"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "BP机早已淘汰，短视频、生成式AI与直播电商是当今现象级数字风口。",
+        "tags": [
+            "互联网热点",
+            "趋势"
+        ]
+    },
+    {
+        "id": "hot_017",
+        "domain": 36,
+        "type": "single",
+        "question": "欧洲首家市值突破5000亿美元、并在肥胖和糖尿病治疗（如司美格鲁肽）领域取得全球瞩目成就的制药公司是？",
+        "options": [
+            "罗氏",
+            "诺和诺德 (Novo Nordisk)",
+            "强生",
+            "拜耳"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "诺和诺德凭借Ozempic和Wegovy(司美格鲁肽)在减肥减脂领域取得空前商业成功。",
+        "tags": [
+            "医疗热点",
+            "医药"
+        ]
+    },
+    {
+        "id": "hot_018",
+        "domain": 36,
+        "type": "single",
+        "question": "中国近年来下水的首艘国产大型邮轮名为？",
+        "options": [
+            "辽宁号",
+            "山东号",
+            "爱达·魔都号",
+            "长城号"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "“爱达·魔都号”是中国首艘国产大型豪华邮轮，标志着中国造船业在邮轮领域的突破。",
+        "tags": [
+            "中国制造",
+            "船舶热点"
+        ]
+    },
+    {
+        "id": "hot_019",
+        "domain": 36,
+        "type": "multiple",
+        "question": "近期各国对大型科技巨头（如苹果、谷歌等）发起的反垄断焦点往往集中在哪些方面？",
+        "options": [
+            "应用商店的排他性抽成（“苹果税”等）",
+            "强制预装自身应用排除竞品",
+            "滥用市场支配地位封杀第三方支付",
+            "规定员工按时吃午餐"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "多国政府对科技巨头的反垄断审查聚焦于其生态封闭性与滥用支配地位获取不当暴利。",
+        "tags": [
+            "反垄断",
+            "科技互联网"
+        ]
+    },
+    {
+        "id": "hot_020",
+        "domain": 36,
+        "type": "single",
+        "question": "日本政府决定并将已经实施排放的争议性生态事件是？",
+        "options": [
+            "捕杀海豚",
+            "将福岛核电站事故的核污染水处理后排入太平洋",
+            "填海造陆",
+            "废除所有核电站"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "福岛核污水排海在国际与周边国家引发了长期的健康环境担忧和严重外交争议。",
+        "tags": [
+            "国际新闻",
+            "环评争议"
+        ]
+    }
+]

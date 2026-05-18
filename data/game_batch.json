@@ -1,0 +1,1297 @@
+[
+    {
+        "id": "gam_001",
+        "domain": 37,
+        "type": "single",
+        "question": "在经典的《超级马里奥兄弟》中，马里奥为了救谁而踏上冒险？",
+        "options": [
+            "碧琪公主 (Princess Peach)",
+            "塞尔达公主",
+            "林克",
+            "路易吉"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "马里奥的宿命是救被库巴抓走的蘑菇王国碧琪公主。",
+        "tags": [
+            "游戏史",
+            "任天堂"
+        ]
+    },
+    {
+        "id": "gam_002",
+        "domain": 37,
+        "type": "single",
+        "question": "被誉为“电子竞技常青树”、由Valve公司开发的知名第一人称射击游戏系列是？",
+        "options": [
+            "《守望先锋》",
+            "《使命召唤》",
+            "《反恐精英》 (CS/CS:GO/CS2)",
+            "《穿越火线》"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "CS系列二十多年来一直是全球最热门和核心的硬核竞技FPS游戏。",
+        "tags": [
+            "FPS",
+            "电子竞技"
+        ]
+    },
+    {
+        "id": "gam_003",
+        "domain": 37,
+        "type": "multiple",
+        "question": "MOBA类（多人在线战术竞技）游戏的代表作有哪些？",
+        "options": [
+            "《英雄联盟》 (League of Legends)",
+            "《DOTA 2》",
+            "《王者荣耀》",
+            "《我的世界》 (Minecraft)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "Minecraft属于沙盒建造生存，其余三者为经典的PC移动端MOBA巨头。",
+        "tags": [
+            "游戏类型",
+            "MOBA"
+        ]
+    },
+    {
+        "id": "gam_004",
+        "domain": 37,
+        "type": "single",
+        "question": "《塞尔达传说：旷野之息》是任天堂哪台主机首发时的护航神作？",
+        "options": [
+            "Wii U",
+            "Nintendo Switch",
+            "Nintendo 3DS",
+            "GameCube"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "随Switch同捆首发（也发售了WiiU版），重新定义了开放世界游戏。",
+        "tags": [
+            "任天堂",
+            "主机游戏"
+        ]
+    },
+    {
+        "id": "gam_005",
+        "domain": 37,
+        "type": "single",
+        "question": "著名游戏制作人“宫崎英高”主导开发，以极高难度和碎片化叙事闻名并在2022年斩获年度游戏的魂系代表作是？",
+        "options": [
+            "《血源诅咒》",
+            "《黑神话：悟空》",
+            "《艾尔登法环》 (Elden Ring)",
+            "《只狼：影逝二度》"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "《艾尔登法环》结合了乔治·R·R·马丁的神话构建和魂系极高挑战性，横扫2022年各项大奖。",
+        "tags": [
+            "魂类游戏",
+            "ARPG"
+        ]
+    },
+    {
+        "id": "gam_006",
+        "domain": 37,
+        "type": "multiple",
+        "question": "《我的世界》(Minecraft)中的核心玩法通常包括哪些？",
+        "options": [
+            "破坏和放置方块进行建造",
+            "合成（Crafting）工具和武器",
+            "探索无限程序生成的地图",
+            "控制一架波音客机飞行"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "这是一个利用方块构建、生存和探索的沙盒游戏。",
+        "tags": [
+            "沙盒游戏",
+            "Minecraft"
+        ]
+    },
+    {
+        "id": "gam_007",
+        "domain": 37,
+        "type": "single",
+        "question": "《巫师3：狂猎》的主角名叫？",
+        "options": [
+            "叶奈法",
+            "杰洛特 (Geralt of Rivia)",
+            "特莉丝",
+            "希里"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "玩家扮演狩魔猎人“白狼”杰洛特，寻找他的养女希里。",
+        "tags": [
+            "RPG",
+            "巫师系列"
+        ]
+    },
+    {
+        "id": "gam_008",
+        "domain": 37,
+        "type": "single",
+        "question": "被称为“吃鸡”玩法的游戏类型，其正式名称是？",
+        "options": [
+            "塔防游戏 (TD)",
+            "大逃杀 (Battle Royale)",
+            "角色扮演 (RPG)",
+            "回合制策略 (TBS)"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "Battle Royale类型指数十至上百人在不断缩小的安全区内厮杀至最后一人（队伍）。",
+        "tags": [
+            "大逃杀",
+            "射击游戏"
+        ]
+    },
+    {
+        "id": "gam_009",
+        "domain": 37,
+        "type": "multiple",
+        "question": "下列哪些是由暴雪娱乐（Valve主要竞争对手之一）开发的游戏？",
+        "options": [
+            "《魔兽世界》 (World of Warcraft)",
+            "《星际争霸》 (StarCraft)",
+            "《暗黑破坏神》 (Diablo)",
+            "《半条命》 (Half-Life)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "《半条命》是Valve开发的，其余三款是暴雪的经典IP。",
+        "tags": [
+            "暴雪",
+            "PC游戏"
+        ]
+    },
+    {
+        "id": "gam_010",
+        "domain": 37,
+        "type": "single",
+        "question": "在《生化危机》(Resident Evil)系列中，制造丧尸病毒的邪恶垄断企业名叫什么？",
+        "options": [
+            "保护伞公司 / 安布雷拉 (Umbrella Corporation)",
+            "阿布斯泰戈 (Abstergo)",
+            "黑山基地 (Black Mesa)",
+            "三岛财阀"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "经典的反派跨国药企，暗中进行生化武器研发导致了浣熊市惨剧。",
+        "tags": [
+            "恐怖游戏",
+            "生化危机"
+        ]
+    },
+    {
+        "id": "gam_011",
+        "domain": 37,
+        "type": "single",
+        "question": "在著名的沙盒射击游戏《侠盗猎车手5》(GTA V)中，游戏的主要舞台洛圣都（Los Santos）是基于现实中的哪座城市设计的？",
+        "options": [
+            "纽约",
+            "洛杉矶",
+            "迈阿密",
+            "拉斯维加斯"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "Los Santos复刻了南加州及洛杉矶的风貌，包括好莱坞标志（Vinewood）等。",
+        "tags": [
+            "开放世界",
+            "GTA"
+        ]
+    },
+    {
+        "id": "gam_012",
+        "domain": 37,
+        "type": "multiple",
+        "question": "以下哪些是著名的主机游戏开发商第一方(独占)阵营？",
+        "options": [
+            "索尼互动娱乐 (PlayStation Studios)",
+            "任天堂 (Nintendo)",
+            "微软 Xbox Game Studios",
+            "育碧 (Ubisoft)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "索尼、微软、任天堂是当今三大主机硬件厂商及最强的第一方阵容，育碧为第三方厂商。",
+        "tags": [
+            "游戏主机",
+            "第一方"
+        ]
+    },
+    {
+        "id": "gam_013",
+        "domain": 37,
+        "type": "single",
+        "question": "《荒野大镖客：救赎2》的故事背景设定在美国哪个历史时期？",
+        "options": [
+            "美国独立战争",
+            "美国西部拓荒时代末期（19世纪末20世纪初）",
+            "第一次世界大战",
+            "二战后"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "讲述了1899年西部时代即将终结时，范德林德帮的故事。",
+        "tags": [
+            "剧情游戏",
+            "西部题材"
+        ]
+    },
+    {
+        "id": "gam_014",
+        "domain": 37,
+        "type": "single",
+        "question": "《最终幻想》 (Final Fantasy)系列是由哪家日本公司开发的？",
+        "options": [
+            "卡普空 (Capcom)",
+            "科乐美 (Konami)",
+            "史克威尔艾尼克斯 (Square Enix)",
+            "万代南梦宫"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "该系列由SE负责，是JRPG的巅峰代表系列之一。",
+        "tags": [
+            "JRPG",
+            "最终幻想"
+        ]
+    },
+    {
+        "id": "gam_015",
+        "domain": 37,
+        "type": "multiple",
+        "question": "传统桌游/实体桌面角色扮演游戏中，TRPG（如《龙与地下城》）进行判定和判决成败最常用的核心道具往往是？",
+        "options": [
+            "二十面骰子 (d20)",
+            "角色卡/人物卡 (Character Sheet)",
+            "各种多面体骰子",
+            "电脑主机"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "TRPG基于纸笔和骰子运算进行判定，而不需要电脑主机辅助介入。",
+        "tags": [
+            "桌游",
+            "TRPG",
+            "龙与地下城"
+        ]
+    },
+    {
+        "id": "gam_016",
+        "domain": 37,
+        "type": "single",
+        "question": "电子游戏中常说的“NPC”是指什么？",
+        "options": [
+            "网络连接错误",
+            "非玩家角色 (Non-Player Character)",
+            "游戏测试服",
+            "无尽模式"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "指游戏中不由玩家控制，由计算机AI控制的路人、村民或发放任务的人。",
+        "tags": [
+            "游戏术语",
+            "名词"
+        ]
+    },
+    {
+        "id": "gam_017",
+        "domain": 37,
+        "type": "single",
+        "question": "被中国玩家称为“猛男捡树枝”的任天堂现象级社交模拟游戏是？",
+        "options": [
+            "《牧场物语》",
+            "《星露谷物语》",
+            "《集合啦！动物森友会》 (Animal Crossing)",
+            "《星光创造营》"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "动森因为在岛上除草、钓鱼、捡树枝等玩法极其轻松休闲而得名。",
+        "tags": [
+            "休闲游戏",
+            "动森"
+        ]
+    },
+    {
+        "id": "gam_018",
+        "domain": 37,
+        "type": "multiple",
+        "question": "《文明》 (Civilization)系列游戏的主要特色玩法标签是“4X”，4X代表哪四个英文单词的缩写？",
+        "options": [
+            "eXplore (探索)",
+            "eXpand (拓张)",
+            "eXploit (开发)",
+            "eXterminate (消灭)"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "difficulty": "hard",
+        "explanation": "玩家在战略地图上从远古发展到未来，这四个X是所有此类回合制4X策略游戏的核心。",
+        "tags": [
+            "策略游戏",
+            "文明"
+        ]
+    },
+    {
+        "id": "gam_019",
+        "domain": 37,
+        "type": "single",
+        "question": "游戏类型中的“Rogue-like/Rogue-lite”主要特征之一是？",
+        "options": [
+            "可以随时读档存档",
+            "每次游戏地图程序随机生成，死亡后通常会失去全部或大部分进度重头再来 (Permadeath)",
+            "只能联机游玩",
+            "剧情完全一样且是线性打怪"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "肉鸽游戏最大的魅力在于永久死亡机制和每次都不一样的随机关卡体验。",
+        "tags": [
+            "Rogue类",
+            "游戏机制"
+        ]
+    },
+    {
+        "id": "gam_020",
+        "domain": 37,
+        "type": "single",
+        "question": "《半条命2》之所以被视为神作，其当时划时代的革命性进步主要体现在？",
+        "options": [
+            "采用了真正的3D画面",
+            "首次引入了极其拟真、解谜与战斗紧密结合的物理引擎(Source引擎)",
+            "游戏完全免费",
+            "支持百人同屏"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "物理引擎不仅用于表现尸体，更核心的是重力枪系统和基于物理学的关卡解谜。",
+        "tags": [
+            "FPS",
+            "游戏史"
+        ]
+    },
+    {
+        "id": "gam_021",
+        "domain": 37,
+        "type": "multiple",
+        "question": "以下哪些是著名的格斗类(FTG)电子游戏系列？",
+        "options": [
+            "《街头霸王》 (Street Fighter)",
+            "《铁拳》 (Tekken)",
+            "《拳皇》 (The King of Fighters)",
+            "《极限竞速》 (Forza)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "极限竞速(Forza)是赛车游戏，前三个都是享誉全球的硬派格斗游戏。",
+        "tags": [
+            "格斗游戏",
+            "FTG"
+        ]
+    },
+    {
+        "id": "gam_022",
+        "domain": 37,
+        "type": "single",
+        "question": "在电竞比赛中，“APM”是衡量选手操作水平的一个重要指标，它代表？",
+        "options": [
+            "每次点击的伤害",
+            "每分钟操作次数 (Actions Per Minute)",
+            "游戏内的魔法值",
+            "鼠标移动速度"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "如星际和魔兽中，职业选手的APM通常达到300以上，代表手速极快。",
+        "tags": [
+            "电竞",
+            "术语"
+        ]
+    },
+    {
+        "id": "gam_023",
+        "domain": 37,
+        "type": "single",
+        "question": "被称为“赛博朋克”风格的游戏《赛博朋克2077》，开发商是因《巫师3》备受赞誉的哪家波兰公司？",
+        "options": [
+            "CD Projekt RED (CDPR/波兰蠢驴)",
+            "Techland",
+            "Naughty Dog",
+            "Remedy"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "CDPR开发了巫师和2077两部顶级制作并以厚道无加密闻名玩家圈。",
+        "tags": [
+            "赛博朋克",
+            "开发商"
+        ]
+    },
+    {
+        "id": "gam_024",
+        "domain": 37,
+        "type": "multiple",
+        "question": "游戏圈中，玩家如果被称为“云玩家”，通常意味着他？",
+        "options": [
+            "使用云电脑玩游戏",
+            "自己很少或完全没玩过该游戏，仅通过看视频或直播了解",
+            "却喜欢在论坛和评论区指点江山或批评他人",
+            "是最顶级的职业选手"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "云玩家指不亲自去体验实机操作，却喜欢基于表面云体验发表断言的人。",
+        "tags": [
+            "网络语",
+            "玩家社群"
+        ]
+    },
+    {
+        "id": "gam_025",
+        "domain": 37,
+        "type": "single",
+        "question": "魂类游戏中，当遇到强力Boss过不去时，玩家间戏称最根本的解决办法是“Git Gud”，这也是什么意思？",
+        "options": [
+            "作弊修改器",
+            "变强吧/提升自己的操作技术水平 (Get good)",
+            "换个电脑",
+            "充钱买装备"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "源指“get good”，嘲讽或鼓励玩家放弃投机取巧，靠反复受苦练出真本领。",
+        "tags": [
+            "魂系梗",
+            "外网术语"
+        ]
+    },
+    {
+        "id": "gam_026",
+        "domain": 37,
+        "type": "single",
+        "question": "知名沙盒游戏《泰拉瑞亚》（Terraria）由于也具有挖矿和建造系统，常被称为2D版的？",
+        "options": [
+            "塞尔达",
+            "我的世界 (Minecraft)",
+            "星露谷",
+            "魂斗罗"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "虽然侧重点更偏向战斗和探索冒险，但因2D像素建造特色常被与MC相比。",
+        "tags": [
+            "独立游戏",
+            "沙盒"
+        ]
+    },
+    {
+        "id": "gam_027",
+        "domain": 37,
+        "type": "multiple",
+        "question": "下列哪些电子游戏具有强烈的“银河恶魔城”（Metroidvania）标签特征？",
+        "options": [
+            "《空洞骑士》 (Hollow Knight)",
+            "《奥日与黑暗森林》 (Ori)",
+            "《血污：夜之仪式》 (Bloodstained)",
+            "《俄罗斯方块》"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "此类游戏特色是一体化的巨大地图，随着获得新能力不断解锁回溯旧区域。这三款都是此类别名作。",
+        "tags": [
+            "银河恶魔城",
+            "游戏分类"
+        ]
+    },
+    {
+        "id": "gam_028",
+        "domain": 37,
+        "type": "single",
+        "question": "恐怖生存游戏的鼻祖之一《寂静岭》 (Silent Hill) 系列中，极具标志性压迫感的怪物是？",
+        "options": [
+            "暴君",
+            "三角头 (Pyramid Head)",
+            "循声者",
+            "异形"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "三角头头戴巨大金字塔铁盔，手拖巨剑，代表了主角内心的罪恶与惩罚。",
+        "tags": [
+            "恐怖游戏",
+            "怪物设定"
+        ]
+    },
+    {
+        "id": "gam_029",
+        "domain": 37,
+        "type": "single",
+        "question": "经常有玩家将“DLC”称作“扩展包”，DLC的全称是什么？",
+        "options": [
+            "Downloadable Character",
+            "Downloadable Content (可下载内容)",
+            "Direct Link Connection",
+            "Digital Level Code"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "DLC一般指游戏发售后发布的额外新地图、新剧情、新服装等附加购买内容。",
+        "tags": [
+            "游戏名词",
+            "商业模式"
+        ]
+    },
+    {
+        "id": "gam_030",
+        "domain": 37,
+        "type": "multiple",
+        "question": "在多人游戏中，哪几种定位分配（铁三角）是MMORPG（如魔兽世界）打副本的经典标配？",
+        "options": [
+            "坦克 (Tank / 肉盾)",
+            "治疗 / 奶妈 (Healer)",
+            "输出 (DPS / Damage Per Second)",
+            "裁判 (Referee)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "“战法牧”铁三角是几乎所有团队PvE下本的核心职业构架。",
+        "tags": [
+            "MMORPG",
+            "组队机制"
+        ]
+    },
+    {
+        "id": "gam_031",
+        "domain": 37,
+        "type": "single",
+        "question": "任天堂著名的角色“卡比” (Kirby) 是一团粉色的圆球，他最主要的能力是？",
+        "options": [
+            "飞行射箭",
+            "潜水",
+            "将敌人吸入肚子中并吞下，复制复制敌人的能力",
+            "变透明"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "卡比有着巨胃，能通过把敌人吸进去而获得火、剑、雷等数十种不同的能力。",
+        "tags": [
+            "游戏角色",
+            "任天堂"
+        ]
+    },
+    {
+        "id": "gam_032",
+        "domain": 37,
+        "type": "single",
+        "question": "在《底特律：变人》等互动电影冒险游戏中，玩家常面临“QTE”，QTE代表什么？",
+        "options": [
+            "快速反应事件 (Quick Time Event)",
+            "问题测试评估",
+            "质量测试执行",
+            "量子计算"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "玩家必须在屏幕提示出现的极短时间内按下特定按键或按键组合的机制。",
+        "tags": [
+            "游戏机制",
+            "交互设计"
+        ]
+    },
+    {
+        "id": "gam_033",
+        "domain": 37,
+        "type": "multiple",
+        "question": "电竞赛事“Ti” (The International的缩写)和“S赛”分别对应哪两款著名的MOBA游戏总决赛？",
+        "options": [
+            "DOTA 2",
+            "英雄联盟 (LOL)",
+            "守望先锋",
+            "CSGO"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "Ti是Dota2的国际邀请赛；而S系列赛（S1、S10等）是英雄联盟全球总决赛的称呼。",
+        "tags": [
+            "电竞赛事",
+            "MOBA"
+        ]
+    },
+    {
+        "id": "gam_034",
+        "domain": 37,
+        "type": "single",
+        "question": "被许多玩家视为神作的解谜游戏《传送门》(Portal)，其中贯穿始终、陪伴并刁难玩家的人工智能反派名叫？",
+        "options": [
+            "Cortana",
+            "GLaDOS (格拉多斯)",
+            "Siri",
+            "HAL 9000"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "GLaDOS以其独特的刻薄幽默和病娇性格成为了游戏史上最经典的AI反派之一。",
+        "tags": [
+            "解谜游戏",
+            "角色设定"
+        ]
+    },
+    {
+        "id": "gam_035",
+        "domain": 37,
+        "type": "single",
+        "question": "在《上古卷轴5》中，玩家因为在游戏中拥有吸收龙魂的力量，被称为？",
+        "options": [
+            "灰卫",
+            "龙裔 (Dragonborn / Dovahkiin)",
+            "狩魔猎人",
+            "大不净者"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "玩家在天际省的角色是龙裔，能够使用龙之吐息龙吼（如著名的Fus Ro Dah）。",
+        "tags": [
+            "RPG",
+            "上古卷轴"
+        ]
+    },
+    {
+        "id": "gam_036",
+        "domain": 37,
+        "type": "multiple",
+        "question": "近期在国内非常火的“国产独立游戏/派对游戏”如《猛兽派对》（Party Animals）或者《糖豆人》，其核心乐趣在于？",
+        "options": [
+            "极其硬核硬派的操作比拼",
+            "软切或布娃娃物理引擎(Ragdoll physics)带来的滑稽搞笑动作",
+            "和朋友联机之间互相坑害或合作破冰",
+            "沉重深沉的悲剧剧情"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "派对游戏主打简单易上手、节目效果拉满的欢乐互坑氛围。",
+        "tags": [
+            "派对游戏",
+            "联机娱乐"
+        ]
+    },
+    {
+        "id": "gam_037",
+        "domain": 37,
+        "type": "single",
+        "question": "老玩家常说的“FC”也就是“红白机”，是指任天堂的哪台游戏主机？",
+        "options": [
+            "Family Computer",
+            "Fantasy Console",
+            "First Controller",
+            "Final Control"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "FC全称为Family Computer，因其机身红白相间而在中国被广泛称为“红白机”（小霸王的原型）。",
+        "tags": [
+            "复古游戏",
+            "任天堂"
+        ]
+    },
+    {
+        "id": "gam_038",
+        "domain": 37,
+        "type": "single",
+        "question": "主机游戏常常分为第一方、第二方和第三方，这里所说的“第三方”指的是？",
+        "options": [
+            "生产游戏光盘盒子的工厂",
+            "拥有主机的平台商自己",
+            "既不拥有硬件平台，也不被平台商控股的独立游戏开发商/发行商（如EA、卡普空）",
+            "买游戏的玩家"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "平台方是第一方，参股是第二方，完全独立能在任何机器上发布的就是第三方。",
+        "tags": [
+            "游戏产业",
+            "市场常识"
+        ]
+    },
+    {
+        "id": "gam_039",
+        "domain": 37,
+        "type": "multiple",
+        "question": "下列哪些元素通常是被称为“生存建造类（Survival Crafting）”游戏（如《方舟》《Rust》《七日杀》）的机制？",
+        "options": [
+            "玩家初始通常一无所有，需要砍树砸石头收集资源",
+            "合成装备和建造庇护所",
+            "管理饥饿、口渴、体温等生理数值",
+            "通过充值几万元直接购买一把杀死全服玩家的神剑"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "纯正的沙盒生存主打白手起家克服环境困难，Pay to win机制大多在这种主流单机联机生存中遭抵制。",
+        "tags": [
+            "生存游戏",
+            "游戏系统"
+        ]
+    },
+    {
+        "id": "gam_040",
+        "domain": 37,
+        "type": "single",
+        "question": "“G胖”是很多Steam玩家爱恨交加的男人，他是这家公司的联合创始人，其真名叫？",
+        "options": [
+            "比尔·盖茨",
+            "加布·纽维尔 (Gabe Newell)",
+            "岩田聪",
+            "宫本茂"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "G胖是Valve公司的老总，由于常推出Steam大促“抢钱”，但迟迟不出半条命3而被玩家调侃。",
+        "tags": [
+            "游戏人物",
+            "Steam"
+        ]
+    },
+    {
+        "id": "gam_041",
+        "domain": 37,
+        "type": "single",
+        "question": "著名科幻史诗RPG《质量效应》(Mass Effect) 是哪家曾经擅长刻画深邃剧情的公司制作的代表作？",
+        "options": [
+            "Bethesda",
+            "BioWare",
+            "Obsidian (黑曜石)",
+            "Blizzard (暴雪)"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "生动展现了外星种族恩怨结合的太空歌剧，是BioWare的巅峰之作。",
+        "tags": [
+            "RPG",
+            "科幻游戏"
+        ]
+    },
+    {
+        "id": "gam_042",
+        "domain": 37,
+        "type": "multiple",
+        "question": "索尼的“白金奖杯”、微软Xbox的“成就解锁”，这些系统的初衷是为了什么？",
+        "options": [
+            "鼓励玩家挑战游戏的各种困难条件或隐藏要素",
+            "延长游戏的重复游玩寿命",
+            "直接转化为现金",
+            "给玩家一种成就虚荣感展示在个人主页"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "difficulty": "easy",
+        "explanation": "成就/奖杯系统不提供真金白银，主要提供玩家精神满足和游戏附加挑战动力。",
+        "tags": [
+            "游戏系统",
+            "主机体系"
+        ]
+    },
+    {
+        "id": "gam_043",
+        "domain": 37,
+        "type": "single",
+        "question": "很多速通(Speedrun)玩家在玩游戏时会故意利用地图穿模漏洞等跳过大段剧情，这种利用游戏漏洞速通的分类被称为？",
+        "options": [
+            "Glitchless (无漏洞规则)",
+            "Any% / Any Percentage (利用任何手段最快通关)",
+            "100% 全收集",
+            "休闲模式"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "Any%只看最终通关画面用时最短，不管完成度或使用了什么邪门的游戏出图Bug。",
+        "tags": [
+            "竞速通关",
+            "速通文化"
+        ]
+    },
+    {
+        "id": "gam_044",
+        "domain": 37,
+        "type": "single",
+        "question": "2016年现象级的移动AR游戏，让无数宅男宅女走上街头去捕捉虚拟怪物的是什么游戏？",
+        "options": [
+            "《阴阳师》",
+            "《Pokémon GO》 (精灵宝可梦GO)",
+            "《愤怒的小鸟》",
+            "《哈利波特：巫师联盟》"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "Niantic结合了谷歌地图功能，将宝可梦IP投射到真实地理坐标中引起全球狂飙去公园抓精灵。",
+        "tags": [
+            "AR游戏",
+            "手游"
+        ]
+    },
+    {
+        "id": "gam_045",
+        "domain": 37,
+        "type": "multiple",
+        "question": "目前游戏领域热议的“云游戏”（Cloud Gaming）其特点包括哪些？",
+        "options": [
+            "游戏画面在远程高性能服务器上渲染，传回手机或旧电脑",
+            "不需要下载安装几百G的庞大游戏客户端",
+            "极度依赖稳定且低延迟的高速宽带网络",
+            "即使断网也能离线游玩"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "本质是看交互视频，断网直接凉凉。",
+        "tags": [
+            "云游戏",
+            "前沿技术"
+        ]
+    },
+    {
+        "id": "gam_046",
+        "domain": 37,
+        "type": "single",
+        "question": "《暗黑破坏神》等装备驱动类刷子游戏(Looter)的终局体验（Endgame）往往是？",
+        "options": [
+            "看完长达3小时的结局大电影",
+            "为了刷出属性极品（Random Roll）的词条装备，不断重复地刷最高难度秘境/副本",
+            "卸载游戏",
+            "开始建造房子"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "俗称“刷刷刷”游戏，打完主线剧情才意味着装备毕业赛跑的开始。",
+        "tags": [
+            "装备驱动",
+            "游戏模式"
+        ]
+    },
+    {
+        "id": "gam_047",
+        "domain": 37,
+        "type": "single",
+        "question": "“Rougelike”分类里的命名祖师爷《Rogue》游戏发售于什么时期？",
+        "options": [
+            "2010年代的Steam时代",
+            "1980年的早期计算机命令行字符界面时代",
+            "1995年红白机时代",
+            "2000年初的网吧时代"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "hard",
+        "explanation": "《Rogue》采用ASCII字符作为图形显示，创造了随机地牢和永久死亡的深远模式。",
+        "tags": [
+            "游戏极简史",
+            "Rogue历史"
+        ]
+    },
+    {
+        "id": "gam_048",
+        "domain": 37,
+        "type": "single",
+        "question": "对于《英雄联盟》（LOL）这款游戏而言，“大龙”通常指代游戏地图上的哪一种史诗级野怪？",
+        "options": [
+            "远古巨龙",
+            "纳什男爵 (Baron Nashor)",
+            "峡谷先锋",
+            "红Buff"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "玩家俗称为大龙的是男爵Baron，能提供关键团队Buff。",
+        "tags": [
+            "MOBA游戏",
+            "LOL"
+        ]
+    },
+    {
+        "id": "gam_049",
+        "domain": 37,
+        "type": "multiple",
+        "question": "下列哪些是电子游戏常见的收费商业模式（Monetization）？",
+        "options": [
+            "买断制 (Buy-to-play) 发售获得完整游戏",
+            "免费游玩，内购物充值 (Free-to-play + Microtransactions)",
+            "基于时间的月卡/点卡订阅制 (Subscription)",
+            "必须每天给开发商写感谢信"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "这是游戏史上主要的三种商业模式。",
+        "tags": [
+            "游戏行业",
+            "商业模式"
+        ]
+    },
+    {
+        "id": "gam_050",
+        "domain": 37,
+        "type": "single",
+        "question": "《双人成行》(It Takes Two) 是哪位知名制作人（常在TGA大奖上飙脏话“Fuck the Oscars”）监制的需要强制两人合作的神作神作？",
+        "options": [
+            "小岛秀夫",
+            "约瑟夫·法尔斯",
+            "三上真司",
+            "蒂姆·斯维尼"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "法尔斯因其暴脾气和对合作类游戏的极高造诣（前作逃出生天）而闻名。",
+        "tags": [
+            "双人游戏",
+            "TGA大奖"
+        ]
+    },
+    {
+        "id": "gam_051",
+        "domain": 37,
+        "type": "single",
+        "question": "对于游戏设计而言，“Hitbox” (受击判定框) 的作用是？",
+        "options": [
+            "装游戏光盘的盒子",
+            "音乐游戏里的节拍点",
+            "在代码模型中不可见的多边形框，用来计算子弹或攻击是否碰到了这个角色",
+            "游戏内弹出的聊天框"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "命中判定框是射击和格斗游戏最核心的系统判定边界。",
+        "tags": [
+            "游戏术语",
+            "设计"
+        ]
+    },
+    {
+        "id": "gam_052",
+        "domain": 37,
+        "type": "multiple",
+        "question": "下列哪些中国本土开发的游戏作品属于著名的国产单机“三剑”？",
+        "options": [
+            "《仙剑奇侠传》",
+            "《轩辕剑》",
+            "《剑侠情缘》",
+            "《古剑奇谭》"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "国产老三剑是仙剑、轩辕剑、剑侠情缘（古剑被称为新三剑之一）。",
+        "tags": [
+            "国产游戏",
+            "仙侠RPG"
+        ]
+    },
+    {
+        "id": "gam_053",
+        "domain": 37,
+        "type": "single",
+        "question": "在经典的战略沙盘游戏《星际争霸》（StarCraft）中，三大种族是人族、神族以及？",
+        "options": [
+            "兽族",
+            "虫族 (Zerg)",
+            "不死族",
+            "暗夜精灵"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "Zerg虫族依靠庞大的数量和生物异化战术淹没对手网络。",
+        "tags": [
+            "RTS",
+            "星际争霸"
+        ]
+    },
+    {
+        "id": "gam_054",
+        "domain": 37,
+        "type": "single",
+        "question": "对于《反恐精英》 (CS:GO) 而言，“ECO局”通常是什么意思？",
+        "options": [
+            "环保局，游戏地图中种树",
+            "经济局 (Economy Round)，全队不买或极少买装备攒钱以备下一局购买全甲长枪",
+            "疯狂花钱购买投掷物",
+            "退出游戏的局"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "medium",
+        "explanation": "ECO局是CS竞技战术核心，用最廉价手枪度过资金薄弱的回合。",
+        "tags": [
+            "战术射击",
+            "CS赛事"
+        ]
+    },
+    {
+        "id": "gam_055",
+        "domain": 37,
+        "type": "single",
+        "question": "《大航海时代》和《三国志》系列是日本哪家著名游戏公司开发的经典历史策略游戏老字号IP？",
+        "options": [
+            "光荣特库摩 (Koei Tecmo)",
+            "万代南梦宫",
+            "SEGA (世嘉)",
+            "Konami (科乐美)"
+        ],
+        "answer": [
+            0
+        ],
+        "difficulty": "easy",
+        "explanation": "光荣(Koei)以历史题材的模拟策略游戏和无双割草系列见长。",
+        "tags": [
+            "历史策略",
+            "光荣"
+        ]
+    },
+    {
+        "id": "gam_056",
+        "domain": 37,
+        "type": "multiple",
+        "question": "下列哪些平台属于PC（个人电脑）平台的数字游戏发行商城/商店？",
+        "options": [
+            "Steam",
+            "Epic Games Store",
+            "GOG (Good Old Games)",
+            "PlayStation Network (PSN)"
+        ],
+        "answer": [
+            0,
+            1,
+            2
+        ],
+        "difficulty": "easy",
+        "explanation": "PSN是索尼主机的专用网路商店，不是主要负责PC发行的商店。",
+        "tags": [
+            "PC游戏",
+            "Steam"
+        ]
+    },
+    {
+        "id": "gam_057",
+        "domain": 37,
+        "type": "single",
+        "question": "被称为魂系游戏祖师爷、“赞美太阳”文化来源的作品是？",
+        "options": [
+            "《恶魔之魂》",
+            "《黑暗之魂》 (Dark Souls)",
+            "《国王密令》",
+            "《怪物猎人》"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "黑魂中索拉尔等太阳骑士传播的“赞美太阳”成为了圈内绝对的膜拜梗。",
+        "tags": [
+            "ARPG",
+            "黑暗之魂"
+        ]
+    },
+    {
+        "id": "gam_058",
+        "domain": 37,
+        "type": "single",
+        "question": "赛车游戏中通常有两类分支，一类像《极限竞速：地平线》《极品飞车》追求爽快，而另一类极其追求物理拟真硬核手感（如《神力科莎》《iRacing》《GT赛车》）的被称为？",
+        "options": [
+            "街机休闲赛车",
+            "卡丁车",
+            "模拟竞速/拟真赛车 (Sim Racing)",
+            "太空飞船赛"
+        ],
+        "answer": [
+            2
+        ],
+        "difficulty": "medium",
+        "explanation": "Sim Racing通过精准的轮胎级物理摩擦演算逼近真实赛道体验。",
+        "tags": [
+            "RAC",
+            "赛车游戏"
+        ]
+    },
+    {
+        "id": "gam_059",
+        "domain": 37,
+        "type": "multiple",
+        "question": "《动物森友会》（动森）里那只总是找你要房贷、掌控着海岛经济命脉的著名狸猫商人叫什么？",
+        "options": [
+            "西施惠",
+            "Tom Nook (狸克)",
+            "KK",
+            "九尾"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "狸克（Tom Nook）提供房贷但可以无限期慢慢还清，是玩家的“债主”。",
+        "tags": [
+            "动森",
+            "NPC角色"
+        ]
+    },
+    {
+        "id": "gam_060",
+        "domain": 37,
+        "type": "single",
+        "question": "电子游戏中，让角色能够连续在空中进行两次向上动作的操作通常被简称为？",
+        "options": [
+            "冲刺",
+            "二段跳 (Double Jump)",
+            "翻滚",
+            "闪避"
+        ],
+        "answer": [
+            1
+        ],
+        "difficulty": "easy",
+        "explanation": "这是一种极度违背现实物理学，但能极大增强平台跳跃流畅度的经典机制。",
+        "tags": [
+            "动作游戏",
+            "操作机制"
+        ]
+    }
+]
