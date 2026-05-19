@@ -140,7 +140,7 @@ export default function Result() {
 
   const activeDisciplines = useMemo(() => {
     if (!identity) return [] as Discipline[];
-    return DISCIPLINES.filter((d) => identity.totals[d] > 0 || identity.percents[d] > 0);
+    return DISCIPLINES.filter((d) => identity.signals[d] > 0 || identity.percents[d] > 0);
   }, [identity]);
 
   const radarData = useMemo(() => {

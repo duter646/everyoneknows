@@ -9,6 +9,7 @@ interface QuestionFull {
   options: string[];
   answer: number[];
   explanation?: string;
+  vector?: Record<string, number>;
   tags?: string[];
 }
 
@@ -135,6 +136,7 @@ export async function localFetchPaper(count: number): Promise<PaperResponse> {
     options: q.options.map((opt, i) => ({ id: i, text: opt })),
     answer: q.answer,
     explanation: q.explanation,
+    vector: q.vector,
     tags: q.tags
   }));
 
@@ -210,7 +212,8 @@ export async function localScorePaper(token: string, answers: AnswerPayload[]): 
       difficulty: q.difficulty,
       score: itemScore,
       isCorrect,
-      timeSec: t
+      timeSec: t,
+      vector: q.vector
     };
   });
 

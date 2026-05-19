@@ -68,52 +68,51 @@ const DOMAIN_VECTOR: Record<string, Vector> = {
   "音乐常识": { 艺术学: 1 }
 };
 
-const BASE_SCORE_MAP: Record<string, Record<string, number>> = {
-  easy: { single: 10, multiple: 15 },
-  medium: { single: 15, multiple: 22.5 },
-  hard: { single: 20, multiple: 30 }
-};
-
-function getBaseScore(difficulty: string, type: string): number {
-  return BASE_SCORE_MAP[difficulty]?.[type] ?? 10;
-}
-
 const PREFIX_BY_SCORE = [
-  { threshold: 1, label: "人形AI" },
-  { threshold: 0.8, label: "降维打击的学神" },
-  { threshold: 0.6, label: "低分飘过的及格生" },
-  { threshold: 0, label: "刚断奶的小屁孩" }
+  { threshold: 1.0, label: "通晓万物的星童" },
+  { threshold: 0.9, label: "降维打击的学神" },
+  { threshold: 0.8, label: "知识面极其离谱的学霸" },
+  { threshold: 0.6, label: "涉猎广泛的及格生" },
+  { threshold: 0.4, label: "偏科严重的学渣" },
+  { threshold: 0, label: "刚出新手村的小白" }
 ];
 
 const SUFFIX_BY_DISCIPLINE: Record<Discipline, string> = {
-  "哲学": "在野文史哲学者",
+  "哲学": "仰望星空的思想家",
   "经济学": "准华尔街之狼",
-  "法学": "律政先锋",
-  "教育学": "灵魂导师",
-  "文学": "吟游诗人",
-  "历史学": "在野文史哲学者",
-  "理学": "理科做题家",
+  "法学": "无情法外狂徒",
+  "教育学": "灵魂指路黑塔",
+  "文学": "忧郁吟游诗人",
+  "历史学": "穿越时空的记录者",
+  "理学": "洞视宇宙的赛博真理客",
   "工学": "硬核赛博打灰人",
-  "农学": "赛博神农",
+  "农学": "赛博神农后浪",
   "医学": "熬夜秃头的医学生",
-  "军事学": "战术键盘侠",
-  "管理学": "准华尔街之狼",
-  "艺术学": "灵魂派画师",
-  "日子人": "冲浪一级达人"
+  "军事学": "纸上谈兵战术家",
+  "管理学": "职场PUA防御带师",
+  "艺术学": "灵魂派行为艺术家",
+  "日子人": "太有生活了"
 };
 
-const SOFTMAX_TEMPERATURE = 5;
+const SMOOTH_K = 3;
+const CONFIDENCE_K = Math.log(19);
+const SIGNAL_EPSILON = 0.01;
 
-function softmax(values: number[], temperature: number): number[] {
-  const scaled = values.map((v) => v / temperature);
-  const maxVal = Math.max(...scaled);
-  const exps = scaled.map((v) => Math.exp(v - maxVal));
-  const sumExps = exps.reduce((s, v) => s + v, 0);
-  return exps.map((v) => v / sumExps);
+function getVector(item: ScoreItem): Vector {
+  if (item.vector) {
+    const vec: Vector = {};
+    for (const [key, val] of Object.entries(item.vector)) {
+      if (DISCIPLINES.includes(key as Discipline)) {
+        vec[key as Discipline] = val;
+      }
+    }
+    if (Object.keys(vec).length > 0) return vec;
+  }
+  return DOMAIN_VECTOR[item.domain] || { 日子人: 1 };
 }
 
 export interface IdentityResult {
-  totals: Record<Discipline, number>;
+  signals: Record<Discipline, number>;
   percents: Record<Discipline, number>;
   topThree: { discipline: Discipline; percent: number }[];
   title: string;
@@ -127,39 +126,52 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
     return acc;
   }, {} as Record<Discipline, number>);
 
-  const baseScores = DISCIPLINES.reduce((acc, key) => {
+  const effectiveCount = DISCIPLINES.reduce((acc, key) => {
     acc[key] = 0;
     return acc;
   }, {} as Record<Discipline, number>);
 
   items.forEach((item) => {
-    const vector = DOMAIN_VECTOR[item.domain] || { 日子人: 1 };
-    const baseScore = getBaseScore(item.difficulty, item.type);
+    const vector = getVector(item);
     Object.entries(vector).forEach(([discipline, value]) => {
       const key = discipline as Discipline;
-      baseScores[key] += baseScore * (value || 0);
-      userScores[key] += item.score * (value || 0);
+      const w = value || 0;
+      userScores[key] += item.score * w;
+      effectiveCount[key] += w;
     });
   });
 
-  const rateScores: Record<Discipline, number> = DISCIPLINES.reduce((acc, key) => {
-    acc[key] = baseScores[key] > 0 ? userScores[key] / baseScores[key] : 0;
+  const signals = DISCIPLINES.reduce((acc, key) => {
+    const count = effectiveCount[key];
+    if (count <= 0) {
+      acc[key] = 0;
+      return acc;
+    }
+    const avgScore = userScores[key] / count;
+    const confidence = count / (count + SMOOTH_K);
+    acc[key] = avgScore * confidence;
     return acc;
   }, {} as Record<Discipline, number>);
 
-  const rateValues = DISCIPLINES.map((d) => rateScores[d]);
-  const softmaxProbs = softmax(rateValues, SOFTMAX_TEMPERATURE);
+  const sorted = DISCIPLINES
+    .map((d) => ({ discipline: d, signal: signals[d] }))
+    .sort((a, b) => b.signal - a.signal);
 
-  const percents = DISCIPLINES.reduce((acc, key, i) => {
-    acc[key] = Number((softmaxProbs[i] * 100).toFixed(1));
+  const signal1 = sorted[0]?.signal ?? 0;
+  const signal2 = sorted[1]?.signal ?? SIGNAL_EPSILON;
+  const advantage = signal1 / Math.max(signal2, SIGNAL_EPSILON);
+  const topConfidence = 1 / (1 + Math.exp(-CONFIDENCE_K * (advantage - 1)));
+
+  const percents = DISCIPLINES.reduce((acc, key) => {
+    if (signal1 <= 0) {
+      acc[key] = 0;
+      return acc;
+    }
+    acc[key] = Number((topConfidence * (signals[key] / signal1) * 100).toFixed(1));
     return acc;
   }, {} as Record<Discipline, number>);
 
-  const ranked = DISCIPLINES
-    .map((discipline, i) => ({ discipline, score: softmaxProbs[i], index: i }))
-    .sort((a, b) => b.score - a.score);
-
-  const topThree = ranked.slice(0, 3).map((item) => ({
+  const topThree = sorted.slice(0, 3).map((item) => ({
     discipline: item.discipline,
     percent: percents[item.discipline]
   }));
@@ -169,5 +181,5 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
   const suffix = SUFFIX_BY_DISCIPLINE[topDiscipline];
   const title = `你是一个【${prefix}】级别的【${suffix}】！`;
 
-  return { totals: rateScores, percents, topThree, title, prefix, suffix };
+  return { signals, percents, topThree, title, prefix, suffix };
 }

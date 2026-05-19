@@ -15,6 +15,7 @@ export interface QuestionView {
   options: QuestionOptionView[];
   answer: number[];
   explanation?: string;
+  vector?: Record<string, number>;
   tags?: string[];
 }
 
@@ -57,6 +58,7 @@ export interface ScoreItem {
   score: number;
   isCorrect: boolean;
   timeSec?: number;
+  vector?: Record<string, number>;
 }
 
 export interface ScoreSummary {
