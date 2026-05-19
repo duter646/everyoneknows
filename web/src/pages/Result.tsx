@@ -225,39 +225,34 @@ export default function Result() {
                 q.difficulty === "easy" ? "简单" : q.difficulty === "medium" ? "中等" : "困难";
 
               return (
-                <div key={q.id} style={{ padding: "12px 16px", border: "1px solid rgba(34,28,20,0.1)", borderRadius: 8 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                <div key={q.id} className="detail-item">
+                  <div className="detail-header">
                     <span className="tag">第 {idx + 1} 题</span>
                     <span className="tag">{q.domain}</span>
                     <span className="tag">{q.type === "multiple" ? "多选" : "单选"}</span>
                     <span className="tag">{difficultyLabel}</span>
-                    <span style={{ marginLeft: "auto", fontWeight: 600, color: isCorrect ? "#2e7d32" : "#c62828" }}>
+                    <span className={`detail-status ${isCorrect ? "correct" : "wrong"}`}>
                       {isCorrect ? "正确" : "错误"} · {scoreItem?.score ?? 0}分
                     </span>
                   </div>
-                  <p style={{ margin: "0 0 8px", fontSize: 15 }}>{q.question}</p>
-                  <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                  <p className="detail-question">{q.question}</p>
+                  <div className="detail-options">
                     {q.options.map((opt) => {
                       const isUserChoice = userSelected.includes(opt.id);
                       const isCorrectOption = correctAnswer.includes(opt.id);
-                      let optStyle: React.CSSProperties = { padding: "4px 8px", borderRadius: 4, fontSize: 14 };
-                      if (isCorrectOption) {
-                        optStyle = { ...optStyle, background: "rgba(46,125,50,0.12)", color: "#2e7d32", fontWeight: 600 };
-                      } else if (isUserChoice && !isCorrectOption) {
-                        optStyle = { ...optStyle, background: "rgba(198,40,40,0.12)", color: "#c62828", textDecoration: "line-through" };
-                      }
+                      let cls = "detail-opt";
+                      if (isCorrectOption) cls += " opt-correct";
+                      else if (isUserChoice && !isCorrectOption) cls += " opt-wrong";
                       const prefix = isCorrectOption ? "✓" : isUserChoice && !isCorrectOption ? "✗" : " ";
                       return (
-                        <div key={opt.id} style={optStyle}>
+                        <div key={opt.id} className={cls}>
                           {prefix} {String.fromCharCode(65 + opt.id)}. {opt.text}
                         </div>
                       );
                     })}
                   </div>
                   {q.explanation && (
-                    <p style={{ marginTop: 8, fontSize: 13, color: "rgba(34,28,20,0.6)", fontStyle: "italic" }}>
-                      解析：{q.explanation}
-                    </p>
+                    <p className="detail-explanation">解析：{q.explanation}</p>
                   )}
                 </div>
               );

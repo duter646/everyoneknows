@@ -1,93 +1,81 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { fetchMeta } from "../lib/api";
-import { Meta } from "../lib/types";
+
+const RULES = [
+  { icon: "📋", title: "题型与题量", desc: "30/40/50 题可选，单选为主，多选为辅，领域均衡覆盖。" },
+  { icon: "🎯", title: "计分规则", desc: "单选按难度得 10/15/20 分，多选全对得 15/22.5/30 分。漏选按比例计分，含错选 0 分。" },
+  { icon: "⚡", title: "时间因子", desc: "答得越快奖励越高，秒答(<2s)惩罚。超时线性衰减，保底 0.5 倍。" },
+  { icon: "📊", title: "百分制归一", desc: "最终得分归一化到百分制，不同题量可公平对比。" },
+  { icon: "🧬", title: "学科画像", desc: "基于得分率 + softmax 推测你的学科倾向，生成雷达图与趣味身份。" }
+];
 
 export default function Home() {
-  const [meta, setMeta] = useState<Meta | null>(null);
   const navigate = useNavigate();
   const [questionCount, setQuestionCount] = useState(30);
-
-  useEffect(() => {
-    fetchMeta()
-      .then(setMeta)
-      .catch(() => setMeta(null));
-  }, []);
+  const [showRules, setShowRules] = useState(false);
 
   return (
-    <div className="grid" style={{ gap: 24 }}>
-      <div className="section hero">
-        <div>
-          <h1>EveryoneKnows 世界知识擂台</h1>
-          <p>
-            {questionCount} 题极速挑战，覆盖 40+ 常识领域。答完立刻生成你的学科画像与雷达图，
-            把你的知识版图晒上排行榜。
-          </p>
-          <div className="form-row">
-            <select
-              className="input-base"
-              style={{ padding: "0.4rem 1rem", borderRadius: "999px" }}
-              value={questionCount}
-              onChange={(e) => setQuestionCount(Number(e.target.value))}
+    <div className="home">
+      <div className="home-center">
+        <div className="home-logo">EK</div>
+        <h1 className="home-title">EveryoneKnows</h1>
+        <p className="home-subtitle">世界知识擂台</p>
+
+        <div className="home-count-select">
+          {[
+            { val: 30, label: "30 题", tag: "进阶" },
+            { val: 40, label: "40 题", tag: "资深" },
+            { val: 50, label: "50 题", tag: "极客" }
+          ].map((item) => (
+            <button
+              key={item.val}
+              className={`count-btn ${questionCount === item.val ? "active" : ""}`}
+              onClick={() => setQuestionCount(item.val)}
             >
-              <option value={30}>30 题进阶</option>
-              <option value={40}>40 题资深</option>
-              <option value={50}>50 题极客</option>
-            </select>
-            <button className="btn" onClick={() => navigate(`/quiz?count=${questionCount}`)}>开始挑战</button>
-            <button className="btn secondary" onClick={() => navigate("/leaderboard")}>去看榜单</button>
-          </div>
-          <div className="badge-row" style={{ marginTop: 18 }}>
-            <span className="badge">单选为主，多选为辅</span>
-            <span className="badge">领域覆盖优先</span>
-            <span className="badge">难度梯度合理</span>
-          </div>
+              <span className="count-num">{item.label}</span>
+              <span className="count-tag">{item.tag}</span>
+            </button>
+          ))}
         </div>
-        <div className="grid two">
-          <div className="stat-card">
-            <span>题库规模</span>
-            <strong>{meta ? `${meta.questionCount}+` : "加载中"}</strong>
-            <span className="note">题库持续扩容，后续题量持续增长。</span>
-          </div>
-          <div className="stat-card">
-            <span>覆盖领域</span>
-            <strong>{meta ? `${meta.domainCount}+` : "加载中"}</strong>
-            <span className="note">每次测试尽可能均衡覆盖。</span>
-          </div>
-          <div className="stat-card">
-            <span>游戏化结算</span>
-            <strong>身份鉴定 + 雷达图</strong>
-            <span className="note">基于学科向量推测你的知识偏好。</span>
-          </div>
-          <div className="stat-card">
-            <span>排行榜机制</span>
-            <strong>得分率优先</strong>
-            <span className="note">速度也重要，快且准才能登顶。</span>
-          </div>
-        </div>
+
+        <button
+          className="home-start"
+          onClick={() => navigate(`/quiz?count=${questionCount}`)}
+        >
+          开始挑战
+        </button>
       </div>
 
-      <div className="section">
-        <h2>规则速览</h2>
-        <div className="grid two">
-          <div className="stat-card">
-            <strong>题量与题型</strong>
-            <span className="note">每次 {questionCount} 题，单选为主，多选为辅。</span>
-          </div>
-          <div className="stat-card">
-            <strong>计分规则</strong>
-            <span className="note">单选答对按难度得10/15/20分，多选全对得15/22.5/30分；漏选按比例计分；含错选0分。</span>
-          </div>
-          <div className="stat-card">
-            <strong>领域均衡</strong>
-            <span className="note">同一领域最多 3 题，尽可能多覆盖不同领域。</span>
-          </div>
-          <div className="stat-card">
-            <strong>排行榜</strong>
-            <span className="note">按得分率排序，同分看用时。</span>
-          </div>
-        </div>
+      <div className="home-actions">
+        <button className="home-link" onClick={() => setShowRules(!showRules)}>
+          {showRules ? "收起规则" : "游戏规则"}
+        </button>
+        <button className="home-link" onClick={() => navigate("/leaderboard")}>
+          排行榜
+        </button>
+        <a
+          className="home-link"
+          href="https://github.com/duter646/everyoneknows"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
+
+      {showRules && (
+        <div className="home-rules">
+          {RULES.map((rule) => (
+            <div key={rule.title} className="rule-item">
+              <span className="rule-icon">{rule.icon}</span>
+              <div>
+                <strong>{rule.title}</strong>
+                <p>{rule.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
