@@ -250,10 +250,10 @@
         "type": "multiple",
         "question": "在现代军事概念中，C4ISR系统首字母C代表的四项是指什么？",
         "options": [
-            "Command (指挥)",
-            "Control (控制)",
-            "Communications (通信)",
-            "Computers (计算机)"
+            "Command",
+            "Control",
+            "Communications",
+            "Computers"
         ],
         "answer": [
             0,
@@ -308,7 +308,7 @@
         "question": "“隐身战机”能够“隐身”的主要原理是？",
         "options": [
             "肉眼看不见",
-            "雷达波反射面积极小(RCS小)",
+            "雷达波反射面积极小",
             "不发出声音",
             "不会被红外线探测"
         ],
@@ -614,7 +614,7 @@
         "options": [
             "防弹衣",
             "宇航服",
-            "排爆服（防爆服）",
+            "排爆服",
             "防火服"
         ],
         "answer": [

@@ -30,19 +30,17 @@ async function invokeFunction<T>(
 }
 
 export function fetchMeta() {
-  return invokeFunction<Meta>("meta");
+  return localFetchMeta();
 }
 
+import { localFetchPaper, localScorePaper, localFetchMeta } from "./localQuiz";
+
 export function fetchPaper(count: number) {
-  return invokeFunction<PaperResponse>("paper", { count });
+  return localFetchPaper(count);
 }
 
 export async function scorePaper(token: string, answers: AnswerPayload[]) {
-  const result = await invokeFunction<{ summary: ScoreSummary }>("score", {
-    token,
-    answers
-  });
-  return result.summary;
+  return localScorePaper(token, answers);
 }
 
 export async function submitLeaderboard(
@@ -51,13 +49,39 @@ export async function submitLeaderboard(
   nickname: string,
   durationSec: number
 ) {
-  const result = await invokeFunction<{ entry: LeaderboardEntry }>("submit", {
-    token,
-    answers,
-    nickname,
-    durationSec
-  });
-  return result.entry;
+  const summary = await localScorePaper(token, answers);
+  
+  // Insert directly into Supabase instead of using Edge Function
+  const { data, error } = await supabase
+    .from("leaderboard")
+    .insert([
+      {
+        nickname,
+        score: summary.score,
+        correct_count: summary.correctCount,
+        total_count: summary.totalCount,
+        accuracy: summary.totalCount > 0 ? (summary.correctCount / summary.totalCount) * 100 : 0,
+        duration_sec: durationSec
+      }
+    ])
+    .select()
+    .single();
+
+  if (error) {
+    throw new Error(error.message || "Failed to submit leaderboard");
+  }
+
+  return {
+    rank: 0, // Mock rank
+    id: data.id,
+    nickname: data.nickname,
+    score: data.score,
+    correctCount: data.correct_count,
+    totalCount: data.total_count,
+    accuracy: Number(data.accuracy),
+    durationSec: data.duration_sec,
+    submittedAt: new Date(data.submitted_at).getTime()
+  } as LeaderboardEntry;
 }
 
 export async function fetchLeaderboard(limit = 100) {

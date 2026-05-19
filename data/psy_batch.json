@@ -340,10 +340,10 @@
         "type": "multiple",
         "question": "人格特征的“大五人格”模型（Big Five）包括哪些维度？",
         "options": [
-            "外向性(Extraversion)",
-            "宜人性(Agreeableness)",
-            "神经质或情绪不稳定性(Neuroticism)",
-            "压抑性(Repression)"
+            "外向性",
+            "宜人性",
+            "神经质或情绪不稳定性",
+            "压抑性"
         ],
         "answer": [
             0,
@@ -372,7 +372,7 @@
             "否认",
             "投射",
             "升华",
-            "倒退（退行）"
+            "倒退"
         ],
         "answer": [
             0,
