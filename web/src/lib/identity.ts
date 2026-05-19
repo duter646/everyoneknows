@@ -98,6 +98,16 @@ const SMOOTH_K = 3;
 const CONFIDENCE_K = Math.log(19);
 const SIGNAL_EPSILON = 0.01;
 
+const BASE_SCORE_MAP: Record<string, Record<string, number>> = {
+  easy: { single: 10, multiple: 15 },
+  medium: { single: 15, multiple: 22.5 },
+  hard: { single: 20, multiple: 30 }
+};
+
+function getBaseScore(difficulty: string, type: string): number {
+  return BASE_SCORE_MAP[difficulty]?.[type] ?? 10;
+}
+
 function getVector(item: ScoreItem): Vector {
   if (item.vector) {
     const vec: Vector = {};
