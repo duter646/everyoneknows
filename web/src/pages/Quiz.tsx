@@ -10,6 +10,7 @@ interface ResultPayload {
   token: string;
   durationSec: number;
   questions: QuestionView[];
+  difficultyProfile: string;
 }
 
 export default function Quiz() {
@@ -134,7 +135,8 @@ export default function Quiz() {
         answers: payloadAnswers,
         token: paper.token,
         durationSec,
-        questions: paper.questions
+        questions: paper.questions,
+        difficultyProfile: diffProfile
       };
       sessionStorage.setItem("lastResult", JSON.stringify(payload));
       navigate("/result", { state: payload });

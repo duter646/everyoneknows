@@ -86,6 +86,7 @@ export interface LeaderboardEntry {
   totalCount: number;
   accuracy: number;
   durationSec: number;
+  difficultyProfile: string;
   submittedAt: number;
 }
 
@@ -97,5 +98,6 @@ export interface LeaderboardRow {
   total_count: number;
   accuracy: number | string;
   duration_sec: number;
+  difficulty_profile: string;
   submitted_at: string;
 }

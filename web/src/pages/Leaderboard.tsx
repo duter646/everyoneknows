@@ -4,20 +4,40 @@ import { fetchLeaderboard } from "../lib/api";
 import { LeaderboardEntry } from "../lib/types";
 import { formatDate, formatDuration } from "../lib/format";
 
+const DIFF_TABS = [
+  { key: "721", label: "轻松" },
+  { key: "343", label: "均衡" },
+  { key: "136", label: "硬核" }
+];
+
 export default function Leaderboard() {
+  const [activeTab, setActiveTab] = useState("343");
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchLeaderboard(100)
+    setError(null);
+    fetchLeaderboard(100, activeTab)
       .then(setEntries)
       .catch(() => setError("排行榜加载失败"));
-  }, []);
+  }, [activeTab]);
 
   return (
     <div className="section">
       <h2>排行榜 Top 100</h2>
+      <div className="diff-tabs" style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+        {DIFF_TABS.map((t) => (
+          <button
+            key={t.key}
+            className={`btn ghost ${activeTab === t.key ? "active" : ""}`}
+            onClick={() => setActiveTab(t.key)}
+            style={activeTab === t.key ? { borderColor: "var(--accent)", color: "var(--accent)" } : {}}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
       {error ? (
         <p>{error}</p>
       ) : (

@@ -47,11 +47,11 @@ export async function submitLeaderboard(
   token: string,
   answers: AnswerPayload[],
   nickname: string,
-  durationSec: number
+  durationSec: number,
+  difficultyProfile: string = "343"
 ) {
   const summary = await localScorePaper(token, answers);
   
-  // Insert directly into Supabase instead of using Edge Function
   const { data, error } = await supabase
     .from("leaderboard")
     .insert([
@@ -61,7 +61,8 @@ export async function submitLeaderboard(
         correct_count: summary.correctCount,
         total_count: summary.totalCount,
         accuracy: summary.totalCount > 0 ? (summary.correctCount / summary.totalCount) * 100 : 0,
-        duration_sec: durationSec
+        duration_sec: durationSec,
+        difficulty_profile: difficultyProfile
       }
     ])
     .select()
@@ -72,7 +73,7 @@ export async function submitLeaderboard(
   }
 
   return {
-    rank: 0, // Mock rank
+    rank: 0,
     id: data.id,
     nickname: data.nickname,
     score: data.score,
@@ -80,18 +81,25 @@ export async function submitLeaderboard(
     totalCount: data.total_count,
     accuracy: Number(data.accuracy),
     durationSec: data.duration_sec,
+    difficultyProfile: data.difficulty_profile || "343",
     submittedAt: new Date(data.submitted_at).getTime()
   } as LeaderboardEntry;
 }
 
-export async function fetchLeaderboard(limit = 100) {
-  const { data, error } = await supabase
+export async function fetchLeaderboard(limit = 100, difficultyProfile?: string) {
+  let query = supabase
     .from("leaderboard")
-    .select("id, nickname, score, correct_count, total_count, accuracy, duration_sec, submitted_at")
-    .order("accuracy", { ascending: false })
+    .select("id, nickname, score, correct_count, total_count, accuracy, duration_sec, difficulty_profile, submitted_at")
+    .order("score", { ascending: false })
     .order("duration_sec", { ascending: true })
     .order("submitted_at", { ascending: true })
     .limit(limit);
+
+  if (difficultyProfile) {
+    query = query.eq("difficulty_profile", difficultyProfile);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     throw new Error(error.message || "Failed to load leaderboard");
@@ -107,6 +115,7 @@ export async function fetchLeaderboard(limit = 100) {
     totalCount: row.total_count,
     accuracy: Number(row.accuracy),
     durationSec: row.duration_sec,
+    difficultyProfile: row.difficulty_profile || "343",
     submittedAt: new Date(row.submitted_at).getTime()
   }));
 }

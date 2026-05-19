@@ -23,6 +23,7 @@ interface ResultPayload {
   token: string;
   durationSec: number;
   questions: QuestionView[];
+  difficultyProfile: string;
 }
 
 const ALL_ACHIEVEMENTS = [
@@ -51,20 +52,26 @@ export default function Result() {
   const [showDomainStats, setShowDomainStats] = useState(false);
   const [showDetail, setShowDetail] = useState(false);
   const [lbEntries, setLbEntries] = useState<LeaderboardEntry[]>([]);
+  const [lbTab, setLbTab] = useState<string>("343");
 
   useEffect(() => {
     const statePayload = location.state as ResultPayload | null;
     if (statePayload?.summary) {
       setPayload(statePayload);
+      if (statePayload.difficultyProfile) setLbTab(statePayload.difficultyProfile);
       return;
     }
     const stored = sessionStorage.getItem("lastResult");
-    if (stored) setPayload(JSON.parse(stored));
+    if (stored) {
+      const parsed = JSON.parse(stored) as ResultPayload;
+      setPayload(parsed);
+      if (parsed.difficultyProfile) setLbTab(parsed.difficultyProfile);
+    }
   }, [location.state]);
 
   useEffect(() => {
-    fetchLeaderboard(100).then(setLbEntries).catch(() => {});
-  }, []);
+    fetchLeaderboard(100, lbTab).then(setLbEntries).catch(() => {});
+  }, [lbTab]);
 
   const summary = payload?.summary;
 
@@ -96,11 +103,10 @@ export default function Result() {
     const lastItem = summary.items[summary.items.length - 1];
     const hasHardFast = summary.items.some((i) => i.difficulty === "hard" && i.isCorrect && (i.timeSec || 99) <= 3);
     const hasFocused = domainStats.some((d) => d.total > 0 && d.correct === d.total);
-    const noInstantAnswer = summary.items.every((i) => (i.timeSec || 0) >= 2);
+    const noInstantAnswer = summary.items.every((i) => (i.timeSec || 0) >= 1);
     const multiAllCorrect = summary.multiStats.total > 0 && summary.multiStats.fullyCorrect === summary.multiStats.total;
     const hardCorrect = summary.items.filter((i) => i.difficulty === "hard" && i.isCorrect).length;
-    const noEmpty = summary.items.every((i) => i.score > 0 || i.isCorrect);
-    const allAnswered = payload.answers.length >= summary.totalCount;
+    const allAnswered = payload.answers.every((a) => a.selected && a.selected.length > 0);
 
     const unlocked = new Set<string>();
     if (hasHardFast) unlocked.add("量子阅读");
@@ -153,7 +159,7 @@ export default function Result() {
     setUploading(true);
     setUploadStatus(null);
     try {
-      const entry = await submitLeaderboard(payload.token, payload.answers, nickname, payload.durationSec);
+      const entry = await submitLeaderboard(payload.token, payload.answers, nickname, payload.durationSec, payload.difficultyProfile);
       setUploadStatus(`已上传：${entry.nickname} / ${entry.score} 分`);
     } catch {
       setUploadStatus("上传失败，请稍后再试。");
@@ -327,6 +333,18 @@ export default function Result() {
           <button className="btn" onClick={handleUpload} disabled={uploading}>上传成绩</button>
         </div>
         {uploadStatus && <p className="note" style={{ marginBottom: 8 }}>{uploadStatus}</p>}
+        <div className="diff-tabs" style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+          {[{ key: "721", label: "轻松" }, { key: "343", label: "均衡" }, { key: "136", label: "硬核" }].map((t) => (
+            <button
+              key={t.key}
+              className={`btn ghost ${lbTab === t.key ? "active" : ""}`}
+              onClick={() => setLbTab(t.key)}
+              style={lbTab === t.key ? { borderColor: "var(--accent)", color: "var(--accent)" } : {}}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
         {lbEntries.length > 0 ? (
           <div style={{ overflowX: "auto", maxHeight: 320, overflowY: "auto" }}>
             <table className="table">

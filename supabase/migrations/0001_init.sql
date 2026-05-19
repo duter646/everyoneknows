@@ -26,6 +26,7 @@ create table if not exists leaderboard (
   total_count int not null,
   accuracy numeric(6, 4) not null,
   duration_sec int not null,
+  difficulty_profile text not null default '343',
   submitted_at timestamptz not null default now()
 );
 
