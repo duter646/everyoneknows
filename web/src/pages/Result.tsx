@@ -70,14 +70,18 @@ export default function Result() {
       .sort((a, b) => b.rate - a.rate);
   }, [summary]);
 
-  const scoreRate = summary ? summary.score / summary.totalPossible : 0;
+  const scoreRate = summary
+    ? summary.rawBaseTotal && summary.rawBaseTotal > 0
+      ? (summary.rawUserTotal ?? summary.score) / summary.rawBaseTotal
+      : summary.score / summary.totalPossible
+    : 0;
   const identity = summary ? scoreIdentity(summary.items, scoreRate) : null;
 
   const achievements = useMemo(() => {
     if (!summary || !payload) {
       return [] as { title: string; desc: string }[];
     }
-    const passLine = Math.ceil(summary.totalPossible * 0.6);
+    const passLine = 60;
     const totalTime = payload.durationSec;
     const lastItem = summary.items[summary.items.length - 1];
 
@@ -155,7 +159,7 @@ export default function Result() {
     return (
       <div className="section">
         <p>还没有成绩记录，先去挑战一局吧。</p>
-        <button className="btn" onClick={() => navigate("/quiz?count=20")}>开始挑战</button>
+        <button className="btn" onClick={() => navigate("/quiz?count=30")}>开始挑战</button>
       </div>
     );
   }
@@ -183,9 +187,9 @@ export default function Result() {
       <div className="section">
         <div className="grid two">
           <div className="stat-card">
-            <span>总分</span>
-            <strong>{summary.score} / {summary.totalPossible}</strong>
-            <span className="note">得分率 {formatPercent(scoreRate)}</span>
+            <span>得分</span>
+            <strong>{summary.score} 分</strong>
+            <span className="note">百分制 · 得分率 {formatPercent(scoreRate)}</span>
           </div>
           <div className="stat-card">
             <span>正确题数</span>

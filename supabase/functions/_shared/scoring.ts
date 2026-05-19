@@ -1,14 +1,49 @@
 import { AnswerInput, ScoreQuestion, ScoreSummary } from "./types.ts";
 
-const FULL_SCORE = 5;
-const PARTIAL_SCORE = 2;
+const BASE_SCORE_MAP: Record<string, Record<string, number>> = {
+  easy: { single: 10, multiple: 15 },
+  medium: { single: 15, multiple: 22.5 },
+  hard: { single: 20, multiple: 30 }
+};
 
-function isSameSet(a: number[], b: number[]) {
-  if (a.length !== b.length) {
-    return false;
+const STANDARD_TIME: Record<string, number> = { easy: 7, medium: 12, hard: 20 };
+const TIME_ALPHA = 0.5;
+const TIME_BETA = 0.5;
+const TIME_T_MIN = 2;
+
+function getBaseScore(difficulty: string, type: string): number {
+  return BASE_SCORE_MAP[difficulty]?.[type] ?? 10;
+}
+
+function getStandardTime(difficulty: string, type: string): number {
+  let t = STANDARD_TIME[difficulty] ?? 10;
+  if (type === "multiple") t *= 1.5;
+  return t;
+}
+
+function computeCorrectness(
+  type: string,
+  selected: number[],
+  correct: number[]
+): number {
+  if (type === "single") {
+    return selected.length === 1 && selected[0] === correct[0] ? 1 : 0;
   }
-  const setA = new Set(a);
-  return b.every((value) => setA.has(value));
+  if (selected.length === 0) return 0;
+  const hasWrong = selected.some((val) => !correct.includes(val));
+  if (hasWrong) return 0;
+  const overlap = selected.filter((val) => correct.includes(val)).length;
+  return overlap / correct.length;
+}
+
+function computeTimeFactor(t: number, difficulty: string, type: string): number {
+  if (t < TIME_T_MIN) return TIME_BETA;
+  const T = getStandardTime(difficulty, type);
+  const r = t / T;
+  if (r <= 1) {
+    return 1 + TIME_ALPHA * (1 - r);
+  }
+  return Math.max(TIME_BETA, 1 - TIME_ALPHA * (r - 1));
 }
 
 export function scoreAnswers(
@@ -20,7 +55,8 @@ export function scoreAnswers(
   answers.forEach((answer) => answerMap.set(answer.id, answer));
 
   const items = [] as ScoreSummary["items"];
-  let score = 0;
+  let userTotal = 0;
+  let baseTotal = 0;
   let correctCount = 0;
   let multiTotal = 0;
   let multiFullyCorrect = 0;
@@ -34,35 +70,45 @@ export function scoreAnswers(
     }
     const answer = answerMap.get(id);
     const selected = answer?.selected ?? [];
+    const correct = question.answer;
+
+    const baseScore = getBaseScore(question.difficulty, question.type);
+    baseTotal += baseScore;
+
+    const correctness = computeCorrectness(question.type, selected, correct);
+    const t = answer?.timeSec ?? 0;
+
     let questionScore = 0;
     let isCorrect = false;
 
-    if (question.type === "single") {
-      isCorrect = selected.length === 1 && selected[0] === question.answer[0];
-      questionScore = isCorrect ? FULL_SCORE : 0;
-    } else {
-      multiTotal += 1;
-      const correct = question.answer;
-      const hasWrong = selected.some((value) => !correct.includes(value));
-      const isExact = isSameSet(selected, correct);
+    if (correctness > 0) {
+      const timeFactor = computeTimeFactor(t, question.difficulty, question.type);
+      questionScore = baseScore * correctness * timeFactor;
+      questionScore = Math.round(questionScore * 10) / 10;
+    }
 
-      if (isExact) {
-        questionScore = FULL_SCORE;
+    if (question.type === "single") {
+      if (correctness === 1) {
         isCorrect = true;
-        multiFullyCorrect += 1;
+        correctCount++;
+      }
+    } else {
+      multiTotal++;
+      const hasWrong = selected.some((val) => !correct.includes(val));
+      const isExact = selected.length === correct.length && selected.every((val) => correct.includes(val));
+      if (isExact) {
+        isCorrect = true;
+        correctCount++;
+        multiFullyCorrect++;
       } else if (!hasWrong && selected.length > 0 && selected.length < correct.length) {
-        questionScore = PARTIAL_SCORE;
-        multiSubsetOnly += 1;
+        multiSubsetOnly++;
         if (correct.length - selected.length === 1) {
-          multiMissedOne += 1;
+          multiMissedOne++;
         }
       }
     }
 
-    score += questionScore;
-    if (isCorrect) {
-      correctCount += 1;
-    }
+    userTotal += questionScore;
 
     items.push({
       id: question.id,
@@ -76,9 +122,11 @@ export function scoreAnswers(
   });
 
   const totalCount = questionOrder.length;
+  const finalScore = baseTotal > 0 ? Math.round((userTotal / baseTotal) * 100 * 10) / 10 : 0;
+
   return {
-    score,
-    totalPossible: totalCount * FULL_SCORE,
+    score: finalScore,
+    totalPossible: 100,
     correctCount,
     totalCount,
     items,

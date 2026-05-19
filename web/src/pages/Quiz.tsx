@@ -13,7 +13,7 @@ interface ResultPayload {
 
 export default function Quiz() {
   const [searchParams] = useSearchParams();
-  const count = Number(searchParams.get("count")) || 20;
+  const count = Number(searchParams.get("count")) || 30;
   const [paper, setPaper] = useState<PaperResponse | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerPayload>>({});
@@ -65,7 +65,7 @@ export default function Quiz() {
       [questionId]: {
         id: questionId,
         selected: selectedIds,
-        timeSec: prev[questionId]?.timeSec
+        timeSec: prev[questionId]?.timeSec ?? 0
       }
     }));
   };
@@ -88,22 +88,31 @@ export default function Quiz() {
     }
   };
 
+  const accumulateTime = (questionId: string) => {
+    const current = answersRef.current[questionId];
+    const elapsed = (Date.now() - questionStartRef.current) / 1000;
+    const prevTime = current?.timeSec ?? 0;
+    const newTime = Math.max(0.2, prevTime + elapsed);
+    return newTime;
+  };
+
   const finalizeCurrentAnswer = () => {
     if (!currentQuestion) {
       return answersRef.current;
     }
-    const duration = Math.max(0.2, (Date.now() - questionStartRef.current) / 1000);
+    const accumulatedTime = accumulateTime(currentQuestion.id);
     const current = answersRef.current[currentQuestion.id];
     const updated = {
       ...answersRef.current,
       [currentQuestion.id]: {
         id: currentQuestion.id,
         selected: current?.selected || [],
-        timeSec: duration
+        timeSec: accumulatedTime
       }
     };
     answersRef.current = updated;
     setAnswers(updated);
+    questionStartRef.current = Date.now();
     return updated;
   };
 

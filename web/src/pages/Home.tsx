@@ -6,7 +6,7 @@ import { Meta } from "../lib/types";
 export default function Home() {
   const [meta, setMeta] = useState<Meta | null>(null);
   const navigate = useNavigate();
-  const [questionCount, setQuestionCount] = useState(20);
+  const [questionCount, setQuestionCount] = useState(30);
 
   useEffect(() => {
     fetchMeta()
@@ -30,7 +30,6 @@ export default function Home() {
               value={questionCount}
               onChange={(e) => setQuestionCount(Number(e.target.value))}
             >
-              <option value={20}>20 题预热</option>
               <option value={30}>30 题进阶</option>
               <option value={40}>40 题资深</option>
               <option value={50}>50 题极客</option>
@@ -77,7 +76,7 @@ export default function Home() {
           </div>
           <div className="stat-card">
             <strong>计分规则</strong>
-            <span className="note">单选答对得满分，多选全对得满分，漏选得 2 分。</span>
+            <span className="note">单选答对按难度得10/15/20分，多选全对得15/22.5/30分；漏选按比例计分；含错选0分。</span>
           </div>
           <div className="stat-card">
             <strong>领域均衡</strong>

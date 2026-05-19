@@ -69,6 +69,8 @@ export interface ScoreSummary {
     missedOne: number;
     subsetOnly: number;
   };
+  rawUserTotal?: number;
+  rawBaseTotal?: number;
 }
 
 export interface LeaderboardEntry {

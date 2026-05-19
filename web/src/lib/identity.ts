@@ -68,6 +68,16 @@ const DOMAIN_VECTOR: Record<string, Vector> = {
   "音乐常识": { 艺术学: 1 }
 };
 
+const BASE_SCORE_MAP: Record<string, Record<string, number>> = {
+  easy: { single: 10, multiple: 15 },
+  medium: { single: 15, multiple: 22.5 },
+  hard: { single: 20, multiple: 30 }
+};
+
+function getBaseScore(difficulty: string, type: string): number {
+  return BASE_SCORE_MAP[difficulty]?.[type] ?? 10;
+}
+
 const PREFIX_BY_SCORE = [
   { threshold: 1, label: "人形AI" },
   { threshold: 0.8, label: "降维打击的学神" },
@@ -92,11 +102,15 @@ const SUFFIX_BY_DISCIPLINE: Record<Discipline, string> = {
   "日子人": "冲浪一级达人"
 };
 
-const DIFFICULTY_WEIGHT = {
-  easy: 0.8,
-  medium: 1,
-  hard: 1.2
-} as const;
+const SOFTMAX_TEMPERATURE = 5;
+
+function softmax(values: number[], temperature: number): number[] {
+  const scaled = values.map((v) => v / temperature);
+  const maxVal = Math.max(...scaled);
+  const exps = scaled.map((v) => Math.exp(v - maxVal));
+  const sumExps = exps.reduce((s, v) => s + v, 0);
+  return exps.map((v) => v / sumExps);
+}
 
 export interface IdentityResult {
   totals: Record<Discipline, number>;
@@ -108,31 +122,41 @@ export interface IdentityResult {
 }
 
 export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityResult {
-  const totals = DISCIPLINES.reduce((acc, key) => {
+  const userScores = DISCIPLINES.reduce((acc, key) => {
+    acc[key] = 0;
+    return acc;
+  }, {} as Record<Discipline, number>);
+
+  const baseScores = DISCIPLINES.reduce((acc, key) => {
     acc[key] = 0;
     return acc;
   }, {} as Record<Discipline, number>);
 
   items.forEach((item) => {
-    if (!item.isCorrect) {
-      return;
-    }
     const vector = DOMAIN_VECTOR[item.domain] || { 日子人: 1 };
-    const weight = DIFFICULTY_WEIGHT[item.difficulty] || 1;
+    const baseScore = getBaseScore(item.difficulty, item.type);
     Object.entries(vector).forEach(([discipline, value]) => {
       const key = discipline as Discipline;
-      totals[key] += (value || 0) * weight;
+      baseScores[key] += baseScore * (value || 0);
+      userScores[key] += item.score * (value || 0);
     });
   });
 
-  const totalScore = Object.values(totals).reduce((sum, value) => sum + value, 0) || 1;
-  const percents = DISCIPLINES.reduce((acc, key) => {
-    acc[key] = Number(((totals[key] / totalScore) * 100).toFixed(1));
+  const rateScores: Record<Discipline, number> = DISCIPLINES.reduce((acc, key) => {
+    acc[key] = baseScores[key] > 0 ? userScores[key] / baseScores[key] : 0;
+    return acc;
+  }, {} as Record<Discipline, number>);
+
+  const rateValues = DISCIPLINES.map((d) => rateScores[d]);
+  const softmaxProbs = softmax(rateValues, SOFTMAX_TEMPERATURE);
+
+  const percents = DISCIPLINES.reduce((acc, key, i) => {
+    acc[key] = Number((softmaxProbs[i] * 100).toFixed(1));
     return acc;
   }, {} as Record<Discipline, number>);
 
   const ranked = DISCIPLINES
-    .map((discipline) => ({ discipline, score: totals[discipline] }))
+    .map((discipline, i) => ({ discipline, score: softmaxProbs[i], index: i }))
     .sort((a, b) => b.score - a.score);
 
   const topThree = ranked.slice(0, 3).map((item) => ({
@@ -145,5 +169,5 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
   const suffix = SUFFIX_BY_DISCIPLINE[topDiscipline];
   const title = `你是一个【${prefix}】级别的【${suffix}】！`;
 
-  return { totals, percents, topThree, title, prefix, suffix };
+  return { totals: rateScores, percents, topThree, title, prefix, suffix };
 }
