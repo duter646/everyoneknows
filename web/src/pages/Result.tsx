@@ -12,7 +12,7 @@ import {
 } from "chart.js";
 import { submitLeaderboard, fetchLeaderboard } from "../lib/api";
 import { AnswerPayload, LeaderboardEntry, QuestionView, ScoreSummary } from "../lib/types";
-import { formatDuration, formatDate } from "../lib/format";
+import { formatDuration } from "../lib/format";
 import { DISCIPLINES, Discipline, scoreIdentity } from "../lib/identity";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
@@ -24,6 +24,21 @@ interface ResultPayload {
   durationSec: number;
   questions: QuestionView[];
 }
+
+const ALL_ACHIEVEMENTS = [
+  { title: "量子阅读", icon: "⚡", desc: "3秒内答对一道困难题" },
+  { title: "偏科战神", icon: "🎯", desc: "某一领域全对但总分不及格" },
+  { title: "天选之子", icon: "👑", desc: "所有多选题一次不错全部全对" },
+  { title: "差之毫厘", icon: "💔", desc: "超过3道多选题只差1个正确答案" },
+  { title: "绝地武士", icon: "⚔️", desc: "最后一题答对刚好跨过及格线" },
+  { title: "时间管理大师", icon: "⏱️", desc: "极速答题且成绩及格" },
+  { title: "满分传说", icon: "💎", desc: "得分率达到100%" },
+  { title: "稳如老狗", icon: "🪨", desc: "没有任何一道题秒答" },
+  { title: "多选杀手", icon: "🔮", desc: "多选题正确率100%" },
+  { title: "全领域探索", icon: "🗺️", desc: "答到的领域超过10个" },
+  { title: "困难突破者", icon: "🏔️", desc: "答对至少3道困难题" },
+  { title: "不抛弃不放弃", icon: "🛡️", desc: "没有任何一道题未作答" }
+];
 
 export default function Result() {
   const location = useLocation();
@@ -48,7 +63,7 @@ export default function Result() {
   }, [location.state]);
 
   useEffect(() => {
-    fetchLeaderboard(20).then(setLbEntries).catch(() => {});
+    fetchLeaderboard(100).then(setLbEntries).catch(() => {});
   }, []);
 
   const summary = payload?.summary;
@@ -74,23 +89,34 @@ export default function Result() {
     : 0;
   const identity = summary ? scoreIdentity(summary.items, scoreRate) : null;
 
-  const achievements = useMemo(() => {
-    if (!summary || !payload) return [] as { title: string; desc: string }[];
+  const unlockedSet = useMemo(() => {
+    if (!summary || !payload) return new Set<string>();
     const passLine = 60;
     const totalTime = payload.durationSec;
     const lastItem = summary.items[summary.items.length - 1];
     const hasHardFast = summary.items.some((i) => i.difficulty === "hard" && i.isCorrect && (i.timeSec || 99) <= 3);
     const hasFocused = domainStats.some((d) => d.total > 0 && d.correct === d.total);
-    const list = [
-      { title: "量子阅读", desc: "3 秒内答对一道困难题。", ok: hasHardFast },
-      { title: "偏科战神", desc: "某一领域全对，但总分不及格。", ok: summary.score < passLine && hasFocused },
-      { title: "天选之子", desc: "所有多选题一次不错、全部全对。", ok: summary.multiStats.total > 0 && summary.multiStats.fullyCorrect === summary.multiStats.total },
-      { title: "差之毫厘", desc: "超过 3 道多选题只差 1 个正确答案。", ok: summary.multiStats.missedOne >= 4 },
-      { title: "绝地武士", desc: "最后一题答对刚好跨过及格线。", ok: !!lastItem && lastItem.isCorrect && summary.score >= passLine && summary.score - lastItem.score < passLine },
-      { title: "时间管理大师", desc: "极速答题且成绩及格。", ok: totalTime <= summary.totalCount * 8 && summary.score >= passLine }
-    ];
-    return list.filter((i) => i.ok);
-  }, [summary, payload, domainStats]);
+    const noInstantAnswer = summary.items.every((i) => (i.timeSec || 0) >= 2);
+    const multiAllCorrect = summary.multiStats.total > 0 && summary.multiStats.fullyCorrect === summary.multiStats.total;
+    const hardCorrect = summary.items.filter((i) => i.difficulty === "hard" && i.isCorrect).length;
+    const noEmpty = summary.items.every((i) => i.score > 0 || i.isCorrect);
+    const allAnswered = payload.answers.length >= summary.totalCount;
+
+    const unlocked = new Set<string>();
+    if (hasHardFast) unlocked.add("量子阅读");
+    if (summary.score < passLine && hasFocused) unlocked.add("偏科战神");
+    if (summary.multiStats.total > 0 && summary.multiStats.fullyCorrect === summary.multiStats.total) unlocked.add("天选之子");
+    if (summary.multiStats.missedOne >= 4) unlocked.add("差之毫厘");
+    if (!!lastItem && lastItem.isCorrect && summary.score >= passLine && summary.score - lastItem.score < passLine) unlocked.add("绝地武士");
+    if (totalTime <= summary.totalCount * 8 && summary.score >= passLine) unlocked.add("时间管理大师");
+    if (scoreRate >= 1) unlocked.add("满分传说");
+    if (noInstantAnswer) unlocked.add("稳如老狗");
+    if (multiAllCorrect) unlocked.add("多选杀手");
+    if (domainStats.length >= 10) unlocked.add("全领域探索");
+    if (hardCorrect >= 3) unlocked.add("困难突破者");
+    if (allAnswered) unlocked.add("不抛弃不放弃");
+    return unlocked;
+  }, [summary, payload, domainStats, scoreRate]);
 
   const activeDisciplines = useMemo(() => {
     if (!identity) return [] as Discipline[];
@@ -198,8 +224,8 @@ export default function Result() {
             {showDomainStats ? "收起领域正确率" : "查看领域正确率"}
           </button>
         </div>
-        {showDomainStats && (
-          <div className="domain-stats-compact" style={{ marginTop: 12 }}>
+        <div className={`slide-panel ${showDomainStats ? "open" : ""}`}>
+          <div className="domain-stats-compact" style={{ paddingTop: 12 }}>
             {domainStats.map((d) => (
               <div key={d.domain} className="identity-bar-row">
                 <span className="identity-bar-label">{d.domain}</span>
@@ -210,19 +236,36 @@ export default function Result() {
               </div>
             ))}
           </div>
-        )}
+        </div>
       </div>
 
-      {!showDetail ? (
-        <div className="section detail-peek" onClick={() => setShowDetail(true)}>
+      <div className="section">
+        <h2>勋章墙</h2>
+        <div className="badge-wall">
+          {ALL_ACHIEVEMENTS.map((a) => {
+            const unlocked = unlockedSet.has(a.title);
+            return (
+              <div key={a.title} className={`badge-item ${unlocked ? "unlocked" : "locked"}`}>
+                <span className="badge-icon">{unlocked ? a.icon : "🔒"}</span>
+                <span className="badge-title">{a.title}</span>
+                <span className="badge-desc">{a.desc}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="section">
+        <div
+          className="detail-peek"
+          onClick={() => setShowDetail(!showDetail)}
+        >
           <div className="detail-peek-row">
-            <span>查看全部答题详情与解析</span>
-            <span className="detail-expand-icon">▼</span>
+            <span>{showDetail ? "收起答题详情" : "查看全部答题详情与解析"}</span>
+            <span className={`detail-expand-icon ${showDetail ? "rotated" : ""}`}>▼</span>
           </div>
         </div>
-      ) : (
-        <div className="section">
-          <h2>答题详情</h2>
+        <div className={`slide-panel ${showDetail ? "open" : ""}`}>
           {payload.questions.map((q, idx) => {
             const ans = payload.answers.find((a) => a.id === q.id);
             const scoreItem = summary.items.find((i) => i.id === q.id);
@@ -239,9 +282,9 @@ export default function Result() {
                   <span className={`detail-status ${isCorrect ? "correct" : "wrong"}`}>
                     {isCorrect ? "正确" : "错误"} · {scoreItem?.score ?? 0}分
                   </span>
-                  <span className="detail-expand-icon">{isExpanded ? "▲" : "▼"}</span>
+                  <span className={`detail-expand-icon ${isExpanded ? "rotated" : ""}`}>▼</span>
                 </div>
-                {isExpanded && (
+                <div className={`slide-panel ${isExpanded ? "open" : ""}`}>
                   <div className="detail-body">
                     <p className="detail-question">{q.question}</p>
                     <div className="detail-options">
@@ -263,29 +306,12 @@ export default function Result() {
                       <p className="detail-explanation">解析：{q.explanation}</p>
                     )}
                   </div>
-                )}
+                </div>
               </div>
             );
           })}
-          <div style={{ marginTop: 12 }}>
-            <button className="btn ghost" onClick={() => { setShowDetail(false); setExpandedQ(null); }}>收起详情</button>
-          </div>
         </div>
-      )}
-
-      {achievements.length > 0 && (
-        <div className="section">
-          <h2>成就解锁</h2>
-          <div className="achievements">
-            {achievements.map((a) => (
-              <div key={a.title} className="achievement-card">
-                <strong>{a.title}</strong>
-                <span>{a.desc}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      </div>
 
       <div className="section">
         <h2>排行榜</h2>
@@ -295,7 +321,7 @@ export default function Result() {
         </div>
         {uploadStatus && <p className="note" style={{ marginBottom: 8 }}>{uploadStatus}</p>}
         {lbEntries.length > 0 ? (
-          <div style={{ overflowX: "auto" }}>
+          <div style={{ overflowX: "auto", maxHeight: 320, overflowY: "auto" }}>
             <table className="table">
               <thead>
                 <tr>
@@ -320,9 +346,6 @@ export default function Result() {
         ) : (
           <p className="note">暂无排行数据</p>
         )}
-        <div style={{ marginTop: 8 }}>
-          <button className="btn ghost" onClick={() => navigate("/leaderboard")}>查看完整排行榜</button>
-        </div>
       </div>
     </div>
   );
