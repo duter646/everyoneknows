@@ -48,6 +48,7 @@ export default function Result() {
   const [nickname, setNickname] = useState("");
   const [uploadStatus, setUploadStatus] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [expandedQ, setExpandedQ] = useState<string | null>(null);
   const [showDomainStats, setShowDomainStats] = useState(false);
   const [showDetail, setShowDetail] = useState(false);
@@ -59,6 +60,7 @@ export default function Result() {
     if (statePayload?.summary) {
       setPayload(statePayload);
       if (statePayload.difficultyProfile) setLbTab(statePayload.difficultyProfile);
+      if (sessionStorage.getItem("lbSubmitted") === statePayload.token) setSubmitted(true);
       return;
     }
     const stored = sessionStorage.getItem("lastResult");
@@ -66,6 +68,7 @@ export default function Result() {
       const parsed = JSON.parse(stored) as ResultPayload;
       setPayload(parsed);
       if (parsed.difficultyProfile) setLbTab(parsed.difficultyProfile);
+      if (sessionStorage.getItem("lbSubmitted") === parsed.token) setSubmitted(true);
     }
   }, [location.state]);
 
@@ -134,7 +137,7 @@ export default function Result() {
     return {
       labels: activeDisciplines,
       datasets: [{
-        label: "学科倾向",
+        label: "正确率",
         data: activeDisciplines.map((d) => identity.rawRates[d]),
         backgroundColor: "rgba(0, 229, 255, 0.2)",
         borderColor: "rgba(0, 229, 255, 0.8)",
@@ -156,10 +159,13 @@ export default function Result() {
   }
 
   const handleUpload = async () => {
+    if (uploading || submitted) return;
     setUploading(true);
     setUploadStatus(null);
     try {
       const entry = await submitLeaderboard(payload.token, payload.answers, nickname, payload.durationSec, payload.difficultyProfile);
+      sessionStorage.setItem("lbSubmitted", payload.token);
+      setSubmitted(true);
       setUploadStatus(`已上传：${entry.nickname} / ${entry.score} 分`);
     } catch {
       setUploadStatus("上传失败，请稍后再试。");
@@ -203,7 +209,11 @@ export default function Result() {
         </div>
         <div className="radar-chart-wrap" style={{ marginTop: 16 }}>
           {radarData ? (
-            <Radar
+            <>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+                <span style={{ fontSize: 12, color: "#8ab4f8" }}>学科正确率雷达图</span>
+              </div>
+              <Radar
               data={radarData}
               options={{
                 responsive: true,
@@ -214,12 +224,14 @@ export default function Result() {
                     grid: { color: "rgba(255, 255, 255, 0.06)" },
                     pointLabels: { color: "#e8eaed", font: { size: 11 } },
                     ticks: { display: false },
-                    suggestedMin: 0
+                    min: 0,
+                    max: 100
                   }
                 },
                 plugins: { legend: { display: false } }
               }}
             />
+            </>
           ) : (
             <p className="note">学科数据不足，无法生成雷达图。</p>
           )}
@@ -330,7 +342,7 @@ export default function Result() {
         <h2>排行榜</h2>
         <div className="form-row" style={{ marginBottom: 12 }}>
           <input className="input" placeholder="输入昵称" value={nickname} onChange={(e) => setNickname(e.target.value)} style={{ minWidth: 120 }} />
-          <button className="btn" onClick={handleUpload} disabled={uploading}>上传成绩</button>
+          <button className="btn" onClick={handleUpload} disabled={uploading || submitted}>{submitted ? "已上传" : "上传成绩"}</button>
         </div>
         {uploadStatus && <p className="note" style={{ marginBottom: 8 }}>{uploadStatus}</p>}
         <div className="diff-tabs" style={{ display: "flex", gap: 8, marginBottom: 12 }}>
