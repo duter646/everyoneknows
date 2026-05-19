@@ -2,9 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NOTES = [
-  "30/40/50 题可选，单选75%多选25%，难度可调",
-  "答得越快奖励越高，秒答惩罚，超时衰减",
-  "百分制归一化，不同题量可公平对比",
+  "题量可选，越多测试越精准",
+  "答得越快奖励越高",
   "基于答题推测学科倾向，生成雷达图与身份"
 ];
 
