@@ -21,14 +21,14 @@ export default function Home() {
       <div className="home-center">
         <div className="home-logo">?</div>
         <h1 className="home-title">万物皆知</h1>
-        <p className="home-subtitle">世界知识擂台</p>
+        <p className="home-subtitle">百科知识擂台</p>
 
         <div className="home-count-select">
           {[
             { val: 20, label: "20 题", tag: "热身" },
             { val: 30, label: "30 题", tag: "进阶" },
             { val: 40, label: "40 题", tag: "资深" },
-            { val: 50, label: "50 题", tag: "极客" }
+            { val: 50, label: "50 题", tag: "大佬" }
           ].map((item) => (
             <button
               key={item.val}

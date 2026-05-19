@@ -21,7 +21,7 @@ create table if not exists questions (
 create table if not exists leaderboard (
   id uuid primary key default gen_random_uuid(),
   nickname text not null,
-  score int not null,
+  score numeric(6,2) not null,
   correct_count int not null,
   total_count int not null,
   accuracy numeric(6, 4) not null,
