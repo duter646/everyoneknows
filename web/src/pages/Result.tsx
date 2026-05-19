@@ -10,9 +10,9 @@ import {
   Tooltip,
   Legend
 } from "chart.js";
-import { submitLeaderboard } from "../lib/api";
-import { AnswerPayload, QuestionView, ScoreSummary } from "../lib/types";
-import { formatDuration } from "../lib/format";
+import { submitLeaderboard, fetchLeaderboard } from "../lib/api";
+import { AnswerPayload, LeaderboardEntry, QuestionView, ScoreSummary } from "../lib/types";
+import { formatDuration, formatDate } from "../lib/format";
 import { DISCIPLINES, Discipline, scoreIdentity } from "../lib/identity";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
@@ -34,6 +34,8 @@ export default function Result() {
   const [uploading, setUploading] = useState(false);
   const [expandedQ, setExpandedQ] = useState<string | null>(null);
   const [showDomainStats, setShowDomainStats] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
+  const [lbEntries, setLbEntries] = useState<LeaderboardEntry[]>([]);
 
   useEffect(() => {
     const statePayload = location.state as ResultPayload | null;
@@ -42,10 +44,12 @@ export default function Result() {
       return;
     }
     const stored = sessionStorage.getItem("lastResult");
-    if (stored) {
-      setPayload(JSON.parse(stored));
-    }
+    if (stored) setPayload(JSON.parse(stored));
   }, [location.state]);
+
+  useEffect(() => {
+    fetchLeaderboard(20).then(setLbEntries).catch(() => {});
+  }, []);
 
   const summary = payload?.summary;
 
@@ -53,16 +57,13 @@ export default function Result() {
     if (!summary) return [] as { domain: string; correct: number; total: number; rate: number }[];
     const map = new Map<string, { correct: number; total: number }>();
     summary.items.forEach((item) => {
-      const current = map.get(item.domain) || { correct: 0, total: 0 };
-      current.total += 1;
-      if (item.isCorrect) current.correct += 1;
-      map.set(item.domain, current);
+      const cur = map.get(item.domain) || { correct: 0, total: 0 };
+      cur.total += 1;
+      if (item.isCorrect) cur.correct += 1;
+      map.set(item.domain, cur);
     });
     return Array.from(map.entries())
-      .map(([domain, value]) => ({
-        domain, correct: value.correct, total: value.total,
-        rate: value.total ? value.correct / value.total : 0
-      }))
+      .map(([domain, v]) => ({ domain, correct: v.correct, total: v.total, rate: v.total ? v.correct / v.total : 0 }))
       .sort((a, b) => b.rate - a.rate);
   }, [summary]);
 
@@ -78,13 +79,11 @@ export default function Result() {
     const passLine = 60;
     const totalTime = payload.durationSec;
     const lastItem = summary.items[summary.items.length - 1];
-    const hasHardFast = summary.items.some(
-      (item) => item.difficulty === "hard" && item.isCorrect && (item.timeSec || 99) <= 3
-    );
-    const hasFocusedDomain = domainStats.some((d) => d.total > 0 && d.correct === d.total);
+    const hasHardFast = summary.items.some((i) => i.difficulty === "hard" && i.isCorrect && (i.timeSec || 99) <= 3);
+    const hasFocused = domainStats.some((d) => d.total > 0 && d.correct === d.total);
     const list = [
       { title: "量子阅读", desc: "3 秒内答对一道困难题。", ok: hasHardFast },
-      { title: "偏科战神", desc: "某一领域全对，但总分不及格。", ok: summary.score < passLine && hasFocusedDomain },
+      { title: "偏科战神", desc: "某一领域全对，但总分不及格。", ok: summary.score < passLine && hasFocused },
       { title: "天选之子", desc: "所有多选题一次不错、全部全对。", ok: summary.multiStats.total > 0 && summary.multiStats.fullyCorrect === summary.multiStats.total },
       { title: "差之毫厘", desc: "超过 3 道多选题只差 1 个正确答案。", ok: summary.multiStats.missedOne >= 4 },
       { title: "绝地武士", desc: "最后一题答对刚好跨过及格线。", ok: !!lastItem && lastItem.isCorrect && summary.score >= passLine && summary.score - lastItem.score < passLine },
@@ -164,10 +163,7 @@ export default function Result() {
               <div key={d} className="identity-bar-row">
                 <span className="identity-bar-label">{d}</span>
                 <div className="identity-bar-track">
-                  <div
-                    className="identity-bar-fill"
-                    style={{ width: `${identity.percents[d]}%` }}
-                  />
+                  <div className="identity-bar-fill" style={{ width: `${identity.percents[d]}%` }} />
                 </div>
                 <span className="identity-bar-pct">{identity.percents[d]}%</span>
               </div>
@@ -208,10 +204,7 @@ export default function Result() {
               <div key={d.domain} className="identity-bar-row">
                 <span className="identity-bar-label">{d.domain}</span>
                 <div className="identity-bar-track">
-                  <div
-                    className="identity-bar-fill domain"
-                    style={{ width: `${Math.round(d.rate * 100)}%` }}
-                  />
+                  <div className="identity-bar-fill domain" style={{ width: `${Math.round(d.rate * 100)}%` }} />
                 </div>
                 <span className="identity-bar-pct">{Math.round(d.rate * 100)}% <span className="note">({d.correct}/{d.total})</span></span>
               </div>
@@ -220,57 +213,65 @@ export default function Result() {
         )}
       </div>
 
-      <div className="section">
-        <h2>答题详情</h2>
-        {payload.questions.map((q, idx) => {
-          const ans = payload.answers.find((a) => a.id === q.id);
-          const scoreItem = summary.items.find((i) => i.id === q.id);
-          const userSelected = ans?.selected ?? [];
-          const correctAnswer = q.answer;
-          const isCorrect = scoreItem?.isCorrect ?? false;
-          const isExpanded = expandedQ === q.id;
-          const difficultyLabel = q.difficulty === "easy" ? "简单" : q.difficulty === "medium" ? "中等" : "困难";
+      {!showDetail ? (
+        <div className="section detail-peek" onClick={() => setShowDetail(true)}>
+          <div className="detail-peek-row">
+            <span>查看全部答题详情与解析</span>
+            <span className="detail-expand-icon">▼</span>
+          </div>
+        </div>
+      ) : (
+        <div className="section">
+          <h2>答题详情</h2>
+          {payload.questions.map((q, idx) => {
+            const ans = payload.answers.find((a) => a.id === q.id);
+            const scoreItem = summary.items.find((i) => i.id === q.id);
+            const userSelected = ans?.selected ?? [];
+            const correctAnswer = q.answer;
+            const isCorrect = scoreItem?.isCorrect ?? false;
+            const isExpanded = expandedQ === q.id;
 
-          return (
-            <div key={q.id} className="detail-item">
-              <div
-                className="detail-summary-row"
-                onClick={() => setExpandedQ(isExpanded ? null : q.id)}
-              >
-                <span className="tag">第 {idx + 1} 题</span>
-                <span className="tag">{q.domain}</span>
-                <span className={`detail-status ${isCorrect ? "correct" : "wrong"}`}>
-                  {isCorrect ? "正确" : "错误"} · {scoreItem?.score ?? 0}分
-                </span>
-                <span className="detail-expand-icon">{isExpanded ? "▲" : "▼"}</span>
-              </div>
-              {isExpanded && (
-                <div className="detail-body">
-                  <p className="detail-question">{q.question}</p>
-                  <div className="detail-options">
-                    {q.options.map((opt) => {
-                      const isUserChoice = userSelected.includes(opt.id);
-                      const isCorrectOption = correctAnswer.includes(opt.id);
-                      let cls = "detail-opt";
-                      if (isCorrectOption) cls += " opt-correct";
-                      else if (isUserChoice && !isCorrectOption) cls += " opt-wrong";
-                      const prefix = isCorrectOption ? "✓" : isUserChoice && !isCorrectOption ? "✗" : " ";
-                      return (
-                        <div key={opt.id} className={cls}>
-                          {prefix} {String.fromCharCode(65 + opt.id)}. {opt.text}
-                        </div>
-                      );
-                    })}
-                  </div>
-                  {q.explanation && (
-                    <p className="detail-explanation">解析：{q.explanation}</p>
-                  )}
+            return (
+              <div key={q.id} className="detail-item">
+                <div className="detail-summary-row" onClick={() => setExpandedQ(isExpanded ? null : q.id)}>
+                  <span className="tag">第 {idx + 1} 题</span>
+                  <span className="tag">{q.domain}</span>
+                  <span className={`detail-status ${isCorrect ? "correct" : "wrong"}`}>
+                    {isCorrect ? "正确" : "错误"} · {scoreItem?.score ?? 0}分
+                  </span>
+                  <span className="detail-expand-icon">{isExpanded ? "▲" : "▼"}</span>
                 </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
+                {isExpanded && (
+                  <div className="detail-body">
+                    <p className="detail-question">{q.question}</p>
+                    <div className="detail-options">
+                      {q.options.map((opt) => {
+                        const isUserChoice = userSelected.includes(opt.id);
+                        const isCorrectOption = correctAnswer.includes(opt.id);
+                        let cls = "detail-opt";
+                        if (isCorrectOption) cls += " opt-correct";
+                        else if (isUserChoice && !isCorrectOption) cls += " opt-wrong";
+                        const prefix = isCorrectOption ? "✓" : isUserChoice && !isCorrectOption ? "✗" : " ";
+                        return (
+                          <div key={opt.id} className={cls}>
+                            {prefix} {String.fromCharCode(65 + opt.id)}. {opt.text}
+                          </div>
+                        );
+                      })}
+                    </div>
+                    {q.explanation && (
+                      <p className="detail-explanation">解析：{q.explanation}</p>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+          <div style={{ marginTop: 12 }}>
+            <button className="btn ghost" onClick={() => { setShowDetail(false); setExpandedQ(null); }}>收起详情</button>
+          </div>
+        </div>
+      )}
 
       {achievements.length > 0 && (
         <div className="section">
@@ -287,13 +288,41 @@ export default function Result() {
       )}
 
       <div className="section">
-        <h2>上传排行榜</h2>
-        <div className="form-row">
-          <input className="input" placeholder="输入昵称" value={nickname} onChange={(e) => setNickname(e.target.value)} />
+        <h2>排行榜</h2>
+        <div className="form-row" style={{ marginBottom: 12 }}>
+          <input className="input" placeholder="输入昵称" value={nickname} onChange={(e) => setNickname(e.target.value)} style={{ minWidth: 120 }} />
           <button className="btn" onClick={handleUpload} disabled={uploading}>上传成绩</button>
-          <button className="btn ghost" onClick={() => navigate("/leaderboard")}>查看排行榜</button>
         </div>
-        {uploadStatus && <p className="note" style={{ marginTop: 10 }}>{uploadStatus}</p>}
+        {uploadStatus && <p className="note" style={{ marginBottom: 8 }}>{uploadStatus}</p>}
+        {lbEntries.length > 0 ? (
+          <div style={{ overflowX: "auto" }}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>排名</th>
+                  <th>昵称</th>
+                  <th>得分</th>
+                  <th>用时</th>
+                </tr>
+              </thead>
+              <tbody>
+                {lbEntries.map((e) => (
+                  <tr key={e.id}>
+                    <td><span className="rank-badge">{e.rank}</span></td>
+                    <td>{e.nickname}</td>
+                    <td>{e.score}</td>
+                    <td>{formatDuration(e.durationSec)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <p className="note">暂无排行数据</p>
+        )}
+        <div style={{ marginTop: 8 }}>
+          <button className="btn ghost" onClick={() => navigate("/leaderboard")}>查看完整排行榜</button>
+        </div>
       </div>
     </div>
   );

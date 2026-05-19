@@ -780,6 +780,25 @@ h3 {
   padding: 4px 12px 12px;
 }
 
+.detail-peek {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.detail-peek:hover {
+  background: rgba(0, 229, 255, 0.04);
+}
+
+.detail-peek-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
 /* ===== DETAIL PANEL ===== */
 
 .detail-item {
