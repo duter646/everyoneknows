@@ -13,6 +13,8 @@ export interface QuestionView {
   difficulty: Difficulty;
   question: string;
   options: QuestionOptionView[];
+  answer: number[];
+  explanation?: string;
   tags?: string[];
 }
 

@@ -11,9 +11,9 @@ import {
   Legend
 } from "chart.js";
 import { submitLeaderboard } from "../lib/api";
-import { AnswerPayload, ScoreSummary } from "../lib/types";
+import { AnswerPayload, QuestionView, ScoreSummary } from "../lib/types";
 import { formatDuration, formatPercent } from "../lib/format";
-import { DISCIPLINES, scoreIdentity } from "../lib/identity";
+import { DISCIPLINES, Discipline, scoreIdentity } from "../lib/identity";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -22,6 +22,7 @@ interface ResultPayload {
   answers: AnswerPayload[];
   token: string;
   durationSec: number;
+  questions: QuestionView[];
 }
 
 export default function Result() {
@@ -31,6 +32,7 @@ export default function Result() {
   const [nickname, setNickname] = useState("");
   const [uploadStatus, setUploadStatus] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
 
   useEffect(() => {
     const statePayload = location.state as ResultPayload | null;
@@ -136,16 +138,21 @@ export default function Result() {
     }));
   }, [summary, payload, domainStats]);
 
+  const activeDisciplines = useMemo(() => {
+    if (!identity) return [] as Discipline[];
+    return DISCIPLINES.filter((d) => identity.totals[d] > 0 || identity.percents[d] > 0);
+  }, [identity]);
+
   const radarData = useMemo(() => {
-    if (!identity) {
+    if (!identity || activeDisciplines.length < 3) {
       return null;
     }
     return {
-      labels: DISCIPLINES,
+      labels: activeDisciplines,
       datasets: [
         {
           label: "学科倾向",
-          data: DISCIPLINES.map((discipline) => identity.percents[discipline]),
+          data: activeDisciplines.map((d) => identity.percents[d]),
           backgroundColor: "rgba(255, 107, 53, 0.2)",
           borderColor: "rgba(255, 107, 53, 0.8)",
           pointBackgroundColor: "rgba(31, 122, 140, 0.9)",
@@ -153,7 +160,7 @@ export default function Result() {
         }
       ]
     };
-  }, [identity]);
+  }, [identity, activeDisciplines]);
 
   if (!summary || !payload) {
     return (
@@ -197,7 +204,67 @@ export default function Result() {
             <span className="note">用时 {formatDuration(payload.durationSec)}</span>
           </div>
         </div>
+        <div style={{ marginTop: 12 }}>
+          <button className="btn ghost" onClick={() => setShowDetail(!showDetail)}>
+            {showDetail ? "收起详情" : "查看详情"}
+          </button>
+        </div>
       </div>
+
+      {showDetail && payload.questions && (
+        <div className="section">
+          <h2>答题详情</h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+            {payload.questions.map((q, idx) => {
+              const ans = payload.answers.find((a) => a.id === q.id);
+              const scoreItem = summary.items.find((i) => i.id === q.id);
+              const userSelected = ans?.selected ?? [];
+              const correctAnswer = q.answer;
+              const isCorrect = scoreItem?.isCorrect ?? false;
+              const difficultyLabel =
+                q.difficulty === "easy" ? "简单" : q.difficulty === "medium" ? "中等" : "困难";
+
+              return (
+                <div key={q.id} style={{ padding: "12px 16px", border: "1px solid rgba(34,28,20,0.1)", borderRadius: 8 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                    <span className="tag">第 {idx + 1} 题</span>
+                    <span className="tag">{q.domain}</span>
+                    <span className="tag">{q.type === "multiple" ? "多选" : "单选"}</span>
+                    <span className="tag">{difficultyLabel}</span>
+                    <span style={{ marginLeft: "auto", fontWeight: 600, color: isCorrect ? "#2e7d32" : "#c62828" }}>
+                      {isCorrect ? "正确" : "错误"} · {scoreItem?.score ?? 0}分
+                    </span>
+                  </div>
+                  <p style={{ margin: "0 0 8px", fontSize: 15 }}>{q.question}</p>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                    {q.options.map((opt) => {
+                      const isUserChoice = userSelected.includes(opt.id);
+                      const isCorrectOption = correctAnswer.includes(opt.id);
+                      let optStyle: React.CSSProperties = { padding: "4px 8px", borderRadius: 4, fontSize: 14 };
+                      if (isCorrectOption) {
+                        optStyle = { ...optStyle, background: "rgba(46,125,50,0.12)", color: "#2e7d32", fontWeight: 600 };
+                      } else if (isUserChoice && !isCorrectOption) {
+                        optStyle = { ...optStyle, background: "rgba(198,40,40,0.12)", color: "#c62828", textDecoration: "line-through" };
+                      }
+                      const prefix = isCorrectOption ? "✓" : isUserChoice && !isCorrectOption ? "✗" : " ";
+                      return (
+                        <div key={opt.id} style={optStyle}>
+                          {prefix} {String.fromCharCode(65 + opt.id)}. {opt.text}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {q.explanation && (
+                    <p style={{ marginTop: 8, fontSize: 13, color: "rgba(34,28,20,0.6)", fontStyle: "italic" }}>
+                      解析：{q.explanation}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <div className="section">
         <h2>趣味身份鉴定</h2>
@@ -212,7 +279,7 @@ export default function Result() {
             ))}
           </div>
           <div className="stat-card">
-            {radarData && (
+            {radarData ? (
               <Radar
                 data={radarData}
                 options={{
@@ -227,6 +294,8 @@ export default function Result() {
                   plugins: { legend: { display: false } }
                 }}
               />
+            ) : (
+              <p className="note">学科数据不足，无法生成雷达图。</p>
             )}
           </div>
         </div>

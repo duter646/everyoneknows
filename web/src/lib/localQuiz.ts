@@ -8,6 +8,7 @@ interface QuestionFull {
   question: string;
   options: string[];
   answer: number[];
+  explanation?: string;
   tags?: string[];
 }
 
@@ -132,6 +133,8 @@ export async function localFetchPaper(count: number): Promise<PaperResponse> {
     difficulty: q.difficulty,
     question: q.question,
     options: q.options.map((opt, i) => ({ id: i, text: opt })),
+    answer: q.answer,
+    explanation: q.explanation,
     tags: q.tags
   }));
 
