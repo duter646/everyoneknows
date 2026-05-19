@@ -127,6 +127,11 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
     return acc;
   }, {} as Record<Discipline, number>);
 
+  const baseScores = DISCIPLINES.reduce((acc, key) => {
+    acc[key] = 0;
+    return acc;
+  }, {} as Record<Discipline, number>);
+
   const effectiveCount = DISCIPLINES.reduce((acc, key) => {
     acc[key] = 0;
     return acc;
@@ -139,6 +144,15 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
       const w = value || 0;
       userScores[key] += item.score * w;
       effectiveCount[key] += w;
+    });
+  });
+
+  items.forEach((item) => {
+    const vector = getVector(item);
+    const baseScore = getBaseScore(item.difficulty, item.type);
+    Object.entries(vector).forEach(([discipline, value]) => {
+      const key = discipline as Discipline;
+      baseScores[key] += baseScore * (value || 0);
     });
   });
 
@@ -173,7 +187,7 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
   }, {} as Record<Discipline, number>);
 
   const rawRates = DISCIPLINES.reduce((acc, key) => {
-    acc[key] = signals[key];
+    acc[key] = baseScores[key] > 0 ? Number(((userScores[key] / baseScores[key]) * 100).toFixed(1)) : 0;
     return acc;
   }, {} as Record<Discipline, number>);
 
