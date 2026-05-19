@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home-center">
-        <div className="home-logo">EK</div>
-        <h1 className="home-title">EveryoneKnows</h1>
+        <div className="home-logo">?</div>
+        <h1 className="home-title">万物皆知</h1>
         <p className="home-subtitle">世界知识擂台</p>
 
         <div className="home-count-select">
