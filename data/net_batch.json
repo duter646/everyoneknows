@@ -113,8 +113,8 @@
         "type": "single",
         "question": "局域网(LAN)中最广泛使用的有线网络标准技术是？",
         "options": [
-            "蓝牙 (Bluetooth)",
-            "以太网 (Ethernet)",
+            "蓝牙",
+            "以太网",
             "光纤通道",
             "LTE"
         ],
@@ -389,10 +389,10 @@
         "type": "single",
         "question": "局域网内的设备为了获得公网服务的应答，常将内部的私有IP映射为网关的公网IP，这个技术叫？",
         "options": [
-            "NAT (网络地址转换)",
-            "DMZ (隔离区)",
-            "VLAN (虚拟局域网)",
-            "CDN (内容分发)"
+            "NAT",
+            "DMZ",
+            "VLAN",
+            "CDN"
         ],
         "answer": [
             0
@@ -581,10 +581,10 @@
         "type": "single",
         "question": "云计算模式中，提供运行环境和开发工具给消费者的服务模式称为？",
         "options": [
-            "IaaS (基础设施即服务)",
-            "PaaS (平台即服务)",
-            "SaaS (软件即服务)",
-            "DaaS (数据即服务)"
+            "IaaS",
+            "PaaS",
+            "SaaS",
+            "DaaS"
         ],
         "answer": [
             1
@@ -638,9 +638,9 @@
         "question": "下列哪些属于局域网或短距离通信常用的无线技术？",
         "options": [
             "Wi-Fi",
-            "蓝牙 (Bluetooth)",
-            "NFC (近场通信)",
-            "BGP (边界网关协议)"
+            "蓝牙",
+            "NFC",
+            "BGP"
         ],
         "answer": [
             0,
@@ -696,7 +696,7 @@
         "options": [
             "源IP地址",
             "目的IP地址",
-            "负载数据(Payload)",
+            "负载数据",
             "显示器的分辨率设定"
         ],
         "answer": [
@@ -751,10 +751,10 @@
         "type": "multiple",
         "question": "常见的HTTP响应状态码中，代表客户端或服务端有错误的是哪些系列？",
         "options": [
-            "1xx (如100)",
-            "2xx (如200)",
-            "4xx (如404)",
-            "5xx (如500)"
+            "1xx",
+            "2xx",
+            "4xx",
+            "5xx"
         ],
         "answer": [
             2,

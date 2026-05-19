@@ -59,10 +59,10 @@
         "type": "single",
         "question": "古希腊建筑中的三大柱式不包括下列哪一种？",
         "options": [
-            "多立克柱式 (Doric)",
-            "爱奥尼柱式 (Ionic)",
-            "科林斯柱式 (Corinthian)",
-            "塔斯干柱式 (Tuscan)"
+            "多立克柱式",
+            "爱奥尼柱式",
+            "科林斯柱式",
+            "塔斯干柱式"
         ],
         "answer": [
             3
@@ -113,7 +113,7 @@
         "type": "single",
         "question": "设计了悉尼歌剧院的丹麦建筑师是？",
         "options": [
-            "约翰·乌松 (Jørn Utzon)",
+            "约翰·乌松",
             "阿尔瓦·阿尔托",
             "诺曼·福斯特",
             "雷姆·库哈斯"
@@ -250,7 +250,7 @@
         "options": [
             "斯特林奖",
             "阿卡汗建筑奖",
-            "普利兹克建筑奖 (Pritzker Prize)",
+            "普利兹克建筑奖",
             "AIA金奖"
         ],
         "answer": [
@@ -303,7 +303,7 @@
         "options": [
             "承德避暑山庄",
             "沈阳外八庙",
-            "北京故宫 (紫禁城)",
+            "北京故宫",
             "曲阜孔庙"
         ],
         "answer": [
@@ -329,7 +329,7 @@
         "question": "罗马帝国时期的一项伟大工程杰作，拥有巨大半球形穹顶及中央采光圆洞（Oculus）的古建筑是？",
         "options": [
             "罗马斗兽场",
-            "万神庙 (Pantheon)",
+            "万神庙",
             "君士坦丁凯旋门",
             "卡拉卡拉浴场"
         ],
@@ -355,10 +355,10 @@
         "type": "single",
         "question": "在工业设计领域，Dieter Rams (迪特·拉姆斯) 为哪个德国品牌做出了卓越贡献，提出了“好设计的十项原则”？",
         "options": [
-            "博世 (Bosch)",
-            "保时捷 (Porsche)",
-            "博朗 (Braun)",
-            "阿迪达斯 (Adidas)"
+            "博世",
+            "保时捷",
+            "博朗",
+            "阿迪达斯"
         ],
         "answer": [
             2
@@ -437,9 +437,9 @@
         "type": "single",
         "question": "巴黎蓬皮杜艺术中心（内脏外露式建筑）是哪一种建筑流派/风格的代表作？",
         "options": [
-            "高技派 (High-Tech)",
-            "粗野主义 (Brutalism)",
-            "解构主义 (Deconstructivism)",
+            "高技派",
+            "粗野主义",
+            "解构主义",
             "新古典主义"
         ],
         "answer": [
@@ -490,10 +490,10 @@
         "type": "single",
         "question": "在UX/UI设计中，“UI”全称是User Interface（用户界面），那么“UX”的全称是？",
         "options": [
-            "User Experience (用户体验)",
-            "User Exchange (用户交流)",
-            "User Execution (用户执行)",
-            "Unity Exchange (统一交互)"
+            "User Experience",
+            "User Exchange",
+            "User Execution",
+            "Unity Exchange"
         ],
         "answer": [
             0
@@ -516,10 +516,10 @@
         "type": "multiple",
         "question": "以下哪些属于勒·柯布西耶提出的“新建筑五点”？",
         "options": [
-            "底层架空 (Pilotis)",
-            "屋顶花园 (Roof garden)",
+            "底层架空",
+            "屋顶花园",
             "自由平面与自由立面",
-            "横向长窗 (Horizontal windows)"
+            "横向长窗"
         ],
         "answer": [
             0,
@@ -547,10 +547,10 @@
         "type": "multiple",
         "question": "解构主义（Deconstructivism）建筑以破碎、非线性、反常规的形态著称。以下哪些建筑师是解构主义的代表人物？",
         "options": [
-            "弗兰克·盖里 (Frank Gehry)",
-            "扎哈·哈迪德 (Zaha Hadid)",
-            "雷姆·库哈斯 (Rem Koolhaas)",
-            "安德烈·帕拉第奥 (Andrea Palladio)"
+            "弗兰克·盖里",
+            "扎哈·哈迪德",
+            "雷姆·库哈斯",
+            "安德烈·帕拉第奥"
         ],
         "answer": [
             0,
@@ -636,10 +636,10 @@
         "type": "multiple",
         "question": "古典拱券结构系统在西方建筑史占有重要地位，以下哪些属于常见的拱券类型？",
         "options": [
-            "半圆拱 (罗马式)",
-            "尖肋拱 (哥特式)",
-            "马蹄拱 (伊斯兰建筑常)",
-            "榫卯 (中国木构)"
+            "半圆拱",
+            "尖肋拱",
+            "马蹄拱",
+            "榫卯"
         ],
         "answer": [
             0,

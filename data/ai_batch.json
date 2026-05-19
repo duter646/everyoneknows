@@ -83,7 +83,7 @@
         "question": "击败人类围棋世界冠军的AI系统AlphaGo，其核心技术主要依赖于深度学习和？",
         "options": [
             "专家系统",
-            "强化学习 (Reinforcement Learning)",
+            "强化学习",
             "KNN分类算法",
             "线性回归"
         ],
@@ -136,7 +136,7 @@
         "options": [
             "图像分类",
             "机器翻译",
-            "聚类 (Clustering)",
+            "聚类",
             "回归预测"
         ],
         "answer": [
@@ -160,10 +160,10 @@
         "type": "single",
         "question": "在人工神经网络（ANN）中，引入非线性特征，使得网络能够拟合复杂函数的关键组件是？",
         "options": [
-            "权重 (Weights)",
-            "偏置 (Bias)",
-            "激活函数 (Activation Function)",
-            "池化层 (Pooling)"
+            "权重",
+            "偏置",
+            "激活函数",
+            "池化层"
         ],
         "answer": [
             2
@@ -187,10 +187,10 @@
         "type": "single",
         "question": "专门针对于图像识别、对象分类等视觉任务设计，并在近十年取得巨大成功的深度学习网络架构是？",
         "options": [
-            "CNN (卷积神经网络)",
-            "RNN (循环神经网络)",
-            "GAN (生成对抗网络)",
-            "SVM (支持向量机)"
+            "CNN",
+            "RNN",
+            "GAN",
+            "SVM"
         ],
         "answer": [
             0
@@ -266,7 +266,7 @@
         "question": "在优化神经网络的过程中，用于不断调整参数以最小化损失函数的核心算法通常是？",
         "options": [
             "二分查找",
-            "梯度下降 (Gradient Descent)",
+            "梯度下降",
             "贪心算法",
             "动态规划"
         ],
@@ -292,9 +292,9 @@
         "question": "能够通过两个网络（生成器和判别器）相互博弈来生成逼真图像或数据的模型是？",
         "options": [
             "CNN",
-            "GAN (生成对抗网络)",
-            "GNN (图神经网络)",
-            "Autoencoder (自编码器)"
+            "GAN",
+            "GNN",
+            "Autoencoder"
         ],
         "answer": [
             1
@@ -448,7 +448,7 @@
         "question": "为了评估多分类模型的综合性能，常常用来表示所有分类情况的正误统计矩阵被称为？",
         "options": [
             "协方差矩阵",
-            "混淆矩阵 (Confusion Matrix)",
+            "混淆矩阵",
             "海森矩阵",
             "单位矩阵"
         ],
@@ -473,7 +473,7 @@
         "question": "将输入的自然语言句子切分成模型可以处理的基础单元的过程叫做？",
         "options": [
             "切片运算",
-            "Tokenization (词元化)",
+            "Tokenization",
             "正则化",
             "归一化"
         ],
@@ -500,7 +500,7 @@
         "options": [
             "异常报错",
             "重置信号",
-            "奖励 (Reward) 或惩罚",
+            "奖励 或惩罚",
             "标签标注"
         ],
         "answer": [
@@ -525,7 +525,7 @@
         "options": [
             "冒泡排序",
             "K-Means",
-            "A* (A-star) 算法",
+            "A* 算法",
             "Apriori算法"
         ],
         "answer": [
@@ -550,7 +550,7 @@
         "question": "解决深度神经网络层数增加带来的“梯度消失/爆炸”问题的一个重要网络结构创新是（常用于ResNet）？",
         "options": [
             "增加全连接层",
-            "引入残差连接 (Residual Connection/Skip Connection)",
+            "引入残差连接",
             "删除隐藏层",
             "使用Sigmoid全替代ReLU"
         ],
@@ -658,9 +658,9 @@
         "question": "减轻或防止大模型/神经网络训练中“过拟合”的常见方法有？",
         "options": [
             "增加训练数据的多样性和数量",
-            "使用正则化技术（如L1/L2）",
+            "使用正则化技术",
             "引入Dropout层",
-            "提前停止训练 (Early Stopping)"
+            "提前停止训练"
         ],
         "answer": [
             0,
@@ -686,10 +686,10 @@
         "type": "multiple",
         "question": "在评价一个二分类模型的准确情况时，常涉及哪些评估指标？",
         "options": [
-            "准确率 (Accuracy)",
-            "精确率 (Precision)",
-            "召回率 (Recall)",
-            "F1分数 (F1 Score)"
+            "准确率",
+            "精确率",
+            "召回率",
+            "F1分数"
         ],
         "answer": [
             0,
@@ -717,7 +717,7 @@
             "当时计算能力严重不足",
             "可用以训练的数据极度匮乏",
             "专家过度承诺未兑现导致资金撤走",
-            "早期模型如单纯感知机无法解决非线性（如异或）问题"
+            "早期模型如单纯感知机无法解决非线性问题"
         ],
         "answer": [
             0,
@@ -745,7 +745,7 @@
             "Geoffrey Hinton",
             "Yann LeCun",
             "Yoshua Bengio",
-            "Andrew Ng (吴恩达)"
+            "Andrew Ng"
         ],
         "answer": [
             0,
@@ -769,10 +769,10 @@
         "type": "multiple",
         "question": "近年来大火的大型语言模型（LLM）包括以下哪些产品或模型族？",
         "options": [
-            "GPT-4 (OpenAI)",
-            "Claude (Anthropic)",
-            "Llama (Meta)",
-            "Photoshop (Adobe)"
+            "GPT-4",
+            "Claude",
+            "Llama",
+            "Photoshop"
         ],
         "answer": [
             0,
