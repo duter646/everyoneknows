@@ -31,11 +31,6 @@ Deno.serve(async (req) => {
     )
   ).sort();
 
-  // 调试：记录数据库查询结果
-  console.log(`Database query returned ${domainRows?.length || 0} rows`);
-  console.log(`Unique domains found: ${domains.length}`);
-  console.log(`Domains: ${JSON.stringify(domains)}`);
-
   return jsonResponse({
     questionCount: questionCount ?? 0,
     domainCount: domains.length,
