@@ -6,6 +6,7 @@ import { Meta } from "../lib/types";
 export default function Home() {
   const [meta, setMeta] = useState<Meta | null>(null);
   const navigate = useNavigate();
+  const [questionCount, setQuestionCount] = useState(20);
 
   useEffect(() => {
     fetchMeta()
@@ -19,11 +20,22 @@ export default function Home() {
         <div>
           <h1>EveryoneKnows 世界知识擂台</h1>
           <p>
-            20 题极速挑战，覆盖 40+ 常识领域。答完立刻生成你的学科画像与雷达图，
+            {questionCount} 题极速挑战，覆盖 40+ 常识领域。答完立刻生成你的学科画像与雷达图，
             把你的知识版图晒上排行榜。
           </p>
           <div className="form-row">
-            <button className="btn" onClick={() => navigate("/quiz?count=20")}>开始挑战</button>
+            <select
+              className="input-base"
+              style={{ padding: "0.4rem 1rem", borderRadius: "999px" }}
+              value={questionCount}
+              onChange={(e) => setQuestionCount(Number(e.target.value))}
+            >
+              <option value={20}>20 题预热</option>
+              <option value={30}>30 题进阶</option>
+              <option value={40}>40 题资深</option>
+              <option value={50}>50 题极客</option>
+            </select>
+            <button className="btn" onClick={() => navigate(`/quiz?count=${questionCount}`)}>开始挑战</button>
             <button className="btn secondary" onClick={() => navigate("/leaderboard")}>去看榜单</button>
           </div>
           <div className="badge-row" style={{ marginTop: 18 }}>
@@ -61,7 +73,7 @@ export default function Home() {
         <div className="grid two">
           <div className="stat-card">
             <strong>题量与题型</strong>
-            <span className="note">每次固定 20 题，单选为主，多选为辅。</span>
+            <span className="note">每次 {questionCount} 题，单选为主，多选为辅。</span>
           </div>
           <div className="stat-card">
             <strong>计分规则</strong>
