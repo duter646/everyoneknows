@@ -651,6 +651,135 @@ h3 {
   height: 100% !important;
 }
 
+/* ===== RESULT PAGE ===== */
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.result-score {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.result-score-label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.result-score-val {
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.result-score-unit {
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.result-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.result-meta strong {
+  color: var(--ink);
+}
+
+.result-identity {
+  margin-top: 16px;
+  font-size: 16px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.identity-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.identity-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.identity-bar-label {
+  width: 48px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.identity-bar-track {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.identity-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 0.3s ease;
+}
+
+.identity-bar-fill.domain {
+  background: linear-gradient(90deg, var(--accent-2), #b388ff);
+}
+
+.identity-bar-pct {
+  width: 56px;
+  font-size: 12px;
+  color: var(--ink);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.domain-stats-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-summary-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.detail-summary-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.detail-expand-icon {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.detail-body {
+  padding: 4px 12px 12px;
+}
+
 /* ===== DETAIL PANEL ===== */
 
 .detail-item {
