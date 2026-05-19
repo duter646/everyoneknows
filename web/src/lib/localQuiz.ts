@@ -90,44 +90,161 @@ function shuffle<T>(array: T[]): T[] {
   return arr;
 }
 
-export async function localFetchPaper(count: number): Promise<PaperResponse> {
-  const questions = await loadQuestions();
+export type DifficultyProfile = "721" | "343" | "136";
 
-  const domainGroups: Record<string, QuestionFull[]> = {};
-  questions.forEach((q) => {
-    if (q.type !== "single" && q.type !== "multiple") return;
-    if (!domainGroups[q.domain]) domainGroups[q.domain] = [];
-    domainGroups[q.domain].push(q);
-  });
+const DIFFICULTY_PROFILES: Record<DifficultyProfile, Record<string, number>> = {
+  "721": { easy: 0.7, medium: 0.2, hard: 0.1 },
+  "343": { easy: 0.3, medium: 0.4, hard: 0.3 },
+  "136": { easy: 0.1, medium: 0.3, hard: 0.6 }
+};
 
-  const domains = Object.keys(domainGroups);
-  const selectedQuestions: QuestionFull[] = [];
+export async function localFetchPaper(count: number, diffProfile: DifficultyProfile = "343"): Promise<PaperResponse> {
+  const allQ = await loadQuestions();
 
-  const shuffledDomains = shuffle(domains);
-  let domainIdx = 0;
+  const validQ = allQ.filter((q) => q.type === "single" || q.type === "multiple");
 
-  while (selectedQuestions.length < count && domains.length > 0) {
-    const domain = shuffledDomains[domainIdx % domains.length];
-    const available = domainGroups[domain].filter((q) => !selectedQuestions.includes(q));
-    if (available.length > 0) {
-      selectedQuestions.push(available[Math.floor(Math.random() * available.length)]);
-    } else {
-      domains.splice(domains.indexOf(domain), 1);
-      shuffledDomains.splice(shuffledDomains.indexOf(domain), 1);
-    }
-    if (domains.length === 0) break;
-    domainIdx++;
+  const SINGLE_RATIO = 0.75;
+  const DIFFICULTY_RATIOS = DIFFICULTY_PROFILES[diffProfile];
+  const MAX_SAME_DOMAIN = 3;
+  const MIN_DOMAIN_COUNT = Math.ceil(count / 1.5);
+
+  const targetSingle = Math.round(count * SINGLE_RATIO);
+  const targetMultiple = count - targetSingle;
+
+  const targetByType: Record<string, number> = { single: targetSingle, multiple: targetMultiple };
+  const targetByDiff: Record<string, number> = {};
+  for (const [diff, ratio] of Object.entries(DIFFICULTY_RATIOS)) {
+    targetByDiff[diff] = Math.round(count * ratio);
   }
 
-  const finalQuestions = shuffle(selectedQuestions);
+  const buckets: Record<string, QuestionFull[]> = {};
+  for (const type of ["single", "multiple"]) {
+    for (const diff of ["easy", "medium", "hard"]) {
+      const key = `${type}_${diff}`;
+      buckets[key] = validQ.filter((q) => q.type === type && q.difficulty === diff);
+    }
+  }
+
+  const bucketTargets: Record<string, number> = {};
+  for (const type of ["single", "multiple"]) {
+    for (const diff of ["easy", "medium", "hard"]) {
+      const key = `${type}_${diff}`;
+      bucketTargets[key] = Math.round(targetByType[type] * DIFFICULTY_RATIOS[diff]);
+    }
+  }
+
+  const selected: QuestionFull[] = [];
+  const usedIds = new Set<string>();
+  const domainCount: Record<string, number> = {};
+
+  function pickFromPool(pool: QuestionFull[], max: number): QuestionFull[] {
+    const available = pool.filter((q) => !usedIds.has(q.id) && (domainCount[q.domain] || 0) < MAX_SAME_DOMAIN);
+    const shuffled = shuffle(available);
+    const picked: QuestionFull[] = [];
+    for (const q of shuffled) {
+      if (picked.length >= max) break;
+      picked.push(q);
+    }
+    return picked;
+  }
+
+  function addQuestions(qs: QuestionFull[]) {
+    for (const q of qs) {
+      selected.push(q);
+      usedIds.add(q.id);
+      domainCount[q.domain] = (domainCount[q.domain] || 0) + 1;
+    }
+  }
+
+  const bucketOrder = shuffle(Object.keys(bucketTargets));
+  for (const key of bucketOrder) {
+    const target = bucketTargets[key];
+    const remaining = count - selected.length;
+    const actualTarget = Math.min(target, remaining);
+    if (actualTarget <= 0) continue;
+    const picked = pickFromPool(buckets[key], actualTarget);
+    addQuestions(picked);
+  }
+
+  if (selected.length < count) {
+    const fallback = validQ.filter((q) => !usedIds.has(q.id) && (domainCount[q.domain] || 0) < MAX_SAME_DOMAIN);
+    const shuffled = shuffle(fallback);
+    for (const q of shuffled) {
+      if (selected.length >= count) break;
+      selected.push(q);
+      usedIds.add(q.id);
+      domainCount[q.domain] = (domainCount[q.domain] || 0) + 1;
+    }
+  }
+
+  if (selected.length < count) {
+    const remaining = validQ.filter((q) => !usedIds.has(q.id));
+    const shuffled = shuffle(remaining);
+    for (const q of shuffled) {
+      if (selected.length >= count) break;
+      selected.push(q);
+      usedIds.add(q.id);
+      domainCount[q.domain] = (domainCount[q.domain] || 0) + 1;
+    }
+  }
+
+  const coveredDomains = Object.keys(domainCount).length;
+  if (coveredDomains < MIN_DOMAIN_COUNT && selected.length >= count) {
+    const domainEntries = Object.entries(domainCount).sort((a, b) => b[1] - a[1]);
+    const overDomains = domainEntries.filter(([, c]) => c > 1);
+    const uncoveredDomains = new Set(
+      [...new Set(validQ.map((q) => q.domain))].filter((d) => !domainCount[d])
+    );
+
+    for (const [domain] of overDomains) {
+      if (uncoveredDomains.size === 0) break;
+      if (coveredDomains + (count - selected.length) >= MIN_DOMAIN_COUNT) break;
+
+      const domainQuestions = selected.filter((q) => q.domain === domain);
+      if (domainQuestions.length <= 1) continue;
+
+      const removable = domainQuestions[domainQuestions.length - 1];
+      const newDomain = [...uncoveredDomains][0];
+      const replacement = validQ.find(
+        (q) => q.domain === newDomain && !usedIds.has(q.id) && q.type === removable.type && q.difficulty === removable.difficulty
+      ) || validQ.find(
+        (q) => q.domain === newDomain && !usedIds.has(q.id)
+      );
+
+      if (replacement) {
+        const idx = selected.indexOf(removable);
+        selected[idx] = replacement;
+        usedIds.delete(removable.id);
+        usedIds.add(replacement.id);
+        domainCount[domain]--;
+        if (domainCount[domain] === 0) delete domainCount[domain];
+        domainCount[newDomain] = (domainCount[newDomain] || 0) + 1;
+        uncoveredDomains.delete(newDomain);
+      }
+    }
+  }
+
+  const finalQuestions = shuffle(selected);
   const token = Math.random().toString(36).substring(2);
 
   currentPaperSession = {
     token,
-    questions: finalQuestions
+    questions: finalQuestions.map((q) => {
+      const shuffledOptionIndices = shuffle(q.options.map((_, i) => i));
+      const answerRemap = new Map<number, number>();
+      shuffledOptionIndices.forEach((origIdx, newIdx) => {
+        answerRemap.set(origIdx, newIdx);
+      });
+      return {
+        ...q,
+        options: shuffledOptionIndices.map((origIdx) => q.options[origIdx]),
+        answer: q.answer.map((origIdx) => answerRemap.get(origIdx)!).sort()
+      };
+    })
   };
 
-  const views: QuestionView[] = finalQuestions.map((q) => ({
+  const sessionQuestions = currentPaperSession.questions;
+  const views: QuestionView[] = sessionQuestions.map((q) => ({
     id: q.id,
     domain: q.domain,
     type: q.type,

@@ -153,10 +153,12 @@ export default function Result() {
         {
           label: "学科倾向",
           data: activeDisciplines.map((d) => identity.percents[d]),
-          backgroundColor: "rgba(255, 107, 53, 0.2)",
-          borderColor: "rgba(255, 107, 53, 0.8)",
-          pointBackgroundColor: "rgba(31, 122, 140, 0.9)",
-          borderWidth: 2
+          backgroundColor: "rgba(0, 229, 255, 0.2)",
+          borderColor: "rgba(0, 229, 255, 0.8)",
+          pointBackgroundColor: "rgba(0, 229, 255, 1)",
+          pointBorderColor: "rgba(0, 229, 255, 1)",
+          borderWidth: 2,
+          pointRadius: 4
         }
       ]
     };
@@ -273,22 +275,28 @@ export default function Result() {
               </div>
             ))}
           </div>
-          <div className="stat-card">
+          <div className="stat-card" style={{ minHeight: 280 }}>
             {radarData ? (
-              <Radar
-                data={radarData}
-                options={{
-                  scales: {
-                    r: {
-                      angleLines: { color: "rgba(34, 28, 20, 0.2)" },
-                      grid: { color: "rgba(34, 28, 20, 0.1)" },
-                      pointLabels: { color: "#221c14" },
-                      ticks: { display: false }
-                    }
-                  },
-                  plugins: { legend: { display: false } }
-                }}
-              />
+              <div className="radar-chart-wrap">
+                <Radar
+                  data={radarData}
+                  options={{
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                      r: {
+                        angleLines: { color: "rgba(255, 255, 255, 0.1)" },
+                        grid: { color: "rgba(255, 255, 255, 0.06)" },
+                        pointLabels: { color: "#e8eaed", font: { size: 11 } },
+                        ticks: { display: false, stepSize: 20 },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                      }
+                    },
+                    plugins: { legend: { display: false } }
+                  }}
+                />
+              </div>
             ) : (
               <p className="note">学科数据不足，无法生成雷达图。</p>
             )}

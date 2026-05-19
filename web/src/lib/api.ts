@@ -33,10 +33,10 @@ export function fetchMeta() {
   return localFetchMeta();
 }
 
-import { localFetchPaper, localScorePaper, localFetchMeta } from "./localQuiz";
+import { localFetchPaper, localScorePaper, localFetchMeta, DifficultyProfile } from "./localQuiz";
 
-export function fetchPaper(count: number) {
-  return localFetchPaper(count);
+export function fetchPaper(count: number, diffProfile?: DifficultyProfile) {
+  return localFetchPaper(count, diffProfile);
 }
 
 export async function scorePaper(token: string, answers: AnswerPayload[]) {
