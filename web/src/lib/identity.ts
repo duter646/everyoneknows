@@ -114,6 +114,7 @@ function getVector(item: ScoreItem): Vector {
 export interface IdentityResult {
   signals: Record<Discipline, number>;
   percents: Record<Discipline, number>;
+  rawRates: Record<Discipline, number>;
   topThree: { discipline: Discipline; percent: number }[];
   title: string;
   prefix: string;
@@ -171,6 +172,11 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
     return acc;
   }, {} as Record<Discipline, number>);
 
+  const rawRates = DISCIPLINES.reduce((acc, key) => {
+    acc[key] = signals[key];
+    return acc;
+  }, {} as Record<Discipline, number>);
+
   const topThree = sorted.slice(0, 3).map((item) => ({
     discipline: item.discipline,
     percent: percents[item.discipline]
@@ -181,5 +187,5 @@ export function scoreIdentity(items: ScoreItem[], scoreRate: number): IdentityRe
   const suffix = SUFFIX_BY_DISCIPLINE[topDiscipline];
   const title = `你是一个【${prefix}】级别的【${suffix}】！`;
 
-  return { signals, percents, topThree, title, prefix, suffix };
+  return { signals, percents, rawRates, topThree, title, prefix, suffix };
 }

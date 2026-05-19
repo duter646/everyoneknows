@@ -129,7 +129,7 @@ export default function Result() {
       labels: activeDisciplines,
       datasets: [{
         label: "学科倾向",
-        data: activeDisciplines.map((d) => identity.percents[d]),
+        data: activeDisciplines.map((d) => identity.rawRates[d]),
         backgroundColor: "rgba(0, 229, 255, 0.2)",
         borderColor: "rgba(0, 229, 255, 0.8)",
         pointBackgroundColor: "rgba(0, 229, 255, 1)",
@@ -207,9 +207,8 @@ export default function Result() {
                     angleLines: { color: "rgba(255, 255, 255, 0.1)" },
                     grid: { color: "rgba(255, 255, 255, 0.06)" },
                     pointLabels: { color: "#e8eaed", font: { size: 11 } },
-                    ticks: { display: false, stepSize: 20 },
-                    suggestedMin: 0,
-                    suggestedMax: 100
+                    ticks: { display: false },
+                    suggestedMin: 0
                   }
                 },
                 plugins: { legend: { display: false } }
@@ -256,16 +255,22 @@ export default function Result() {
       </div>
 
       <div className="section">
-        <div
-          className="detail-peek"
-          onClick={() => setShowDetail(!showDetail)}
-        >
+        <div className="detail-peek" onClick={() => setShowDetail(true)}>
           <div className="detail-peek-row">
-            <span>{showDetail ? "收起答题详情" : "查看全部答题详情与解析"}</span>
-            <span className={`detail-expand-icon ${showDetail ? "rotated" : ""}`}>▼</span>
+            <span>查看全部答题详情与解析</span>
+            <span className="detail-expand-icon">▼</span>
           </div>
         </div>
-        <div className={`slide-panel ${showDetail ? "open" : ""}`}>
+      </div>
+
+      {showDetail && (
+        <div className="dialog-backdrop" onClick={() => { setShowDetail(false); setExpandedQ(null); }}>
+          <div className="dialog detail-dialog" onClick={(e) => e.stopPropagation()}>
+            <div className="detail-dialog-header">
+              <h2>答题详情</h2>
+              <button className="btn ghost" onClick={() => { setShowDetail(false); setExpandedQ(null); }}>关闭</button>
+            </div>
+            <div className="detail-dialog-body">
           {payload.questions.map((q, idx) => {
             const ans = payload.answers.find((a) => a.id === q.id);
             const scoreItem = summary.items.find((i) => i.id === q.id);
@@ -310,8 +315,10 @@ export default function Result() {
               </div>
             );
           })}
+            </div>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="section">
         <h2>排行榜</h2>
