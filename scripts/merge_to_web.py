@@ -4,7 +4,7 @@ all_data = []
 files = sorted(glob.glob('data/*_batch.json'))
 
 for f in files:
-    with open(f, 'r', encoding='utf-8') as fh:
+    with open(f, 'r', encoding='utf-8-sig') as fh:
         data = json.load(fh)
         all_data.extend(data)
 
