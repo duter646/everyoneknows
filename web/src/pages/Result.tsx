@@ -15,6 +15,24 @@ import { AnswerPayload, LeaderboardEntry, QuestionView, ScoreSummary } from "../
 import { formatDuration } from "../lib/format";
 import { DISCIPLINES, Discipline, scoreIdentity } from "../lib/identity";
 
+const DISCIPLINE_IMAGE: Record<Discipline, string> = {
+  "哲学": "/images/philosophy.png",
+  "经济学": "/images/economy.png",
+  "法学": "/images/law.png",
+  "教育学": "/images/education.png",
+  "文学": "/images/literature.png",
+  "历史学": "/images/history.png",
+  "理学": "/images/science.png",
+  "工学": "/images/engineering.png",
+  "农学": "/images/agriculture.png",
+  "医学": "/images/medicine.png",
+  "军事学": "/images/military.png",
+  "管理学": "/images/management.png",
+  "艺术学": "/images/arts.png",
+  "生活常识": "/images/life.png",
+  "体育生": "/images/sports.png"
+};
+
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
 interface ResultPayload {
@@ -189,7 +207,16 @@ export default function Result() {
           </div>
           <button className="btn" onClick={() => navigate("/")}>再来一局</button>
         </div>
-        <p className="result-identity">{identity?.title}</p>
+        <div className="result-identity-wrap" style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 8 }}>
+          {identity && (
+            <img
+              src={DISCIPLINE_IMAGE[identity.topThree[0]?.discipline ?? "生活常识"]}
+              alt={identity.suffix}
+              style={{ width: 64, height: 64, borderRadius: 12, objectFit: "cover", flexShrink: 0 }}
+            />
+          )}
+          <p className="result-identity">{identity?.title}</p>
+        </div>
       </div>
 
       <div className="section">
