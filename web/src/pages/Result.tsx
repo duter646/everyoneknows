@@ -15,22 +15,24 @@ import { AnswerPayload, LeaderboardEntry, QuestionView, ScoreSummary } from "../
 import { formatDuration } from "../lib/format";
 import { DISCIPLINES, Discipline, scoreIdentity } from "../lib/identity";
 
+const BASE_PATH = "/everyoneknows";
+
 const DISCIPLINE_IMAGE: Record<Discipline, string> = {
-  "哲学": "/images/philosophy.png",
-  "经济学": "/images/economy.png",
-  "法学": "/images/law.png",
-  "教育学": "/images/education.png",
-  "文学": "/images/literature.png",
-  "历史学": "/images/history.png",
-  "理学": "/images/science.png",
-  "工学": "/images/engineering.png",
-  "农学": "/images/agriculture.png",
-  "医学": "/images/medicine.png",
-  "军事学": "/images/military.png",
-  "管理学": "/images/management.png",
-  "艺术学": "/images/arts.png",
-  "生活常识": "/images/life.png",
-  "体育生": "/images/sports.png"
+  "哲学": `${BASE_PATH}/images/philosophy.png`,
+  "经济学": `${BASE_PATH}/images/economy.png`,
+  "法学": `${BASE_PATH}/images/law.png`,
+  "教育学": `${BASE_PATH}/images/education.png`,
+  "文学": `${BASE_PATH}/images/literature.png`,
+  "历史学": `${BASE_PATH}/images/history.png`,
+  "理学": `${BASE_PATH}/images/science.png`,
+  "工学": `${BASE_PATH}/images/engineering.png`,
+  "农学": `${BASE_PATH}/images/agriculture.png`,
+  "医学": `${BASE_PATH}/images/medicine.png`,
+  "军事学": `${BASE_PATH}/images/military.png`,
+  "管理学": `${BASE_PATH}/images/management.png`,
+  "艺术学": `${BASE_PATH}/images/arts.png`,
+  "生活常识": `${BASE_PATH}/images/life.png`,
+  "体育生": `${BASE_PATH}/images/sports.png`
 };
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
