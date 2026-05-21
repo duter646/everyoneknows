@@ -866,10 +866,10 @@
         "difficulty": "hard",
         "question": "在分布式系统中，CAP定理指出以下三者不能同时满足，其中哪项可暂时牺牲？",
         "options": [
-            "一致性(Consistency)",
-            "可用性(Availability)",
-            "分区容错性(Partition tolerance)",
-            "持久性(Durability)"
+            "一致性",
+            "可用性",
+            "分区容错性",
+            "持久性"
         ],
         "answer": [
             1
@@ -994,7 +994,7 @@
         "difficulty": "hard",
         "question": "关于x86架构的内存排序模型，以下哪些说法正确？",
         "options": [
-            "x86采用TSO(完全存储定序)模型",
+            "x86采用TSO模型",
             "允许Store-Load重排序",
             "不允许Load-Load重排序",
             "x86的内存模型比ARM严格"

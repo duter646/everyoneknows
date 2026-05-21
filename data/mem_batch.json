@@ -676,7 +676,7 @@
         "question": "'绝绝子'这个网络用语表达的意思是什么？",
         "options": [
             "极其差",
-            "极度好或极度差(取决于语境)",
+            "极度好或极度差",
             "一般般",
             "再见"
         ],
@@ -852,7 +852,7 @@
         "difficulty": "hard",
         "question": "在meme研究中，'Doge' meme的原始图片中的犬种是什么？",
         "options": [
-            "柴犬(Shiba Inu)",
+            "柴犬",
             "秋田犬",
             "哈士奇",
             "柯基"
@@ -978,7 +978,7 @@
         "question": "'草'在中文ACG圈中表示什么意思？",
         "options": [
             "植物",
-            "笑声(日文'草'=笑声'www')",
+            "笑声",
             "愤怒",
             "无聊"
         ],
@@ -1055,7 +1055,7 @@
             "Rick Astley的《Never Gonna Give You Up》",
             "Rick and Morty动画",
             "Richard Stallman的演讲",
-            "rickshaw(人力车)"
+            "rickshaw"
         ],
         "answer": [
             0
@@ -1160,7 +1160,7 @@
         "question": "以下哪些是源自日本的网络文化概念？",
         "options": [
             "弹幕",
-            "宅文化(OTAKU)",
+            "宅文化",
             "躺平",
             "中二病"
         ],
